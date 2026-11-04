@@ -1,0 +1,19 @@
+APLIKASI
+
+Kalkulator Faraidh Tiga Versi
+Hak Cipta (c) 2026 Azhari Syafaat, S.H., M.Kn. (Syafaat & Associates Law Firm).
+Dilisensikan berdasarkan GNU Affero General Public License versi 3 (lihat LICENSE dan hak-cipta.txt).
+
+
+KOMPONEN PIHAK KETIGA
+
+pdf.js 3.11.174 - Mozilla Foundation - Apache License 2.0 (vendor/license-pdfjs.txt)
+Literata - The Literata Project Authors - SIL Open Font License 1.1 (fonts/license-literata.txt)
+IBM Plex Sans dan IBM Plex Mono - IBM Corp. - SIL Open Font License 1.1 (fonts/license-ibm-plex-*.txt)
+Amiri - The Amiri Project Authors - SIL Open Font License 1.1 (fonts/license-amiri.txt)
+
+
+DOKUMEN
+
+Buku panduan dan folder rujukan/ tidak disertakan dalam repositori ini. Tautan dokumen di
+dalam aplikasi mengarah ke https://faraidh.syafaatlawfirm.com dan tidak tersedia offline.

@@ -1,0 +1,10 @@
+KALKULATOR WARIS ISLAM — SYAFAAT LAWFIRM
+Versi 5.17.1 — Panduan penggunaan paket
+
+Aplikasi ini membandingkan simulasi KHI, Hazairin, fikih Syafi'i dan kaidah yang dirujuk dalam kitab. Kolom kitab mencakup keluarga inti dan beberapa susunan khusus yang dinyatakan dalam aplikasi. Formulir kitab terpisah memakai masukan sendiri dan cakupan keluarga inti sebagaimana dijelaskan pada halaman. Hasil tidak menggantikan pemeriksaan fakta, dokumen atau putusan.
+
+Harta bersama yang dimasukkan adalah nilai bersih setelah kewajiban bersama ditentukan; utang bersama tidak dihitung otomatis. Jika status keluarga atau bagian belum dapat ditentukan dari data yang tersedia, aplikasi menampilkan alasan dan tidak mengeluarkan angka.
+
+Berkas utama: index.html, bank-kasus.js, sw.js, manifest.webmanifest, sumber-hukum.json, fonts/, icons/ dan vendor/. Buku panduan dan rujukan/ tidak disertakan dalam repositori ini; tautannya mengarah ke situs resmi. Jalankan melalui HTTPS. Untuk pembaruan, pertahankan seluruh struktur folder dan sediakan cadangan versi sebelumnya. Periksa tampilan, perhitungan dan pembaruan aplikasi terpasang setelah penerbitan.
+
+Isian kalkulator utama disimpan pada perangkat/peramban pengguna. Hasil dihitung di perangkat; kode kalkulator tidak mengirim isian perkara ke server. Baca kebijakan privasi website untuk informasi lebih lanjut.

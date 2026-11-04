@@ -1,0 +1,40 @@
+PERNYATAAN HAK CIPTA DAN LISENSI
+(Copyright Notice & License)
+
+Nama Ciptaan       : Kalkulator Faraidh Tiga Versi (Web Application & Progressive Web App)
+Jenis Ciptaan      : Program Komputer / Aplikasi Perangkat Lunak
+Pencipta           : Azhari Syafaat, S.H., M.Kn.
+Pemegang Hak Cipta : Azhari Syafaat, S.H., M.Kn. (Syafaat & Associates Law Firm)
+Tahun Ciptaan      : 2026
+
+Hak Cipta (c) 2026 Azhari Syafaat, S.H., M.Kn. (Syafaat & Associates Law Firm).
+
+--------------------------------------------------------------------------------
+LISENSI
+
+Kode sumber aplikasi ini (HTML, CSS, JavaScript) beserta struktur datanya
+dilisensikan berdasarkan GNU Affero General Public License versi 3 (AGPL-3.0).
+Naskah lengkapnya ada di berkas LICENSE.
+
+Anda boleh memakai, mengubah, dan menyebarkan aplikasi ini sesuai lisensi tersebut.
+Jika Anda mengubah aplikasi ini dan menjalankannya sebagai layanan jaringan, Anda
+wajib menyediakan kode sumber versi Anda kepada penggunanya.
+
+--------------------------------------------------------------------------------
+YANG TIDAK TERCAKUP DALAM LISENSI INI
+
+1. Buku panduan dan folder rujukan/ tidak disertakan dalam repositori ini. Isinya
+   tetap tunduk pada hak masing-masing pemegang hak cipta.
+2. Komponen pihak ketiga tunduk pada lisensinya masing-masing (lihat
+   lisensi-pihak-ketiga.txt).
+3. Sesuai Pasal 7 AGPL-3.0, lisensi ini tidak memberikan hak atas nama dagang atau
+   merek "Syafaat & Associates Law Firm" dan "Syafaat Lawfirm". Versi yang telah
+   diubah harus ditandai dengan jelas sebagai versi yang berbeda dan tidak boleh
+   ditampilkan sebagai karya atau pendapat hukum Syafaat & Associates Law Firm.
+
+--------------------------------------------------------------------------------
+TANPA JAMINAN
+
+Aplikasi ini disediakan apa adanya, tanpa jaminan apa pun, sebagaimana diatur dalam
+AGPL-3.0. Hasilnya merupakan simulasi dan tidak menggantikan pemeriksaan fakta,
+dokumen, atau penetapan pengadilan.

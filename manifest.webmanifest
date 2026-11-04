@@ -1,0 +1,102 @@
+{
+  "id": "./",
+  "name": "Kalkulator Faraidh Tiga Versi",
+  "short_name": "Faraidh",
+  "description": "Kalkulator waris Islam menurut KHI, bilateral Hazairin, dan patrilineal Syafi'i, dengan dasar hukum JDIH MA, Buku II 2026, dan buku panduan. Hak cipta Azhari Syafaat, S.H., M.Kn. (Syafaat & Associates Law Firm). Dapat dipakai tanpa internet.",
+  "developer": {
+    "name": "Azhari Syafaat, S.H., M.Kn. (Syafaat & Associates Law Firm)"
+  },
+  "lang": "id",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#eff2ee",
+  "theme_color": "#fbfcfa",
+  "categories": [
+    "education",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dasar hukum",
+      "short_name": "Dasar hukum",
+      "url": "./index.html#dasar-hukum",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Buku Panduan",
+      "short_name": "Panduan",
+      "url": "./index.html#panduan",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/ponsel-isian.png",
+      "sizes": "780x1688",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Isian ahli waris dan harta"
+    },
+    {
+      "src": "screenshots/ponsel-hasil.png",
+      "sizes": "780x1688",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Hasil pembagian menurut KHI"
+    },
+    {
+      "src": "screenshots/layar-lebar.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tirkah dan hasil di layar lebar"
+    }
+  ],
+  "prefer_related_applications": false,
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ]
+}
