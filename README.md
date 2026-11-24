@@ -72,7 +72,8 @@ Situs faraidh.syafaatlawfirm.com dibangun dari repositori ini; berkas di server 
   - Area sentuh tombol, isian, dan tautan kecil (Dalil, Baca panduan) minimal 40 px di layar sentuh.
   - Pembaca cerita: "saya adik/kakak (laki-laki/perempuan)-nya" dicatat sebagai saudara pewaris dan jenisnya (kandung, seayah, seibu) ditanyakan; dari sudut anak pewaris, kakek/nenek tanpa keterangan pihak dibaca sebagai orang tua pewaris dengan asumsi yang ditampilkan. Kakak yang meninggal tidak lagi ikut terhitung sebagai saudara.
   - Catatan di hasil KHI: pembacaan Pasal 193 (pasangan ikut radd) dan Pasal 181–182 (anak perempuan menghijab saudara) ditandai sebagai tafsir yang dipakai aplikasi. Pesan "Perhitungan ditahan" untuk cucu pengganti menjelaskan Pasal 185 dan pilihan simulasinya.
-  - Rujukan: salinan KHI ketik ulang (insantri.com), lampiran KHI UIN Malang, dan artikel Jurnal Hukum dan Peradilan (CC BY-NC-SA) diganti tautan ke sumber asli. Lisensi artikel yang tetap disertakan dicantumkan.
+  - Rujukan: salinan KHI ketik ulang (insantri.com) dan lampiran KHI UIN Malang diganti tautan ke sumber asli karena tidak berketerangan lisensi. Lisensi artikel yang disertakan diperiksa di halaman jurnal dan dicantumkan; artikel Jurnal Hukum dan Peradilan (CC BY-NC-SA) tetap disertakan karena kalkulator ini nonkomersial.
+  - Dasar hukum: Putusan MA 122 K/AG/1995 (anak perempuan menghijab saudara pewaris) dicocokkan dengan pindaian Varia Peradilan No. 150 yang dimuat Komisi Yudisial, lalu dicantumkan di catatan hasil KHI, dalil Pasal 181–182, dan katalog Dasar hukum. Bunyi Pasal 42 UU 28/2014 di `hak-cipta.txt` dicocokkan dengan naskah JDIH Kementerian Keuangan.
   - Header keamanan HSTS dan `frame-ancestors` di `.htaccess`; `.htaccess` kini ikut repositori. Skrip `terbit/buat-paket.cjs` membangun paket situs dari repositori.
 
 - **5.17.2** (24 November 2026):

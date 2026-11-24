@@ -46,13 +46,14 @@ Lisensi dibaca dari halaman jurnal atau artikel pada 24 November 2026.
 - Akhmad Khisni, "Ijtihad Hakim Peradilan Agama Bidang Hukum Kewarisan dan Kontribusinya terhadap
   Hukum Nasional", Jurnal Hukum IUS QUIA IUSTUM, Vol. 18 Edisi Khusus, Oktober 2011, hlm. 146-163.
   CC BY-SA 4.0. https://journal.uii.ac.id/IUSTUM/article/view/7238
+- Muhamad Isna Wahyudi, "Melacak Illat Hukum Larangan Waris Beda Agama", Jurnal Hukum dan
+  Peradilan, Vol. 10 No. 1, 2021. CC BY-NC-SA 4.0. Disertakan karena kalkulator ini disediakan
+  secara gratis dan nonkomersial (pernyataan pemegang hak aplikasi, 24 November 2026).
+  https://doi.org/10.25216/jhp.10.1.2021.155-172
 
 
 DITAUTKAN KE SUMBER ASLI, TIDAK DISERTAKAN (sejak versi 5.18.0)
 
-- Muhamad Isna Wahyudi, "Melacak Illat Hukum Larangan Waris Beda Agama", Jurnal Hukum dan
-  Peradilan, Vol. 10 No. 1, 2021. CC BY-NC-SA 4.0 (khusus penggunaan nonkomersial).
-  https://doi.org/10.25216/jhp.10.1.2021.155-172
 - Naskah KHI ketik ulang insantri.com ("Seri Perundangan", 2021): tidak ada keterangan lisensi.
 - Lampiran KHI pada repositori etheses UIN Maulana Malik Ibrahim Malang: tidak ada keterangan
   lisensi. http://etheses.uin-malang.ac.id/1595/11/07210048_Lampiran.pdf

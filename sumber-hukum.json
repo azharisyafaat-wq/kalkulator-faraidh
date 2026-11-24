@@ -131,10 +131,22 @@
       "summary": "Nomor ini tercantum pada aplikasi dan panduan awal. Salinan putusan asal belum berhasil diverifikasi dalam telaah ini.",
       "integration": "Tidak dijadikan klaim verifikasi yurisprudensi yang sudah tuntas. Bagian anak dan syarat tanpa anak untuk saudara tetap diperiksa melalui KHI 176 dan 182.",
       "url": "https://putusan3.mahkamahagung.go.id/",
-      "verification": "Naskah asli putusan 86 K/AG/1994 dan 184 K/AG/1995 belum diperoleh. Pedoman MA 2018 dan kajian MA membahasnya sebagai ringkasan; keduanya bukan naskah putusan lengkap. Keterangan sekunder (Khisni, Jurnal Hukum FH UII 2011, catatan kaki 10): PA Mataram No. 85/Pdt.G/92/V/PA.MTR (5-11-1992) jo. PTA Mataram No. 19/Pdt.G/1993/PTA.MTR (15-9-1993) jo. MA No. 86 K/AG/1994 tanggal 28-4-1995; nomor tercetak “86 K/AG/194”.",
+      "verification": "Naskah asli putusan 86 K/AG/1994 dan 184 K/AG/1995 belum diperoleh. Pedoman MA 2018 dan kajian MA membahasnya sebagai ringkasan; keduanya bukan naskah putusan lengkap. Keterangan sekunder (Khisni, Jurnal Hukum FH UII 2011, catatan kaki 10): PA Mataram No. 85/Pdt.G/92/V/PA.MTR (5-11-1992) jo. PTA Mataram No. 19/Pdt.G/1993/PTA.MTR (15-9-1993) jo. MA No. 86 K/AG/1994 tanggal 28-4-1995; nomor tercetak “86 K/AG/194”. Anotasi pada karakterisasi Putusan 122 K/AG/1995 oleh Komisi Yudisial (dibaca 24-11-2026) mengutip kaidah 86 K/AG/1994: “Selama masih ada anak laki-laki maupun anak perempuan, maka hak waris dari orang-orang yang mempunyai hubungan darah dengan pewaris kecuali orang tua, suami dan isteri menjadi tertutup (terhijab)”, dengan tanggal 27 Juli 1994. Sumber sekunder lain menulis 28-4-1995 atau 27 Juli 1995; tanggal belum dapat dipastikan tanpa salinan putusan. Putusan 122 K/AG/1995 yang sudah dicocokkan dimuat sebagai sumber tersendiri.",
       "checked_on": "2026-10-28",
       "local_url": "rujukan/PA_07_Ijtihad_Hakim_Peradilan_Agama_Bidang_Kewarisan_dan_Wasiat.pdf",
       "text_url": "https://kepaniteraan.mahkamahagung.go.id/images/artikel/pmppbdh.pdf"
+    },
+    {
+      "id": "putusan122",
+      "title": "Putusan MA 122 K/AG/1995",
+      "kind": "Putusan Mahkamah Agung",
+      "location": "Pertimbangan hukum dan amar; Varia Peradilan No. 150, hlm. 84–85",
+      "summary": "Kasasi atas putusan PTA Bandung No. 64/Pdt.G/1994/PTA.Bdg dan PA Cibadak No. 316/Pdt.G/1993/PA.Cbd. Pertimbangan: “pewaris meninggalkan anak perempuan yaitu tergugat asal I sehingga saudara-saudara dari pewaris haknya menjadi terhijab atau tertutup”. Mahkamah Agung mengabulkan permohonan kasasi, membatalkan kedua putusan itu, lalu mengadili sendiri dengan menolak gugatan para penggugat. Diputus dalam musyawarah 11 April 1996 dan diucapkan 30 April 1996.",
+      "integration": "Dasar putusan bagi model KHI: anak perempuan menghijab saudara pewaris (Pasal 181–182 KHI). Mode Syafi'i tetap mengikuti fikih Syafi'i.",
+      "url": "https://karakterisasi.komisiyudisial.go.id/file/27052024-143330-Putusan%20No%20122%20K%20Ag%201995.pdf",
+      "text_url": "https://karakterisasi.komisiyudisial.go.id/?view=t5nsyMraxMLmx9%2Fn2uDj18bg0g%3D%3D&id=pmao",
+      "verification": "Dicocokkan 24-11-2026 dengan pindaian Varia Peradilan No. 150, hlm. 62–85, yang dimuat Komisi Yudisial pada karakterisasi putusan ini. Pindaian memuat keterangan “Salinan Resmi putusan ini diberikan kepada Varia Peradilan Mahkamah Agung RI, Direktur Perdata Agama”. Kutipan pertimbangan dibaca langsung dari hlm. 84; tanggal musyawarah dan pengucapan dari hlm. 85.",
+      "checked_on": "2026-11-24"
     },
     {
       "id": "buku2_ma",
@@ -173,7 +185,8 @@
       "related_url": "rujukan/PA_06_Yurisprudensi_MA_Pembagian_Ahli_Waris_Pengganti.pdf",
       "verification": "Himpunan resmi MA 2018 halaman cetak 51-56 adalah ringkasan, bukan salinan lengkap kedua putusan; terdapat tanggal yang tidak mungkin secara kalender sehingga tanggal belum dipastikan.",
       "checked_on": "2026-10-28",
-      "text_url": "https://doi.org/10.25216/jhp.10.1.2021.155-172"
+      "text_url": "https://doi.org/10.25216/jhp.10.1.2021.155-172",
+      "local_url": "rujukan/PA_09_Putusan_dan_Penetapan_PA_Waris_Beda_Agama_Jurnal_MA.pdf"
     },
     {
       "id": "hazairin_bilateral",
