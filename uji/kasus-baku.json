@@ -1,0 +1,1039 @@
+[
+ {
+  "id": "C01 istri+putra+putri",
+  "p": {
+   "sex": "L",
+   "wives": 1,
+   "children": [
+    {
+     "sex": "L",
+     "name": "A"
+    },
+    {
+     "sex": "P",
+     "name": "B"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Istri (janda)": "1/8",
+    "A": "7/12",
+    "B": "7/24"
+   },
+   "khi": {
+    "Istri (janda)": "1/8",
+    "A": "7/12",
+    "B": "7/24"
+   },
+   "haz": {
+    "Istri (janda)": "1/8",
+    "A": "7/12",
+    "B": "7/24"
+   }
+  }
+ },
+ {
+  "id": "C02 gharrawain suami+ibu+ayah",
+  "p": {
+   "sex": "P",
+   "husband": true,
+   "mother": true,
+   "father": true
+  },
+  "harap": {
+   "syafii": {
+    "Suami (duda)": "1/2",
+    "Ibu": "1/6",
+    "Ayah": "1/3"
+   },
+   "khi": {
+    "Suami (duda)": "1/2",
+    "Ibu": "1/6",
+    "Ayah": "1/3"
+   }
+  }
+ },
+ {
+  "id": "C03 gharrawain istri+ibu+ayah",
+  "p": {
+   "sex": "L",
+   "wives": 1,
+   "mother": true,
+   "father": true
+  },
+  "harap": {
+   "syafii": {
+    "Istri (janda)": "1/4",
+    "Ibu": "1/4",
+    "Ayah": "1/2"
+   },
+   "khi": {
+    "Istri (janda)": "1/4",
+    "Ibu": "1/4",
+    "Ayah": "1/2"
+   }
+  }
+ },
+ {
+  "id": "C04 aul suami+2 saudari kandung",
+  "p": {
+   "sex": "P",
+   "husband": true,
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "P",
+     "name": "S1"
+    },
+    {
+     "type": "K",
+     "sex": "P",
+     "name": "S2"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Suami (duda)": "3/7",
+    "S1": "2/7",
+    "S2": "2/7"
+   },
+   "khi": {
+    "Suami (duda)": "3/7",
+    "S1": "2/7",
+    "S2": "2/7"
+   }
+  }
+ },
+ {
+  "id": "C05 musytarakah",
+  "p": {
+   "sex": "P",
+   "husband": true,
+   "mother": true,
+   "siblings": [
+    {
+     "type": "U",
+     "sex": "L",
+     "name": "U1"
+    },
+    {
+     "type": "U",
+     "sex": "P",
+     "name": "U2"
+    },
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "K1"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Suami (duda)": "1/2",
+    "Ibu": "1/6",
+    "U1": "1/9",
+    "U2": "1/9",
+    "K1": "1/9"
+   },
+   "khi": {
+    "Suami (duda)": "1/2",
+    "Ibu": "1/6",
+    "U1": "1/9",
+    "U2": "1/9",
+    "K1": "1/9"
+   }
+  }
+ },
+ {
+  "id": "C06 akdariyah",
+  "p": {
+   "sex": "P",
+   "husband": true,
+   "mother": true,
+   "pgf": true,
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "P",
+     "name": "SK"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Suami (duda)": "1/3",
+    "Ibu": "2/9",
+    "Kakek (ayah dari ayah)": "8/27",
+    "SK": "4/27"
+   }
+  }
+ },
+ {
+  "id": "C07 minbariyah",
+  "p": {
+   "sex": "L",
+   "wives": 1,
+   "father": true,
+   "mother": true,
+   "children": [
+    {
+     "sex": "P",
+     "name": "D1"
+    },
+    {
+     "sex": "P",
+     "name": "D2"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Istri (janda)": "1/9",
+    "D1": "8/27",
+    "D2": "8/27",
+    "Ayah": "4/27",
+    "Ibu": "4/27"
+   },
+   "khi": {
+    "Istri (janda)": "1/9",
+    "D1": "8/27",
+    "D2": "8/27",
+    "Ayah": "4/27",
+    "Ibu": "4/27"
+   }
+  }
+ },
+ {
+  "id": "C08 radd ibu+anak pr",
+  "p": {
+   "sex": "L",
+   "mother": true,
+   "children": [
+    {
+     "sex": "P",
+     "name": "D"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Ibu": "1/4",
+    "D": "3/4"
+   },
+   "khi": {
+    "Ibu": "1/4",
+    "D": "3/4"
+   }
+  }
+ },
+ {
+  "id": "C09 radd istri+anak pr",
+  "p": {
+   "sex": "L",
+   "wives": 1,
+   "children": [
+    {
+     "sex": "P",
+     "name": "D"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Istri (janda)": "1/8",
+    "D": "7/8"
+   },
+   "khi": {
+    "Istri (janda)": "1/5",
+    "D": "4/5"
+   },
+   "haz": {
+    "Istri (janda)": "1/8",
+    "D": "7/8"
+   }
+  }
+ },
+ {
+  "id": "C10 anak pr+cucu pr dr anak lk wafat",
+  "p": {
+   "sex": "L",
+   "children": [
+    {
+     "sex": "P",
+     "name": "D"
+    },
+    {
+     "sex": "L",
+     "name": "Sx",
+     "alive": false,
+     "kP": 1
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "D": "3/4",
+    "Cucu pr dari Sx": "1/4"
+   },
+   "khi": "ditahan"
+  }
+ },
+ {
+  "id": "C11 anak pr+saudari kandung",
+  "p": {
+   "sex": "L",
+   "children": [
+    {
+     "sex": "P",
+     "name": "D"
+    }
+   ],
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "P",
+     "name": "SK"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "D": "1/2",
+    "SK": "1/2"
+   },
+   "khi": {
+    "D": "1"
+   },
+   "haz": {
+    "D": "1"
+   }
+  }
+ },
+ {
+  "id": "C12 anak pr+saudara kandung lk",
+  "p": {
+   "sex": "L",
+   "children": [
+    {
+     "sex": "P",
+     "name": "D"
+    }
+   ],
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "BK"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "D": "1/2",
+    "BK": "1/2"
+   },
+   "khi": {
+    "D": "1"
+   },
+   "haz": {
+    "D": "1"
+   }
+  }
+ },
+ {
+  "id": "C13 ayah+anak pr",
+  "p": {
+   "sex": "L",
+   "father": true,
+   "children": [
+    {
+     "sex": "P",
+     "name": "D"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "D": "1/2",
+    "Ayah": "1/2"
+   },
+   "khi": {
+    "D": "1/2",
+    "Ayah": "1/2"
+   }
+  }
+ },
+ {
+  "id": "C14 ibu+ayah+2 saudara",
+  "p": {
+   "sex": "L",
+   "father": true,
+   "mother": true,
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "B1"
+    },
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "B2"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Ibu": "1/6",
+    "Ayah": "5/6"
+   },
+   "khi": {
+    "Ibu": "1/6",
+    "Ayah": "5/6"
+   }
+  }
+ },
+ {
+  "id": "C15 kakek+1 saudara kandung",
+  "p": {
+   "sex": "L",
+   "pgf": true,
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "B1"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Kakek (ayah dari ayah)": "1/2",
+    "B1": "1/2"
+   }
+  }
+ },
+ {
+  "id": "C16 kakek+3 saudara kandung",
+  "p": {
+   "sex": "L",
+   "pgf": true,
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "B1"
+    },
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "B2"
+    },
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "B3"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Kakek (ayah dari ayah)": "1/3",
+    "B1": "2/9",
+    "B2": "2/9",
+    "B3": "2/9"
+   }
+  }
+ },
+ {
+  "id": "C17 nenek dr ibu+ayah",
+  "p": {
+   "sex": "L",
+   "mgm": true,
+   "father": true
+  },
+  "harap": {
+   "syafii": {
+    "Nenek (ibu dari ibu)": "1/6",
+    "Ayah": "5/6"
+   }
+  }
+ },
+ {
+  "id": "C18 ibu+2 saudara seibu",
+  "p": {
+   "sex": "L",
+   "mother": true,
+   "siblings": [
+    {
+     "type": "U",
+     "sex": "L",
+     "name": "U1"
+    },
+    {
+     "type": "U",
+     "sex": "P",
+     "name": "U2"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Ibu": "1/3",
+    "U1": "1/3",
+    "U2": "1/3"
+   },
+   "khi": {
+    "Ibu": "1/3",
+    "U1": "1/3",
+    "U2": "1/3"
+   }
+  }
+ },
+ {
+  "id": "C19 suami+saudari kandung+saudari seayah",
+  "p": {
+   "sex": "P",
+   "husband": true,
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "P",
+     "name": "SK"
+    },
+    {
+     "type": "A",
+     "sex": "P",
+     "name": "SA"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Suami (duda)": "3/7",
+    "SK": "3/7",
+    "SA": "1/7"
+   }
+  }
+ },
+ {
+  "id": "C20 ibu+ayah",
+  "p": {
+   "sex": "L",
+   "mother": true,
+   "father": true
+  },
+  "harap": {
+   "syafii": {
+    "Ibu": "1/3",
+    "Ayah": "2/3"
+   },
+   "khi": {
+    "Ibu": "1/3",
+    "Ayah": "2/3"
+   },
+   "haz": {
+    "Ibu": "1/3",
+    "Ayah": "2/3"
+   }
+  }
+ },
+ {
+  "id": "C21 istri saja",
+  "p": {
+   "sex": "L",
+   "wives": 1
+  },
+  "harap": {
+   "syafii": {
+    "Istri (janda)": "1"
+   },
+   "khi": {
+    "Istri (janda)": "1"
+   }
+  }
+ },
+ {
+  "id": "C22 aul suami+ayah+ibu+anak pr",
+  "p": {
+   "sex": "P",
+   "husband": true,
+   "father": true,
+   "mother": true,
+   "children": [
+    {
+     "sex": "P",
+     "name": "D"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Suami (duda)": "3/13",
+    "Ayah": "2/13",
+    "Ibu": "2/13",
+    "D": "6/13"
+   },
+   "khi": {
+    "Suami (duda)": "3/13",
+    "Ayah": "2/13",
+    "Ibu": "2/13",
+    "D": "6/13"
+   }
+  }
+ },
+ {
+  "id": "C23 anak pr+cucu lk dr anak lk wafat",
+  "p": {
+   "sex": "L",
+   "children": [
+    {
+     "sex": "P",
+     "name": "D"
+    },
+    {
+     "sex": "L",
+     "name": "Sx",
+     "alive": false,
+     "kL": 1
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "D": "1/2",
+    "Cucu lk dari Sx": "1/2"
+   },
+   "khi": "ditahan"
+  }
+ },
+ {
+  "id": "C24 saudari kandung+saudara seayah",
+  "p": {
+   "sex": "L",
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "P",
+     "name": "SK"
+    },
+    {
+     "type": "A",
+     "sex": "L",
+     "name": "BA"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "SK": "1/2",
+    "BA": "1/2"
+   },
+   "khi": {
+    "SK": "1/2",
+    "BA": "1/2"
+   }
+  }
+ },
+ {
+  "id": "C25 2 saudari kdg+saudara&saudari seayah",
+  "p": {
+   "sex": "L",
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "P",
+     "name": "S1"
+    },
+    {
+     "type": "K",
+     "sex": "P",
+     "name": "S2"
+    },
+    {
+     "type": "A",
+     "sex": "L",
+     "name": "BA"
+    },
+    {
+     "type": "A",
+     "sex": "P",
+     "name": "SA"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "S1": "1/3",
+    "S2": "1/3",
+    "BA": "2/9",
+    "SA": "1/9"
+   }
+  }
+ },
+ {
+  "id": "C26 2 saudari kdg+saudari seayah",
+  "p": {
+   "sex": "L",
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "P",
+     "name": "S1"
+    },
+    {
+     "type": "K",
+     "sex": "P",
+     "name": "S2"
+    },
+    {
+     "type": "A",
+     "sex": "P",
+     "name": "SA"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "S1": "1/2",
+    "S2": "1/2"
+   }
+  }
+ },
+ {
+  "id": "C27 suami+ibu+ayah+2 saudara",
+  "p": {
+   "sex": "P",
+   "husband": true,
+   "mother": true,
+   "father": true,
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "B1"
+    },
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "B2"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Suami (duda)": "1/2",
+    "Ibu": "1/6",
+    "Ayah": "1/3"
+   },
+   "khi": {
+    "Suami (duda)": "1/2",
+    "Ibu": "1/6",
+    "Ayah": "1/3"
+   }
+  }
+ },
+ {
+  "id": "C28 suami+ibu+kakek (bukan gharrawain)",
+  "p": {
+   "sex": "P",
+   "husband": true,
+   "mother": true,
+   "pgf": true
+  },
+  "harap": {
+   "syafii": {
+    "Suami (duda)": "1/2",
+    "Ibu": "1/3",
+    "Kakek (ayah dari ayah)": "1/6"
+   }
+  }
+ },
+ {
+  "id": "C29 ibu+nenek dr ayah",
+  "p": {
+   "sex": "L",
+   "mother": true,
+   "pgm": true
+  },
+  "harap": {
+   "syafii": {
+    "Ibu": "1"
+   }
+  }
+ },
+ {
+  "id": "C30 anak pr+paman kandung",
+  "p": {
+   "sex": "L",
+   "children": [
+    {
+     "sex": "P",
+     "name": "D"
+    }
+   ],
+   "uncles": {
+    "pkK": 1
+   }
+  },
+  "harap": {
+   "syafii": {
+    "D": "1/2",
+    "Paman sekandung (saudara lk ayah)": "1/2"
+   }
+  }
+ },
+ {
+  "id": "C31 2 istri+ibu+putra",
+  "p": {
+   "sex": "L",
+   "wives": 2,
+   "mother": true,
+   "children": [
+    {
+     "sex": "L",
+     "name": "A"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Istri (janda), masing-masing": "1/8",
+    "Ibu": "1/6",
+    "A": "17/24"
+   },
+   "khi": {
+    "Istri (janda), masing-masing": "1/8",
+    "Ibu": "1/6",
+    "A": "17/24"
+   }
+  }
+ },
+ {
+  "id": "C32 suami+anak lk",
+  "p": {
+   "sex": "P",
+   "husband": true,
+   "children": [
+    {
+     "sex": "L",
+     "name": "A"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Suami (duda)": "1/4",
+    "A": "3/4"
+   },
+   "khi": {
+    "Suami (duda)": "1/4",
+    "A": "3/4"
+   }
+  }
+ },
+ {
+  "id": "C33 ibu+saudara seibu 1+saudara kandung",
+  "p": {
+   "sex": "L",
+   "mother": true,
+   "siblings": [
+    {
+     "type": "U",
+     "sex": "L",
+     "name": "U1"
+    },
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "BK"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Ibu": "1/6",
+    "U1": "1/6",
+    "BK": "2/3"
+   },
+   "khi": {
+    "Ibu": "1/6",
+    "U1": "1/6",
+    "BK": "2/3"
+   }
+  }
+ },
+ {
+  "id": "C34 suami+ibu+ayah+anak lk",
+  "p": {
+   "sex": "P",
+   "husband": true,
+   "mother": true,
+   "father": true,
+   "children": [
+    {
+     "sex": "L",
+     "name": "A"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Suami (duda)": "1/4",
+    "Ibu": "1/6",
+    "Ayah": "1/6",
+    "A": "5/12"
+   },
+   "khi": {
+    "Suami (duda)": "1/4",
+    "Ibu": "1/6",
+    "Ayah": "1/6",
+    "A": "5/12"
+   }
+  }
+ },
+ {
+  "id": "C35 2 anak pr+cucu pr dr anak lk",
+  "p": {
+   "sex": "L",
+   "children": [
+    {
+     "sex": "P",
+     "name": "D1"
+    },
+    {
+     "sex": "P",
+     "name": "D2"
+    },
+    {
+     "sex": "L",
+     "name": "Sx",
+     "alive": false,
+     "kP": 1
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "D1": "1/2",
+    "D2": "1/2"
+   },
+   "khi": "ditahan"
+  }
+ },
+ {
+  "id": "C36 ibu+anak pr+saudara kandung",
+  "p": {
+   "sex": "L",
+   "mother": true,
+   "children": [
+    {
+     "sex": "P",
+     "name": "D"
+    }
+   ],
+   "siblings": [
+    {
+     "type": "K",
+     "sex": "L",
+     "name": "BK"
+    }
+   ]
+  },
+  "harap": {
+   "syafii": {
+    "Ibu": "1/6",
+    "D": "1/2",
+    "BK": "1/3"
+   },
+   "khi": {
+    "Ibu": "1/4",
+    "D": "3/4"
+   }
+  }
+ },
+ {
+  "id": "P1 anak lk hidup+anak lk wafat(1 cucu lk)",
+  "p": {
+   "sex": "L",
+   "children": [
+    {
+     "sex": "L",
+     "name": "A"
+    },
+    {
+     "sex": "L",
+     "name": "Bx",
+     "alive": false,
+     "kL": 1
+    }
+   ]
+  },
+  "harap": {
+   "khi": {
+    "A": "1/2",
+    "Cucu lk dari Bx": "1/2"
+   }
+  },
+  "opt": {
+   "khi": {
+    "replacement": "cabang"
+   }
+  }
+ },
+ {
+  "id": "P2 anak lk hidup+anak pr wafat(1 cucu lk)",
+  "p": {
+   "sex": "L",
+   "children": [
+    {
+     "sex": "L",
+     "name": "A"
+    },
+    {
+     "sex": "P",
+     "name": "Dx",
+     "alive": false,
+     "kL": 1
+    }
+   ]
+  },
+  "harap": {
+   "khi": {
+    "A": "2/3",
+    "Cucu lk dari Dx": "1/3"
+   }
+  },
+  "opt": {
+   "khi": {
+    "replacement": "cabang"
+   }
+  }
+ },
+ {
+  "id": "P6 hanya cucu (anak wafat semua)",
+  "p": {
+   "sex": "L",
+   "children": [
+    {
+     "sex": "L",
+     "name": "Bx",
+     "alive": false,
+     "kL": 1,
+     "kP": 1
+    }
+   ]
+  },
+  "harap": {
+   "khi": "ditahan"
+  },
+  "opt": {
+   "khi": {
+    "replacement": "cabang"
+   }
+  }
+ }
+]

@@ -558,7 +558,7 @@ th.sys::before { content: ""; display: inline-block; width: 7px; height: 7px; bo
 }</style>
 
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Kalkulator Waris Islam (Faraidh) Pro v5.17.1 | Syafaat Lawfirm</title>
+<title>Kalkulator Waris Islam (Faraidh) Pro v5.17.2 | Syafaat Lawfirm</title>
 <meta name="description" content="Simulasikan pembagian waris Islam dengan perbandingan KHI, Hazairin, dan Syafi’i. Kalkulator faraidh Syafaat Lawfirm dilengkapi asumsi dan rujukan hukum.">
 <link rel="canonical" href="https://syafaatlawfirm.com/faraidh/">
 <meta name="robots" content="index,follow">
@@ -583,13 +583,14 @@ th.sys::before { content: ""; display: inline-block; width: 7px; height: 7px; bo
   <div class="mast-in">
     <div>
       <div class="eyebrow"><span class="ar" lang="ar" dir="rtl">علم الفرائض</span><span>Hukum Kewarisan Islam Indonesia</span></div>
-      <h1>Kalkulator Waris Islam (Faraidh) <small style="font-size:0.52em;font-weight:500;padding:3px 9px;border-radius:99px;background:var(--pine-soft);color:var(--pine);vertical-align:middle">Pro v5.17.1 · Edisi Terpadu</small></h1>
+      <h1>Kalkulator Waris Islam (Faraidh) <small style="font-size:0.52em;font-weight:500;padding:3px 9px;border-radius:99px;background:var(--pine-soft);color:var(--pine);vertical-align:middle">Pro v5.17.2 · Edisi Terpadu</small></h1>
 
       <div class="pwa" id="pwa">
         <button class="btn primary" id="pwa-install" type="button" hidden>Pasang aplikasi</button>
         <span class="pwa-pill" id="pwa-ios" hidden>Pasang di iPhone/iPad: ketuk <b>Bagikan</b>, lalu <b>Tambahkan ke Layar Utama</b>, dan buka sekali saat daring agar tersimpan untuk dipakai tanpa internet. <button type="button" class="linkish" id="pwa-ios-x">Tutup</button></span>
         <span class="pwa-pill" id="pwa-update" hidden>Versi baru tersedia. <button type="button" class="linkish" id="pwa-reload">Muat ulang</button></span>
-        <span class="pwa-pill" id="pwa-offline" role="status" aria-live="polite">Menyiapkan aplikasi dan PDF untuk penggunaan tanpa internet…</span>
+        <span class="pwa-pill" id="pwa-offline" role="status" aria-live="polite">Menyiapkan aplikasi untuk dipakai tanpa internet…</span>
+        <span class="pwa-pill" id="pwa-dokumen" hidden><span id="pwa-dokumen-teks">PDF rujukan disimpan saat dibuka.</span> <button type="button" class="linkish" id="pwa-dokumen-simpan">Simpan semua PDF rujukan (± 9,6 MB)</button></span>
         <span class="pwa-pill" id="pwa-network" role="status" aria-live="polite">Anda sedang offline. Tautan ke situs rujukan luar memerlukan internet.</span>
       </div>
       <p class="lede">Bandingkan pembagian waris Islam menurut <b>KHI</b>, pemikiran <b>bilateral Hazairin</b>, dan fikih <b>patrilineal Syafi'i</b>. Setiap model menjelaskan bagian dan langkah perhitungannya.</p>
@@ -791,7 +792,7 @@ th.sys::before { content: ""; display: inline-block; width: 7px; height: 7px; bo
       <div class="phead"><div><h2>Patrilineal Syafi'i</h2><p class="audit-note">Pembanding fikih patrilineal Mazhab Syafii (Matan Ar-Rahbiyyah, Fathul Qorib, dan literatur Fikih Mawaris — lihat salinan kitab/buku pada tab Dasar hukum).</p><p>Ashabul furudh, ashabah (bin-nafsi, bil-ghair, ma'al-ghair), dan dzawil arham. Gharrawain, musyarakah, kakek bersama saudara menurut Zaid bin Tsabit (muqasamah, mu'addah, akdariyah). <button type="button" class="plink" data-pg="5">Baca panduan Syafi’i</button></p></div><div class="chips" id="chips-syf"><span class="chip">Asal masalah <b>24</b></span><span class="chip">Penyebut akhir <b>72</b></span></div></div>
       <div class="opts">
         <div class="opts-title">Pilihan tafsir simulasi · dicantumkan dalam ringkasan</div>
-        <label class="field"><span>Sisa tanpa ashabah</span><select id="o-syf-bm" data-opt="syf.baitulmal"><option value="0">Muta'akhkhirin: radd, lalu dzawil arham</option><option value="1">Mutaqaddimin: ke Baitul Mal</option></select></label>
+        <label class="field"><span>Sisa tanpa ashabah</span><select id="o-syf-bm" data-opt="syf.baitulmal"><option value="0">Muta'akhkhirin: radd, lalu dzawil arham, lalu pasangan</option><option value="1">Mutaqaddimin: ke Baitul Mal</option></select></label>
         <label class="field"><span>Ibu bersama ayah &amp; pasangan (Gharrawain)</span><select id="o-syf-gh" data-opt="syf.gharrawain"><option value="1">1/3 sisa (Jumhur &amp; Mazhab Syafi'i)</option><option value="0">1/3 seluruh harta (Ibnu Abbas)</option></select></label>
       </div>
       <div id="out-syf"><div class="sec"><div class="bar" role="img" aria-label="Komposisi pembagian"><i title="Istri (janda): 12,50%" style="flex-grow:0.125;background:var(--h1)"></i><i title="Ibu: 16,67%" style="flex-grow:0.16666666666666666;background:var(--h3)"></i><i title="Ayah: 16,67%" style="flex-grow:0.16666666666666666;background:var(--h2)"></i><i title="Putra: 36,11%" style="flex-grow:0.3611111111111111;background:var(--h4)"></i><i title="Putri: 18,06%" style="flex-grow:0.18055555555555555;background:var(--h5)"></i></div>
@@ -980,7 +981,7 @@ function settle(G,ctx){
   const sp=G.find(g=>g.isSpouse);
   if(sp&&!ctx.noSpouseFallback){
     sp.share=sp.share.add(resd);sp.radd=true;meta.radd={residue:resd,to:[sp.label]};
-    st.push(`Sisa ${resd} dikembalikan (radd) kepada ${sp.label.toLowerCase()} karena tidak ada ahli waris lain yang berhak atas sisa.`);return;
+    st.push(`Sisa ${resd} dikembalikan (radd) kepada ${sp.label.toLowerCase()} karena tidak ada ahli waris lain yang berhak atas sisa${ctx.spouseBasis?' ('+ctx.spouseBasis+')':''}.`);return;
   }
   G.push({key:'bm',label:'Baitul Mal',kind:'preset',share:resd,tag:'Baitul Mal',fardTxt:'sisa',basis:ctx.bmBasis||'',members:[mem('bm','Baitul Mal',1,1)]});
   meta.baitulmal=resd;st.push(`Sisa ${resd} dicatat pada pos Baitul Mal sebagai sisa model${ctx.bmBasis?' ('+ctx.bmBasis+')':''}.`);
@@ -1347,7 +1348,7 @@ function fiqhEngine(P0,mode,opt){
     });
   }
 
-  settle(G,{st,meta,raddSpouse:KHI?opt.raddSpouse!==false:false,noRadd:SY&&!!opt.baitulmal,noSpouseFallback:SY||(KHI&&opt.raddSpouse===false),onNoRadd,
+  settle(G,{st,meta,raddSpouse:KHI?opt.raddSpouse!==false:false,noRadd:SY&&!!opt.baitulmal,noSpouseFallback:SY?!!opt.baitulmal:(KHI&&opt.raddSpouse===false),spouseBasis:SY?'muta\'akhkhirin Syafi\'iyah: pasangan menerima radd bila tidak ada ahli waris lain':'',onNoRadd,
     aulBasis:KHI?'Ps. 192 KHI':'ijtihad Umar bin Khattab, diikuti jumhur',raddBasis:KHI?'Ps. 193 KHI':'muta\'akhkhirin Syafi\'iyah',bmBasis:KHI?'sisa model; penetapan dan pengelolaannya perlu telaah (bandingkan Ps. 191 KHI)':'mutaqaddimin Syafi\'iyah'});
 
   if(!dzUsed)dzList.forEach(d=>d.recip.forEach(m=>{
@@ -1597,7 +1598,7 @@ function verifyKitabMoney(result,totalSen,amounts){
 if(typeof module!=='undefined')module.exports={Fr,fr,fiqhEngine,hazairinEngine,F1,calculateEstate,allocateMoney,validatePeople,parseRupiahInput,kitabCase,verifyKitabResult,verifyKitabMoney};
 
 </script>
-<script src="bank-kasus.js"></script>
+
 <script>
 (function(){
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
@@ -2947,12 +2948,22 @@ function optionSummary(k){
  const o=state.opt[k];
  if(k==='khi')return 'Cucu pengganti: '+(o.replacement==='cabang'?'simulasi bagian cabang bersama, dengan asumsi batas cabang':o.replacement==='cabang21'?'simulasi per cucu 2:1 dalam cabang, dengan asumsi batas cabang':'perlu telaah')+'; keturunan saudara: '+(o.sibMode==='putusan139'?'simulasi terbatas putusan MA 139 K/Ag/2026':'perlu telaah')+'; pasangan ikut radd: '+(o.raddSpouse?'ya':'tidak')+'; bagian ayah: '+(o.ayahRadd?'pembacaan harfiah':'ashabah menurut fikih')+'; musyarakah: '+(o.musyarakah?'diterapkan':'tidak');
  if(k==='haz')return 'Ibu: '+(o.gharrawain?'gharrawain (1/3 sisa)':'1/3 seluruh harta')+'; pasangan ikut radd: '+(o.raddSpouse?'ya':'tidak');
- return 'Sisa tanpa ashabah: '+(o.baitulmal?'Baitul Mal (mutaqaddimin)':'radd, lalu dzawil arham (muta’akhkhirin)')+'; ibu bersama ayah & pasangan: '+(o.gharrawain!==false?'1/3 sisa (gharrawain)':'1/3 seluruh harta');
+ return 'Sisa tanpa ashabah: '+(o.baitulmal?'Baitul Mal (mutaqaddimin)':'radd, lalu dzawil arham, lalu pasangan bila tidak ada ahli waris lain (muta’akhkhirin)')+'; ibu bersama ayah & pasangan: '+(o.gharrawain!==false?'1/3 sisa (gharrawain)':'1/3 seluruh harta');
 }
 
 /* ---------- mulai ---------- */
 
-const BANK=Array.isArray(window.WARIS_CASES)?window.WARIS_CASES:[];
+let BANK=Array.isArray(window.WARIS_CASES)?window.WARIS_CASES:[],BANK_MUAT=null;
+// Bank contoh (1,6 MB) dimuat saat bagiannya dibuka, bukan pada setiap kunjungan.
+function bankSiapkan(){
+ if(BANK.length)return Promise.resolve();
+ if(BANK_MUAT)return BANK_MUAT;
+ $('#bank-detail').textContent='Memuat bank contoh…';
+ BANK_MUAT=new Promise((ok,gagal)=>{const sc=document.createElement('script');sc.src='bank-kasus.js';sc.onload=ok;sc.onerror=gagal;document.head.appendChild(sc);})
+  .then(()=>{BANK=Array.isArray(window.WARIS_CASES)?window.WARIS_CASES:[];bankDraw();})
+  .catch(()=>{BANK_MUAT=null;$('#bank-detail').textContent='Bank contoh belum dapat dimuat. Periksa sambungan internet, lalu tutup dan buka kembali bagian ini.';});
+ return BANK_MUAT;
+}
 function bankDraw(){
  const mode=$('#bank-mode').value,query=$('#bank-search').value.toLocaleLowerCase('id-ID').trim();
  const rows=BANK.filter(c=>c.mode===mode&&(!query||(c.description+' '+c.id).toLocaleLowerCase('id-ID').includes(query)));
@@ -2962,13 +2973,14 @@ function bankDraw(){
 }
 function bankDetail(){
  const c=BANK.find(x=>x.id===$('#bank-select').value);const box=$('#bank-detail');
- if(!c){box.textContent=BANK.length?'Tidak ada contoh yang cocok.':'Bank contoh belum tersedia.';$('#bank-load').disabled=true;return;}
+ if(!c){box.textContent=BANK.length?'Tidak ada contoh yang cocok.':'Bank contoh dimuat saat bagian ini dibuka.';$('#bank-load').disabled=true;return;}
  $('#bank-load').disabled=false;
  const labels={spouse:c.input.sex==='L'?'Istri (bersama)':'Suami',mother:'Ibu',father:'Ayah',pgf:'Kakek',pgm:'Nenek dari ayah',mgm:'Nenek dari ibu',bm:'Sisa model Baitul Mal'};
  [...c.input.children,...c.input.siblings].forEach(x=>{labels[x.id]=/^son[0-9]+$/.test(x.id)?'Putra '+x.id.slice(3):/^daughter[0-9]+$/.test(x.id)?'Putri '+x.id.slice(8):(x.name||x.id);});
  const pieces=Object.entries(c.expected).filter(([,v])=>v.total!=='0').map(([id,v])=>`${esc(labels[id]||id)}: ${esc(v.total)}${v.n>1?' bersama ('+v.n+' orang)':''}`);
  box.innerHTML=`<p>${esc(c.description)}</p><p><b>Hasil pembanding:</b> ${pieces.join(' · ')}</p><p><b>Dasar dan asumsi:</b> ${esc(c.basis)}</p>`;
 }
+{const lipat=$('#bank-mode').closest('details');if(lipat){lipat.addEventListener('toggle',()=>{if(lipat.open)bankSiapkan();});if(lipat.open)bankSiapkan();}else bankSiapkan();}
 $('#bank-mode').addEventListener('change',bankDraw);$('#bank-search').addEventListener('input',bankDraw);$('#bank-select').addEventListener('change',bankDetail);
 $('#bank-load').addEventListener('click',()=>{resetFamilyConfirmations();const c=BANK.find(x=>x.id===$('#bank-select').value);if(!c)return;const b=blank(),p=JSON.parse(JSON.stringify(c.input));[...p.children,...p.siblings].forEach(x=>{if(/^son[0-9]+$/.test(x.id))x.name='Putra '+x.id.slice(3);if(/^daughter[0-9]+$/.test(x.id))x.name='Putri '+x.id.slice(8);});state=Object.assign(b,p);state.harta=Object.assign({},HARTA0,{bawaan:120000000});state.opt=blank().opt;const mode=c.mode==='hazairin'?'haz':c.mode==='syafii'?'syf':'khi';state.opt[mode]=Object.assign(state.opt[mode],c.options);state.tab=mode;state.preset='';state.caseIssue='normal';fillForm();setTab(mode,true);later();document.querySelector('.berkas').scrollIntoView({block:'start',behavior:'smooth'});});
 bankDraw();
@@ -3022,7 +3034,21 @@ compute();
   const offlineStatus=text=>{el('pwa-offline').textContent=text;el('pwa-offline').hidden=false;sync();};
   if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){
     let waiting=null,wantReload=false,reloading=false;
-    const ready=()=>offlineStatus('Aplikasi dan PDF rujukan tersimpan. Siap dipakai tanpa internet.');
+    // PDF rujukan (± 9,6 MB) tidak diunduh otomatis; pengguna memilih menyimpannya.
+    const dok=el('pwa-dokumen'),dokTeks=el('pwa-dokumen-teks'),dokTombol=el('pwa-dokumen-simpan');
+    const kirim=pesan=>navigator.serviceWorker.ready.then(reg=>{if(reg.active)reg.active.postMessage(pesan);}).catch(()=>{});
+    const tanyaDokumen=()=>kirim('status-dokumen');
+    navigator.serviceWorker.addEventListener('message',e=>{
+      const d=e.data;if(!d||d.type!=='dokumen')return;
+      dok.hidden=false;
+      if(d.berjalan){dokTeks.textContent='Menyimpan PDF rujukan… '+(d.selesai+d.gagal)+' dari '+d.total+'.';dokTombol.hidden=true;}
+      else if(d.selesai===d.total){dokTeks.textContent='Semua PDF rujukan tersimpan untuk dipakai tanpa internet.';dokTombol.hidden=true;}
+      else if(d.gagal){dokTeks.textContent=d.gagal+' PDF belum tersimpan. Periksa sambungan internet lalu coba lagi.';dokTombol.hidden=false;dokTombol.textContent='Coba lagi';}
+      else{dokTeks.textContent=d.selesai?d.selesai+' dari '+d.total+' PDF rujukan sudah tersimpan.':'PDF rujukan disimpan saat dibuka.';dokTombol.hidden=false;dokTombol.textContent='Simpan semua PDF rujukan (± 9,6 MB)';}
+      sync();
+    });
+    dokTombol.addEventListener('click',()=>{dokTombol.hidden=true;dokTeks.textContent='Menyimpan PDF rujukan…';kirim('simpan-dokumen');});
+    const ready=()=>{offlineStatus('Aplikasi tersimpan dan siap dipakai tanpa internet.');tanyaDokumen();};
     const failed=()=>offlineStatus('Penyimpanan offline belum selesai. Sambungkan internet dan muat ulang untuk mencoba lagi.');
     const showUpdate=w=>{waiting=w;el('pwa-update').hidden=false;sync();};
     el('pwa-reload').addEventListener('click',()=>{
@@ -3043,7 +3069,7 @@ compute();
         };
         w.addEventListener('statechange',changed);changed();
       };
-      if(reg.installing){offlineStatus('Menyiapkan aplikasi dan PDF untuk penggunaan tanpa internet…');watch(reg.installing);}
+      if(reg.installing){offlineStatus('Menyiapkan aplikasi untuk dipakai tanpa internet…');watch(reg.installing);}
       reg.addEventListener('updatefound',()=>{if(reg.installing)watch(reg.installing);});
       const check=()=>{if(navigator.onLine)reg.update().catch(()=>{});};
       window.addEventListener('online',check);
