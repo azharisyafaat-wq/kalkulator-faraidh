@@ -37,9 +37,8 @@
       "summary": "Mengatur harta waris, ahli waris, bagian, penggantian, aul, radd serta wasiat. Pasal 209 memberi batas maksimum 1/3 untuk wasiat wajibah anak/orang tua angkat yang tidak menerima wasiat. Batas tersebut bukan bagian otomatis.",
       "integration": "Pemisahan kepemilikan, kewajiban, bagian dasar dan wasiat; pilihan tafsir tetap ditampilkan. Batas pengganti Pasal 185 tidak disamakan dengan satu rumus universal.",
       "url": "https://bphn.go.id/data/documents/perkawinan.pdf",
-      "verification": "Naskah KHI tersedia dalam paket rujukan dan salinan Kementerian Agama.",
-      "checked_on": "2026-10-26",
-      "local_url": "rujukan/KHI_02_Naskah_Kompilasi_Hukum_Islam_Bab_1_2_3.pdf"
+      "verification": "Kutipan Pasal 174–193 KHI dalam aplikasi dicocokkan kata demi kata (30-10-2026) dengan pindaian resmi edisi Kementerian Agama 2018 yang dimuat dalam Panduan aplikasi, Lampiran A. Salinan ketik ulang pihak ketiga tidak lagi disertakan dalam paket.",
+      "checked_on": "2026-10-26"
     },
     {
       "id": "sema1994",
@@ -171,10 +170,10 @@
       "summary": "Himpunan Yurisprudensi MA 2018 membahas putusan 368 K/AG/1995 dan 51 K/AG/1999 terkait wasiat wajibah beda agama; naskah lengkap kedua putusan belum diverifikasi. Pasal 209 mengatur konteks anak dan orang tua angkat, bukan bukti batas universal untuk semua perkara beda agama.",
       "integration": "Perkara beda agama ditahan untuk telaah. Pengganti KHI ditahan sampai cara menentukan batas dan bagian setiap orang ditelaah; himpunan tidak membuktikan satu formula pembagian untuk seluruh keluarga.",
       "url": "https://jdih.mahkamahagung.go.id/storage/uploads/produk_hukum/Yurisprudensi%20Tahun%202018/1652410687_Yurisprudensi_2018.pdf",
-      "local_url": "rujukan/PA_09_Putusan_dan_Penetapan_PA_Waris_Beda_Agama_Jurnal_MA.pdf",
       "related_url": "rujukan/PA_06_Yurisprudensi_MA_Pembagian_Ahli_Waris_Pengganti.pdf",
       "verification": "Himpunan resmi MA 2018 halaman cetak 51-56 adalah ringkasan, bukan salinan lengkap kedua putusan; terdapat tanggal yang tidak mungkin secara kalender sehingga tanggal belum dipastikan.",
-      "checked_on": "2026-10-28"
+      "checked_on": "2026-10-28",
+      "text_url": "https://doi.org/10.25216/jhp.10.1.2021.155-172"
     },
     {
       "id": "hazairin_bilateral",
@@ -223,7 +222,7 @@
       "summary": "Naskah lengkap tiga buku Kompilasi Hukum Islam beserta Penjelasan Umum dan Pasal demi Pasal.",
       "integration": "Rujukan primer bagi seluruh pasal KHI yang diterapkan dalam kalkulator (termasuk harta bersama Ps. 85-97, waris Ps. 171-193, wasiat Ps. 194-209, dan hibah Ps. 210-214).",
       "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/KHI_id.pdf",
-      "related_url": "rujukan/KHI_03_Lampiran_Kompilasi_Hukum_Islam_UIN_Malang.pdf",
+      "related_url": "http://etheses.uin-malang.ac.id/1595/11/07210048_Lampiran.pdf",
       "verification": "Tautan katalog atau salinan eksternal tersedia; dokumen ini tidak termasuk salinan PDF dalam paket aplikasi ini.",
       "checked_on": "2026-10-27"
     },

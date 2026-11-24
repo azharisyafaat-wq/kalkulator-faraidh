@@ -2,7 +2,8 @@ APLIKASI
 
 Kalkulator Faraidh Tiga Versi
 Hak Cipta (c) 2026 Azhari Syafaat, S.H., M.Kn. (Syafaat & Associates Law Firm).
-Dilisensikan berdasarkan GNU Affero General Public License versi 3 (lihat LICENSE dan hak-cipta.txt).
+Kode sumber dilisensikan berdasarkan GNU Affero General Public License versi 3 (lihat LICENSE
+dan hak-cipta.txt).
 
 
 KOMPONEN PIHAK KETIGA
@@ -13,7 +14,45 @@ IBM Plex Sans dan IBM Plex Mono - IBM Corp. - SIL Open Font License 1.1 (fonts/l
 Amiri - The Amiri Project Authors - SIL Open Font License 1.1 (fonts/license-amiri.txt)
 
 
-DOKUMEN
+DOKUMEN (hanya dalam paket situs, tidak di repositori kode)
 
-Buku panduan dan folder rujukan/ tidak disertakan dalam repositori ini. Tautan dokumen di
-dalam aplikasi mengarah ke https://faraidh.syafaatlawfirm.com dan tidak tersedia offline.
+- Lampiran A Buku Panduan memuat pindaian Kompilasi Hukum Islam edisi Kementerian Agama RI 2018
+  (Buku II, Penjelasan, Inpres No. 1 Tahun 1991, KMA No. 154 Tahun 1991).
+- Buku Hazairin yang masih dilindungi hak cipta tidak dilampirkan; panduan hanya memuat ringkasan
+  dengan rujukan halaman.
+- Folder rujukan/ memuat salinan SEMA No. 2 Tahun 1994, No. 3 Tahun 2015, dan No. 1 Tahun 2025
+  sebagaimana diterbitkan di JDIH Mahkamah Agung, Buku II Pedoman Pelaksanaan Tugas dan
+  Administrasi Peradilan Agama, serta artikel jurnal di bawah. Karya pihak lain tetap menjadi hak
+  penulis atau penerbitnya dan tidak tercakup dalam lisensi aplikasi ini.
+
+
+ARTIKEL JURNAL BERLISENSI CREATIVE COMMONS (disertakan dalam rujukan/)
+Lisensi dibaca dari halaman jurnal atau artikel pada 24 November 2026.
+
+- Dainori, "Rekonstruksi Hukum Waris Islam Perspektif Hazairin: Sistem Bilateral dan Keadilan
+  Gender", Jurnal Keislaman Terateks, Vol. 11 No. 1, April 2026. CC BY-SA 4.0.
+  https://ejournal.kopertais4.or.id/madura/index.php/terateks/article/view/8623
+- Riski Ramadhan dan Lilik Andaryuni, "Menakar Esensi Waris Bilateral: Analisis Pemikiran Hazairin",
+  Bulletin of Community Engagement, Vol. 4 No. 3, Desember 2024. CC BY-SA 4.0 (pernyataan pada
+  artikel). https://attractivejournal.com/index.php/bce/
+- Akmal Adicahya, "Mengakhiri Ambiguitas Kewenangan Absolut Peradilan Agama dalam Sengketa Waris
+  dan Hak Milik", Jurnal Yudisial, Vol. 16 No. 2, Agustus 2023. CC BY 4.0.
+  https://jurnal.komisiyudisial.go.id/jy/article/view/624
+- Wani, Sukiati, dan Muhammad Yadi Harahap, "Yurisprudensi Hukum Penentuan Pembagian Ahli Waris
+  Pengganti", INNOVATIVE: Journal of Social Science Research, Vol. 5 No. 4, 2025. CC BY-SA 4.0
+  menurut pernyataan hak cipta jurnal; kaki halaman jurnal menyebut CC BY 4.0. Keduanya
+  mengizinkan penyebaran ulang dengan menyebut penulis dan penerbit pertama.
+  https://j-innovative.org/index.php/Innovative/article/view/20071
+- Akhmad Khisni, "Ijtihad Hakim Peradilan Agama Bidang Hukum Kewarisan dan Kontribusinya terhadap
+  Hukum Nasional", Jurnal Hukum IUS QUIA IUSTUM, Vol. 18 Edisi Khusus, Oktober 2011, hlm. 146-163.
+  CC BY-SA 4.0. https://journal.uii.ac.id/IUSTUM/article/view/7238
+
+
+DITAUTKAN KE SUMBER ASLI, TIDAK DISERTAKAN (sejak versi 5.18.0)
+
+- Muhamad Isna Wahyudi, "Melacak Illat Hukum Larangan Waris Beda Agama", Jurnal Hukum dan
+  Peradilan, Vol. 10 No. 1, 2021. CC BY-NC-SA 4.0 (khusus penggunaan nonkomersial).
+  https://doi.org/10.25216/jhp.10.1.2021.155-172
+- Naskah KHI ketik ulang insantri.com ("Seri Perundangan", 2021): tidak ada keterangan lisensi.
+- Lampiran KHI pada repositori etheses UIN Maulana Malik Ibrahim Malang: tidak ada keterangan
+  lisensi. http://etheses.uin-malang.ac.id/1595/11/07210048_Lampiran.pdf
