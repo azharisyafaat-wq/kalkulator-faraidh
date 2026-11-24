@@ -27,6 +27,9 @@ AddCharset utf-8 .html .js .css .txt .webmanifest
   RewriteRule ^(robots\.txt|favicon\.ico)$ - [L]
   # Service worker pembersih salinan v5.1 dilayani langsung, tidak boleh dialihkan
   RewriteRule ^(uji-v51-20261028|rilis-v51-20261029)/(aplikasi/)?sw\.js$ - [L]
+  # Salinan pihak ketiga tanpa keterangan lisensi, dikeluarkan dari paket 5.18.0: tidak disajikan lagi
+  RewriteRule ^rujukan/KHI_03_Lampiran_Kompilasi_Hukum_Islam_UIN_Malang\.pdf$ http://etheses.uin-malang.ac.id/1595/11/07210048_Lampiran.pdf [R=301,L]
+  RewriteRule ^rujukan/KHI_02_Naskah_Kompilasi_Hukum_Islam_Bab_1_2_3\.pdf$ - [G,L]
   # Salinan, rilis, dan paket lama yang sudah dipensiunkan: pindah permanen
   RewriteRule ^(uji-v51-20261028|rilis-v51-20261029)(/|$) https://faraidh.syafaatlawfirm.com/ [R=301,L]
   RewriteRule ^pembaruan-[^/]*\.zip$ https://faraidh.syafaatlawfirm.com/ [R=301,L]
