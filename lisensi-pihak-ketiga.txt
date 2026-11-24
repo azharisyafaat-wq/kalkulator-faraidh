@@ -52,8 +52,14 @@ Lisensi dibaca dari halaman jurnal atau artikel pada 24 November 2026.
   https://doi.org/10.25216/jhp.10.1.2021.155-172
 
 
-DITAUTKAN KE SUMBER ASLI, TIDAK DISERTAKAN (sejak versi 5.18.0)
+NASKAH KHI
 
-- Naskah KHI ketik ulang insantri.com ("Seri Perundangan", 2021): tidak ada keterangan lisensi.
-- Lampiran KHI pada repositori etheses UIN Maulana Malik Ibrahim Malang: tidak ada keterangan
-  lisensi. http://etheses.uin-malang.ac.id/1595/11/07210048_Lampiran.pdf
+Naskah KHI yang dirujuk aplikasi adalah edisi resmi "Kompilasi Hukum Islam di Indonesia",
+Direktorat Bina KUA dan Keluarga Sakinah, Ditjen Bimbingan Masyarakat Islam, Kementerian Agama
+RI, November 2018. Halaman Buku II (Pasal 171-214) dimuat dalam Panduan aplikasi, Lampiran A.
+Naskah utuhnya (262 halaman) ditautkan ke berkas di Wikimedia Commons, yang mencatatnya sebagai
+domain publik menurut Pasal 43 UU 28/2014: https://commons.wikimedia.org/wiki/File:KHI_id.pdf
+
+Dua salinan KHI ketik ulang pihak ketiga (insantri.com dan lampiran di repositori etheses
+UIN Maulana Malik Ibrahim Malang) dikeluarkan dari paket sejak 5.18.0 karena tidak berketerangan
+lisensi, dan sejak 5.18.1 tidak lagi ditautkan karena isinya sudah tercakup naskah resmi di atas.

@@ -1,5 +1,5 @@
 KALKULATOR WARIS ISLAM — SYAFAAT LAWFIRM
-Versi 5.18.0 — Panduan penggunaan paket
+Versi 5.18.1 — Panduan penggunaan paket
 
 Aplikasi ini membandingkan simulasi KHI, Hazairin, fikih Syafi'i dan kaidah yang dirujuk dalam kitab. Kolom kitab mencakup keluarga inti dan beberapa susunan khusus yang dinyatakan dalam aplikasi. Formulir kitab terpisah memakai masukan sendiri dan cakupan keluarga inti sebagaimana dijelaskan pada halaman. Hasil tidak menggantikan pemeriksaan fakta, dokumen atau putusan.
 

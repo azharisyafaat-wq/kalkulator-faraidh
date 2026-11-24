@@ -66,6 +66,11 @@ Situs faraidh.syafaatlawfirm.com dibangun dari repositori ini; berkas di server 
 
 ## Riwayat versi
 
+- **5.18.1** (24 November 2026):
+  - Naskah KHI hanya dari edisi resmi Kementerian Agama 2018. Tautan "Naskah KHI (BPHN)" pada sepuluh dalil KHI dan kartu KHI Buku II diganti naskah lengkap resmi; berkas BPHN itu (`perkawinan.pdf`) tidak dapat dibuka untuk diperiksa karena dijawab halaman tantangan Cloudflare. Kartu KHI kini juga menautkan pindaian resmi Buku II di Panduan, Lampiran A.
+  - Rujukan KHI ganda dibuang: salinan ketik ulang di Internet Archive dan lampiran KHI UIN Malang tidak lagi ditautkan dari katalog Pustaka, kartu Dasar hukum, maupun PDF katalog 00 dan 03 (halaman 5). Alamat lama `rujukan/KHI_02_…` dan `rujukan/KHI_03_…` dijawab 410.
+  - Identitas naskah lengkap dicatat dari halaman berkas Wikimedia Commons: Direktorat Bina KUA dan Keluarga Sakinah, November 2018, 262 halaman, domain publik menurut Pasal 43 UU 28/2014.
+
 - **5.18.0** (24 November 2026):
   - Di layar di bawah 600 px, hasil tampil sebagai kartu per ahli waris (bagian, persen, rupiah), termasuk tab Perbandingan. Tabel tetap dipakai di layar lebar dan cetakan.
   - Setelah isian berubah, bilah "Hasil … siap" dengan tombol "Lihat hasil" muncul di bawah layar bila hasilnya berada di luar layar.

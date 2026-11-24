@@ -13,7 +13,8 @@
 //   - setiap PDF di PDF_RUJUKAN ada di folder dokumen;
 //   - setiap PDF yang ditautkan index.html dari situs sendiri tercantum di PDF_RUJUKAN;
 //   - versi di judul index.html sama dengan versi CACHE di sw.js;
-//   - label ukuran tombol "Simpan semua PDF rujukan (± X MB)" sesuai jumlah ukuran PDF.
+//   - label ukuran tombol "Simpan semua PDF rujukan (± X MB)" sesuai jumlah ukuran PDF;
+//   - ukuran di PDF_DIPERBARUI (sw.js) sama dengan berkas PDF yang diganti.
 // Hasil: folder paket, SHA256SUMS, dan (dengan --banding) daftar berkas yang berubah, baru, atau
 // perlu dihapus dari server.
 'use strict';
@@ -49,6 +50,18 @@ const terdaftar = new Set(PDF.map(rel));
 for (const t of tertaut) if (!terdaftar.has(t)) galat.push('index.html menautkan PDF yang tidak ada di PDF_RUJUKAN: ' + t);
 for (const t of terdaftar) if (!tertaut.has(t)) catatan.push('PDF_RUJUKAN memuat PDF yang tidak ditautkan index.html: ' + t);
 if (!versiHtml || versiHtml !== versiSw) galat.push(`Versi berbeda: judul index.html ${versiHtml}, CACHE sw.js ${versiSw}`);
+
+// PDF_DIPERBARUI (bila ada): setiap PDF harus tercantum di PDF_RUJUKAN dan ukurannya sama dengan berkas di folder dokumen,
+// karena service worker memakai ukuran itu untuk mengenali salinan lama di perangkat pengguna.
+const mDiperbarui = sw.match(/const PDF_DIPERBARUI=(\{[^}]*\});/);
+if (mDiperbarui) {
+  for (const [u, ukuran] of Object.entries(JSON.parse(mDiperbarui[1]))) {
+    const f = path.join(DOK, rel(u));
+    if (!PDF.includes(u)) galat.push('PDF_DIPERBARUI memuat PDF yang tidak ada di PDF_RUJUKAN: ' + rel(u));
+    else if (!fs.existsSync(f)) galat.push('PDF_DIPERBARUI: berkas tidak ada di folder dokumen: ' + rel(u));
+    else if (fs.statSync(f).size !== ukuran) galat.push(`PDF_DIPERBARUI: ukuran ${rel(u)} ${ukuran} byte, berkas ${fs.statSync(f).size} byte`);
+  }
+}
 
 let total = 0;
 for (const u of PDF) { const f = path.join(DOK, rel(u)); if (fs.existsSync(f)) total += fs.statSync(f).size; }
