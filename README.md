@@ -38,11 +38,43 @@ Skrip ini menjalankan mesin hitung di `index.html` tanpa peramban, dengan dua ke
 
 Skrip keluar dengan kode 1 bila ada hasil yang tidak sesuai.
 
+```bash
+node uji/periksa-cerita.cjs
+```
+
+Skrip ini menguji pembaca cerita keluarga (`parseCeritaBebas`): bidang yang diusulkan dan pertanyaan yang diajukan untuk tiap cerita contoh.
+
 ## Rujukan dan panduan
 
-Buku panduan dan folder `rujukan/` tidak disertakan dalam repositori ini. Keduanya tersedia di situs resmi, dan `sw.js` mencantumkan daftar PDF yang dapat disimpan untuk dipakai tanpa internet. Bila aplikasi dijalankan tanpa folder tersebut, tombol penyimpanan PDF akan melaporkan bahwa PDF belum tersimpan.
+Buku panduan dan folder `rujukan/` tidak disertakan dalam repositori ini. Keduanya tersedia di situs resmi, dan `sw.js` mencantumkan daftar PDF yang dapat disimpan untuk dipakai tanpa internet (`PDF_RUJUKAN`). Bila aplikasi dijalankan tanpa folder tersebut, tombol penyimpanan PDF akan melaporkan bahwa PDF belum tersimpan. Lisensi tiap dokumen pihak ketiga dicatat di [lisensi-pihak-ketiga.txt](lisensi-pihak-ketiga.txt).
+
+## Menerbitkan ke situs
+
+Situs faraidh.syafaatlawfirm.com dibangun dari repositori ini; berkas di server tidak disunting langsung.
+
+1. Naikkan versi di judul `index.html` (`Pro vX.Y.Z`) dan `CACHE` di `sw.js` (`faraidh-X.Y.Z-tanggal`).
+2. Jalankan kedua uji di atas.
+3. Bangun paket. Folder dokumen memuat `panduan/` dan `rujukan/`; hanya PDF yang tercantum di `PDF_RUJUKAN` yang ikut paket:
+
+   ```bash
+   node terbit/buat-paket.cjs --dokumen <folder-dokumen> --banding <paket-terpasang>
+   ```
+
+   Skrip menolak membuat paket bila ada berkas INTI atau PDF yang hilang, PDF yang ditautkan `index.html` tetapi tidak terdaftar, versi `index.html` dan `sw.js` berbeda, atau label ukuran tombol "Simpan semua PDF rujukan" tidak sesuai jumlah ukuran PDF. Dengan `--banding`, skrip mencetak berkas yang perlu diunggah dan berkas yang perlu dihapus dari server.
+4. Unggah per berkas (berkas yang berubah saja), hapus berkas yang tidak lagi ikut paket, lalu bersihkan cache hosting.
+5. Periksa situs terpasang: tampilan ponsel dan desktop, tiga tab perhitungan, pembaca PDF, mode tanpa internet, dan sematan di syafaatlawfirm.com/faraidh.
 
 ## Riwayat versi
+
+- **5.18.0** (24 November 2026):
+  - Di layar di bawah 600 px, hasil tampil sebagai kartu per ahli waris (bagian, persen, rupiah), termasuk tab Perbandingan. Tabel tetap dipakai di layar lebar dan cetakan.
+  - Setelah isian berubah, bilah "Hasil … siap" dengan tombol "Lihat hasil" muncul di bawah layar bila hasilnya berada di luar layar.
+  - Area sentuh tombol, isian, dan tautan kecil (Dalil, Baca panduan) minimal 40 px di layar sentuh.
+  - Pembaca cerita: "saya adik/kakak (laki-laki/perempuan)-nya" dicatat sebagai saudara pewaris dan jenisnya (kandung, seayah, seibu) ditanyakan; dari sudut anak pewaris, kakek/nenek tanpa keterangan pihak dibaca sebagai orang tua pewaris dengan asumsi yang ditampilkan. Kakak yang meninggal tidak lagi ikut terhitung sebagai saudara.
+  - Catatan di hasil KHI: pembacaan Pasal 193 (pasangan ikut radd) dan Pasal 181–182 (anak perempuan menghijab saudara) ditandai sebagai tafsir yang dipakai aplikasi. Pesan "Perhitungan ditahan" untuk cucu pengganti menjelaskan Pasal 185 dan pilihan simulasinya.
+  - Rujukan: salinan KHI ketik ulang (insantri.com) dan lampiran KHI UIN Malang diganti tautan ke sumber asli karena tidak berketerangan lisensi. Lisensi artikel yang disertakan diperiksa di halaman jurnal dan dicantumkan; artikel Jurnal Hukum dan Peradilan (CC BY-NC-SA) tetap disertakan karena kalkulator ini nonkomersial.
+  - Dasar hukum: Putusan MA 122 K/AG/1995 (anak perempuan menghijab saudara pewaris) dicocokkan dengan pindaian Varia Peradilan No. 150 yang dimuat Komisi Yudisial, lalu dicantumkan di catatan hasil KHI, dalil Pasal 181–182, dan katalog Dasar hukum. Bunyi Pasal 42 UU 28/2014 di `hak-cipta.txt` dicocokkan dengan naskah JDIH Kementerian Keuangan.
+  - Header keamanan HSTS dan `frame-ancestors` di `.htaccess`; `.htaccess` kini ikut repositori. Skrip `terbit/buat-paket.cjs` membangun paket situs dari repositori.
 
 - **5.17.2** (24 November 2026):
   - Mode Syafi'i bawaan (muta'akhkhirin) mengembalikan sisa harta kepada suami atau istri bila tidak ada ahli waris lain, sesuai Panduan hlm. 13. Sebelumnya sisa dicatat ke Baitul Mal. Pilihan mutaqaddimin (Baitul Mal) tetap tersedia. Lima kasus bank contoh "pasangan saja" diselaraskan.

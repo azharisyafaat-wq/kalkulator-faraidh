@@ -1,6 +1,8 @@
 PERNYATAAN HAK CIPTA DAN LISENSI
 (Copyright Notice & License)
 
+Berdasarkan Undang-Undang Republik Indonesia Nomor 28 Tahun 2014 tentang Hak Cipta:
+
 Nama Ciptaan       : Kalkulator Faraidh Tiga Versi (Web Application & Progressive Web App)
 Jenis Ciptaan      : Program Komputer / Aplikasi Perangkat Lunak
 Pencipta           : Azhari Syafaat, S.H., M.Kn.
@@ -10,11 +12,12 @@ Tahun Ciptaan      : 2026
 Hak Cipta (c) 2026 Azhari Syafaat, S.H., M.Kn. (Syafaat & Associates Law Firm).
 
 --------------------------------------------------------------------------------
-LISENSI
+LISENSI KODE SUMBER
 
 Kode sumber aplikasi ini (HTML, CSS, JavaScript) beserta struktur datanya
 dilisensikan berdasarkan GNU Affero General Public License versi 3 (AGPL-3.0).
-Naskah lengkapnya ada di berkas LICENSE.
+Naskah lengkap lisensinya ada di berkas LICENSE. Kode sumber tersedia di:
+https://github.com/azharisyafaat-wq/kalkulator-faraidh
 
 Anda boleh memakai, mengubah, dan menyebarkan aplikasi ini sesuai lisensi tersebut.
 Jika Anda mengubah aplikasi ini dan menjalankannya sebagai layanan jaringan, Anda
@@ -23,14 +26,34 @@ wajib menyediakan kode sumber versi Anda kepada penggunanya.
 --------------------------------------------------------------------------------
 YANG TIDAK TERCAKUP DALAM LISENSI INI
 
-1. Buku panduan dan folder rujukan/ tidak disertakan dalam repositori ini. Isinya
-   tetap tunduk pada hak masing-masing pemegang hak cipta.
-2. Komponen pihak ketiga tunduk pada lisensinya masing-masing (lihat
-   lisensi-pihak-ketiga.txt).
+1. Buku panduan (folder panduan/) tetap dilindungi hak cipta dan tidak dilisensikan
+   berdasarkan AGPL-3.0.
+2. Dokumen dalam folder rujukan/ tetap tunduk pada hak dan lisensi masing-masing
+   pemegang hak cipta (lihat lisensi-pihak-ketiga.txt).
+   Folder panduan/ dan rujukan/ hanya ada di paket situs, tidak di repositori kode.
 3. Sesuai Pasal 7 AGPL-3.0, lisensi ini tidak memberikan hak atas nama dagang atau
    merek "Syafaat & Associates Law Firm" dan "Syafaat Lawfirm". Versi yang telah
    diubah harus ditandai dengan jelas sebagai versi yang berbeda dan tidak boleh
    ditampilkan sebagai karya atau pendapat hukum Syafaat & Associates Law Firm.
+
+--------------------------------------------------------------------------------
+KOMPONEN PIHAK KETIGA DAN DOKUMEN HUKUM
+
+1. Komponen fon terbuka (Literata, IBM Plex Sans, IBM Plex Mono, Amiri) dan pustaka
+   PDF (pdf.js) merupakan ciptaan masing-masing pemilik hak cipta dan didistribusikan
+   berdasarkan lisensi terbuka masing-masing (lihat lisensi-pihak-ketiga.txt).
+2. Pasal 42 UU No. 28 Tahun 2014 tentang Hak Cipta (naskah JDIH Kementerian
+   Keuangan, dibaca 24 November 2026) berbunyi:
+     "Tidak ada Hak Cipta atas hasil karya berupa:
+      a. hasil rapat terbuka lembaga negara;
+      b. peraturan perundang-undangan;
+      c. pidato kenegaraan atau pidato pejabat pemerintah;
+      d. putusan pengadilan atau penetapan hakim; dan
+      e. kitab suci atau simbol keagamaan."
+   Atas dasar itu, peraturan perundang-undangan dan putusan pengadilan yang dijadikan
+   rujukan disertakan tanpa izin pihak lain. KHI (lampiran Inpres No. 1 Tahun 1991),
+   SEMA, SK KMA, dan Buku II Mahkamah Agung disertakan sebagai dokumen resmi lembaga
+   negara yang diterbitkan untuk umum, dengan menyebut sumbernya.
 
 --------------------------------------------------------------------------------
 TANPA JAMINAN

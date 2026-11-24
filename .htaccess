@@ -1,0 +1,42 @@
+# Kalkulator Faraidh — pengaturan server Hostinger (diperbarui 24-11-2026 untuk v5.18.0)
+# Berkas ini ikut paket situs (terbit/buat-paket.cjs) dan menggantikan salinan di server.
+DirectoryIndex index.html
+
+AddType application/manifest+json .webmanifest
+AddType text/javascript .js
+AddType font/woff2 .woff2
+AddCharset utf-8 .html .js .css .txt .webmanifest
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # Hanya HTTPS untuk subdomain ini (tanpa includeSubDomains dan tanpa preload)
+  Header always set Strict-Transport-Security "max-age=31536000"
+  # Kalkulator hanya boleh disematkan oleh situs sendiri dan syafaatlawfirm.com (produksi dan staging WordPress)
+  Header always set Content-Security-Policy "frame-ancestors 'self' https://syafaatlawfirm.com https://www.syafaatlawfirm.com https://wp-staging.syafaatlawfirm.com"
+  <FilesMatch "^(index\.html|sw\.js|manifest\.webmanifest)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+# Pengalihan: semua alamat lama dan alamat yang tidak ada menuju aplikasi terbaru
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Jalur sistem dan berkas standar mesin pencari dilayani apa adanya
+  RewriteRule ^\.well-known/ - [L]
+  RewriteRule ^(robots\.txt|favicon\.ico)$ - [L]
+  # Service worker pembersih salinan v5.1 dilayani langsung, tidak boleh dialihkan
+  RewriteRule ^(uji-v51-20261028|rilis-v51-20261029)/(aplikasi/)?sw\.js$ - [L]
+  # Salinan pihak ketiga tanpa keterangan lisensi, dikeluarkan dari paket 5.18.0: tidak disajikan lagi
+  RewriteRule ^rujukan/KHI_03_Lampiran_Kompilasi_Hukum_Islam_UIN_Malang\.pdf$ http://etheses.uin-malang.ac.id/1595/11/07210048_Lampiran.pdf [R=301,L]
+  RewriteRule ^rujukan/KHI_02_Naskah_Kompilasi_Hukum_Islam_Bab_1_2_3\.pdf$ - [G,L]
+  # Salinan, rilis, dan paket lama yang sudah dipensiunkan: pindah permanen
+  RewriteRule ^(uji-v51-20261028|rilis-v51-20261029)(/|$) https://faraidh.syafaatlawfirm.com/ [R=301,L]
+  RewriteRule ^pembaruan-[^/]*\.zip$ https://faraidh.syafaatlawfirm.com/ [R=301,L]
+  # Folder lain (selain akar) dan alamat yang tidak ada
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^.+$ https://faraidh.syafaatlawfirm.com/ [R=302,L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ https://faraidh.syafaatlawfirm.com/ [R=302,L]
+</IfModule>
