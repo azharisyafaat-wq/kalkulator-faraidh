@@ -1,7 +1,7 @@
 // Uji naskah KHI dalam aplikasi (naskah/khi-kemenag-2018.md) dan pembacanya (naskah-khi.js).
 // Pakai: node uji/periksa-naskah-khi.cjs
 // - Pasal 1–229 ada tepat sekali dan berurutan; Pasal 124 dan 139 memang tidak dicetak dalam edisi Kemenag 2018.
-// - Pasal yang dipakai kalkulator berstatus "dicocokkan"; halaman PDF = halaman buku + 12 di bagian KHI.
+// - Semua pasal berstatus "dicocokkan" (sejak 5.19.1); halaman PDF = halaman buku + 12 di bagian KHI.
 // - Kutipan dalil KHI di index.html sama kata demi kata dengan teks pasal di naskah.
 // - Penjelasan Pasal demi Pasal mencakup Pasal 1–229 (kecuali 186, sesuai cetakan).
 'use strict';
@@ -29,9 +29,9 @@ cek('Pasal 1–229 berurutan, tanpa 124 dan 139', JSON.stringify(N.urutan) === J
   'urutan: ' + N.urutan.filter((x, i) => x !== harap[i]).slice(0, 10).join(', '));
 cek('catatan Pasal 124 dan 139 tidak tercantum ada di naskah', /Pasal 124 tidak tercantum/.test(md) && /Pasal 139 tidak tercantum/.test(md));
 
-const DIC = new Set(); for (let k = 85; k <= 97; k++) DIC.add(k); for (let k = 171; k <= 214; k++) DIC.add(k); DIC.add(228); DIC.add(229);
+const DIC = new Set(harap);   // sejak 5.19.1 semua pasal dicocokkan
 const salahStatus = N.urutan.filter(k => (N.pasal[k].status === 'dicocokkan') !== DIC.has(k));
-cek('status pencocokan sesuai (85–97, 171–214, 228–229 dicocokkan)', !salahStatus.length, 'pasal: ' + salahStatus.slice(0, 10).join(', '));
+cek('semua pasal berstatus dicocokkan', !salahStatus.length, 'pasal: ' + salahStatus.slice(0, 10).join(', '));
 const tanpaStatus = N.urutan.filter(k => !/^(dicocokkan|belum dicocokkan)$/.test(N.pasal[k].status));
 cek('setiap pasal punya status', !tanpaStatus.length, tanpaStatus.join(', '));
 const halamanSalah = N.urutan.filter(k => { const p = N.pasal[k]; return /^\d+$/.test(p.hlm) && p.pdf - +p.hlm !== 12; });

@@ -66,6 +66,13 @@ Situs faraidh.syafaatlawfirm.com dibangun dari repositori ini; berkas di server 
 
 ## Riwayat versi
 
+- **5.19.1** (25 November 2026):
+  - Seluruh pasal naskah KHI kini dicocokkan.
+    - Pasal yang sebelumnya bertanda "belum dicocokkan" (Buku I Pasal 1–84 dan 98–170, Buku III Pasal 215–227) dibandingkan kata demi kata dengan OCR kedua yang independen (Tesseract 5, bahasa Indonesia) atas pindaian yang sama.
+    - Setiap selisih diperiksa pada gambar pindaian, lalu dikoreksi. Contohnya kalimat yang tertukar urutannya oleh OCR (Pasal 77, 80, 131, 135, 169), salah baca "petjanjian", "pennohonan", "hawah petwaliannya", serta nomor halaman yang terselip ke dalam teks.
+    - Salah cetak asli tetap dipertahankan, misalnya "KEWJIBAN", "dikakukan", "Urutan Agama", "orng tua".
+  - Hasil OCR kedua dan alat pembandingnya disimpan di `terbit/naskah-khi/` sebagai jejak pencocokan. Pasal yang sudah dicocokkan di 5.19.0, Penjelasan, Inpres, dan KMA tidak berubah.
+
 - **5.19.0** (25 November 2026):
   - Naskah KHI dalam aplikasi. Pindaian resmi *Kompilasi Hukum Islam di Indonesia* (Kemenag 2018, 262 halaman) dikonversi dengan markitdown menjadi `naskah/khi-kemenag-2018.md`. Pasal 85–97, 171–214, 228–229, Penjelasan, Inpres 1/1991, dan KMA 154/1991 dicocokkan kata demi kata dengan pindaian. Pasal lain ditandai "belum dicocokkan". Edisi ini tidak mencetak Pasal 124 dan Pasal 139.
   - Rujukan "Ps. N" di hasil KHI menjadi tautan ke pasal itu. Penampilnya memuat teks, status pencocokan, penjelasan pasal, pencarian nomor atau kata, dan tombol ke halaman pindaiannya.

@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.25-Pro-v5.19.0",
+  "version": "2026.11.25-Pro-v5.19.1",
   "checked_on": "2026-10-29",
   "jurisdiction": "Indonesia — kewarisan Islam / Kamar Agama Mahkamah Agung",
   "update_mode": "Tautan resmi dan katalog sumber bertanggal; tidak ada sinkronisasi otomatis maupun perubahan rumus dari situs eksternal.",
@@ -240,7 +240,7 @@
       "related_url": "https://commons.wikimedia.org/wiki/File:KHI_id.pdf",
       "text_url": "#naskah-khi",
       "local_url": "rujukan/KHI_Kemenag_2018_Kompilasi_Hukum_Islam.pdf",
-      "verification": "Berkas pindaian utuh disertakan dalam paket (rujukan/KHI_Kemenag_2018_Kompilasi_Hukum_Islam.pdf, 262 halaman, SHA-256 322fe34a…a2e3); ukuran dan jumlah halamannya sama dengan berkas di Wikimedia Commons yang dicatat sebagai domain publik menurut Pasal 43 UU 28/2014. Naskah teks dalam aplikasi (naskah/khi-kemenag-2018.md) disusun dari pindaian ini dengan markitdown; Pasal 85–97, 171–214, 228–229, Penjelasan, Inpres 1/1991, dan KMA 154/1991 dicocokkan kata demi kata dengan pindaian (25-11-2026), pasal lain ditandai belum dicocokkan. Edisi ini tidak mencetak Pasal 124 dan Pasal 139.",
+      "verification": "Berkas pindaian utuh disertakan dalam paket (rujukan/KHI_Kemenag_2018_Kompilasi_Hukum_Islam.pdf, 262 halaman, SHA-256 322fe34a…a2e3); ukuran dan jumlah halamannya sama dengan berkas di Wikimedia Commons yang dicatat sebagai domain publik menurut Pasal 43 UU 28/2014. Naskah teks dalam aplikasi (naskah/khi-kemenag-2018.md) disusun dari pindaian ini dengan markitdown dan seluruh pasalnya dicocokkan pada 25-11-2026: Pasal 85–97, 171–214, 228–229, Penjelasan, Inpres 1/1991, dan KMA 154/1991 dibaca langsung pada pindaian; pasal lain dibandingkan kata demi kata dengan OCR kedua (Tesseract) dan setiap selisih diperiksa pada pindaian. Edisi ini tidak mencetak Pasal 124 dan Pasal 139.",
       "checked_on": "2026-11-24"
     },
     {

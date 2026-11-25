@@ -9,12 +9,12 @@
 1. Teks diambil dari lapisan OCR berkas PDF dengan markitdown 0.1.9, per halaman. Artefak tabel dibuang, lalu judul Buku, Bab, Bagian, dan Pasal disusun ulang.
 2. Salah baca OCR yang berulang dikoreksi otomatis, misalnya "hagian" menjadi "bagian" dan "suarni" menjadi "suami".
 3. Pasal 85–97, Pasal 171–214, Pasal 228–229, Penjelasan, Instruksi Presiden Nomor 1 Tahun 1991, dan Keputusan Menteri Agama Nomor 154 Tahun 1991 dicocokkan kata demi kata dengan gambar pindaian pada 25 November 2026. Halaman Penjelasan Pasal demi Pasal, Inpres, dan KMA ditulis ulang dari pindaian karena urutan teks OCR-nya kacau.
-4. Pasal lain bertanda "belum dicocokkan". Teksnya dapat memuat salah baca OCR; cocokkan dengan pindaian pada halaman yang disebut sebelum mengutipnya.
+4. Pasal lain di Buku I dan Buku III dicocokkan pada 25 November 2026 dengan cara lain. Teksnya dibandingkan kata demi kata dengan OCR kedua yang independen (Tesseract 5, bahasa Indonesia) atas pindaian yang sama. Setiap selisih diperiksa pada gambar pindaian, lalu dikoreksi (`terbit/naskah-khi/koreksi.json`).
 5. Salah cetak dalam edisi ini dipertahankan sebagaimana tercetak. Salah cetak yang dapat memengaruhi makna diberi catatan penyunting.
 6. Edisi ini tidak mencetak Pasal 124 dan Pasal 139.
 7. Spasi sebelum titik dua dan koma dinormalkan.
 
-**Penanda.** `<!-- hlm N · pdf P -->` menunjukkan halaman buku (hlm) dan halaman berkas PDF (pdf). Setiap pasal disertai `<!-- pasal N · hlm · pdf · status -->`; statusnya "dicocokkan" atau "belum dicocokkan".
+**Penanda.** `<!-- hlm N · pdf P -->` menunjukkan halaman buku (hlm) dan halaman berkas PDF (pdf). Setiap pasal disertai `<!-- pasal N · hlm · pdf · status -->`.
 
 **Tidak dimuat.** Kata Pengantar, Sambutan, Daftar Isi, dan Lampiran buku (UU 1/1974 dan PP 9/1975 beserta penjelasannya, hlm. 129–238). Bagian itu dapat dibaca pada pindaian.
 
@@ -28,11 +28,11 @@
 
 ##### Pasal 1
 
-<!-- pasal 1 · hlm 3 · pdf 15 · belum dicocokkan -->
+<!-- pasal 1 · hlm 3 · pdf 15 · dicocokkan -->
 
 Yang dimaksud dengan:
 
-a. Peminangan ialah kegiatan upaya ke arah teijadinya hubungan petjodohan antara seorang pria dengan seorang wanita,
+a. Peminangan ialah kegiatan upaya ke arah terjadinya hubungan perjodohan antara seorang pria dengan seorang wanita,
 
 b. Wali hakim ialah wali nikah yang ditunjuk oleh Menteri Agama atau pejabat yang ditunjuk olehnya, yang diberi hak dan kewenangan untuk bertindak sebagai wali nikah;
 
@@ -48,65 +48,75 @@ g. Pemeliharaan anak atau hadhonah adalah kegiatan mengasuh, memelihara dan mend
 
 h. Perwalian adalah kewenangan yang diberikan kepada seseorang untuk melakukan sesuatu perbuatan hukum sebagai wakil untuk kepentingan dan atas nama anak yang tidak mempunyai kedua orang tua, orang tua yang masih hidup, tidak cakap melakukan perbuatan hukum;
 
-1. Khuluk adalah perceraian yang terjadi atas permintaan isteri dengan memberikan tebusan atau iwadh kepada dan atas persetujuan suaminya; <!-- hlm 5 · pdf 17 --> J. Mut'ah adalah pemberian bekas suami kepada isteri, yang dijatuhi talak berupa benda atau uang dan lainnya.
+i. Khuluk adalah perceraian yang terjadi atas permintaan isteri dengan memberikan tebusan atau iwadh kepada dan atas persetujuan suaminya; <!-- hlm 5 · pdf 17 --> J. Mut'ah adalah pemberian bekas suami kepada isteri, yang dijatuhi talak berupa benda atau uang dan lainnya.
 
 ### BAB II — DASAR-DASAR PERKAWINAN
 
 ##### Pasal 2
 
-<!-- pasal 2 · hlm 5 · pdf 17 · belum dicocokkan -->
+<!-- pasal 2 · hlm 5 · pdf 17 · dicocokkan -->
 
 Perkawinan menurut hukun Islam adalah pernikahan, yaitu akad yang sangat kuat atau mitssaqan ghalidzan untuk mentaati perintah Allah dan melaksanakannya merupakan ibadah.
 
 ##### Pasal 3
 
-<!-- pasal 3 · hlm 5 · pdf 17 · belum dicocokkan -->
+<!-- pasal 3 · hlm 5 · pdf 17 · dicocokkan -->
 
 Perkawinan bertujuan untuk mewujudkan kehidupan rumah tangga yang sakinah, mawaddah, dan rahmah.
 
 ##### Pasal 4
 
-<!-- pasal 4 · hlm 5 · pdf 17 · belum dicocokkan -->
+<!-- pasal 4 · hlm 5 · pdf 17 · dicocokkan -->
 
 Perkawinan adalah sah, apabila dilakukan menurut hukum Islam sesuai dengan pasal 2 ayat (1) Undang-undang No. 1 Tahun 1974 tentang Perkawinan.
 
 ##### Pasal 5
 
-<!-- pasal 5 · hlm 5 · pdf 17 · belum dicocokkan -->
+<!-- pasal 5 · hlm 5 · pdf 17 · dicocokkan -->
 
-(1) Agar terjamin ketertiban perkawinan bagi Islam setiap perkawinan harus masyarakat dicatat. <!-- hlm 6 · pdf 18 -->
+(1) Agar terjamin ketertiban perkawinan bagi masyarakat Islam setiap perkawinan harus dicatat. <!-- hlm 6 · pdf 18 -->
 
 (2) Pencatatan perkawinan tersebut pada ayat (1), dilakukan oleh Pegawai Pencatat Nikah sebagaimana yang diatur dalam Undang-undang No. 22 Tahun 1946 jo Undang-undang No. 32 Tahun 1954.
 
 ##### Pasal 6
 
-<!-- pasal 6 · hlm 6 · pdf 18 · belum dicocokkan -->
+<!-- pasal 6 · hlm 6 · pdf 18 · dicocokkan -->
 
-(1) Untuk memenuhi ketentuan dalam pasal5, setiap perkawinan harus dilangsungkan dihadapan dan di bawah pengawasan Pegawai Pencatat Nikah.
+(1) Untuk memenuhi ketentuan dalam pasal 5, setiap perkawinan harus dilangsungkan dihadapan dan di bawah pengawasan Pegawai Pencatat Nikah.
 
 (2) Perkawinan yang dilakukan di luar pengawasan Pegawai Pencatat Nikah tidak mempunyai kekuatan Hukum.
 
 ##### Pasal 7
 
-<!-- pasal 7 · hlm 6 · pdf 18 · belum dicocokkan -->
+<!-- pasal 7 · hlm 6 · pdf 18 · dicocokkan -->
 
-(1) Perkawinan hanya dapat dibuktikan dengan Akta N ikah yang dibuat oleh Pegawai Pencatat Nikah.
+(1) Perkawinan hanya dapat dibuktikan dengan Akta Nikah yang dibuat oleh Pegawai Pencatat Nikah.
 
 (2) Dalam hal perkawinan tidak dapat dibuktikan dengan Akata Nikah, dapat diajukan itsbat nikahnya ke Pengadilan Agama.
 
-(3) ltsbat nikah yang dapat diajukan ke Pengadilan Agama terbatas mengenai hal-hal yang ber kenaan dengan: <!-- hlm 7 · pdf 19 --> (a) Adanya perkawinan dalam rangka penyelesaian perceraian; (b) Hilangnya Akta Nikah; (c) Adanya keragan tentang sah atau tidaknya salah satu syarat perkawian; (d) Adanya perkawinan yang terjadi sebelum berlakunya Undang-undang No. I Tahun 1974 dan; (e) Perkawinan yang dilakukan oleh mereka tidak mempunyai halangan per yang kawinan menurut Undang-Undang No. I Tahun 1974;
+(3) Itsbat nikah yang dapat diajukan ke Pengadilan Agama terbatas mengenai hal-hal yang berkenaan dengan: <!-- hlm 7 · pdf 19 -->
+
+(a) Adanya perkawinan dalam rangka penyelesaian perceraian;
+
+(b) Hilangnya Akta Nikah;
+
+(c) Adanya keragan tentang sah atau tidaknya salah satu syarat perkawian;
+
+(d) Adanya perkawinan yang terjadi sebelum berlakunya Undang-undang No. 1 Tahun 1974 dan;
+
+(e) Perkawinan yang dilakukan oleh mereka yang tidak mempunyai halangan perkawinan menurut Undang-Undang No. 1 Tahun 1974;
 
 (4) Yang berhak mengajukan permohonan itsbat nikah ialah suami atau isteri, anak-anak mereka, wali nikah dan pihak yang berkepentingan dengan perkawinan itu.
 
 ##### Pasal 8
 
-<!-- pasal 8 · hlm 7 · pdf 19 · belum dicocokkan -->
+<!-- pasal 8 · hlm 7 · pdf 19 · dicocokkan -->
 
 Putusnya perkawinan selain cerai mati hanya dapat dibuktikan dengan surat cerai berupa putusan Pengadilan Agama baik yang berbentuk putusan perceraian, ikrar talak, khuluk atau putusan taklik talak. <!-- hlm 8 · pdf 20 -->
 
 ##### Pasal 9
 
-<!-- pasal 9 · hlm 8 · pdf 20 · belum dicocokkan -->
+<!-- pasal 9 · hlm 8 · pdf 20 · dicocokkan -->
 
 (1) Apabila bukti sebagaimana pada pasal 8 tidak ditemukan karena hilang dan sebagainya, dapat dimintakan salinannya kepada Pengadilan Agama.
 
@@ -114,21 +124,21 @@ Putusnya perkawinan selain cerai mati hanya dapat dibuktikan dengan surat cerai 
 
 ##### Pasal 10
 
-<!-- pasal 10 · hlm 8 · pdf 20 · belum dicocokkan -->
+<!-- pasal 10 · hlm 8 · pdf 20 · dicocokkan -->
 
-Rujuk hanya dapat dibuktikan dengan kutipan Buku Pendaftaran Rujuk yang dikeluarkan oleh Pegawai Pellcatat Nikah.
+Rujuk hanya dapat dibuktikan dengan kutipan Buku Pendaftaran Rujuk yang dikeluarkan oleh Pegawai Pencatat Nikah.
 
 ### BAB III — PEMINANGAN
 
 ##### Pasal 11
 
-<!-- pasal 11 · hlm 8 · pdf 20 · belum dicocokkan -->
+<!-- pasal 11 · hlm 8 · pdf 20 · dicocokkan -->
 
 Peminangan dapat langsung dilakukan oleh orang yang berkehendak mencari pasangan jodoh, tapi dapat pula dilakukan oleh perantara yang dapat dipercaya. <!-- hlm 9 · pdf 21 -->
 
 ##### Pasal 12
 
-<!-- pasal 12 · hlm 9 · pdf 21 · belum dicocokkan -->
+<!-- pasal 12 · hlm 9 · pdf 21 · dicocokkan -->
 
 (1) Peminangan dapat dilakukan terhadap seorang wanita yang masih perawan atau terhadap janda yang telah habis masa iddahya.
 
@@ -136,13 +146,13 @@ Peminangan dapat langsung dilakukan oleh orang yang berkehendak mencari pasangan
 
 (3) Dilarang juga meminang seorang wanita yang sedang dipinang pria lain, selama pinangan pria tersebut belum putus atau belum ada penolakan dari pihak wanita.
 
-(4) Putusnya pinangan untuk pria, karena adanya pemyataan tentang putusnya hubungan pinangan atau secara diam-diam. Pria yang meminang telah menjauhi dan meninggalkan wanita yang dipinang.
+(4) Putusnya pinangan untuk pria, karena adanya pernyataan tentang putusnya hubungan pinangan atau secara diam-diam. Pria yang meminang telah menjauhi dan meninggalkan wanita yang dipinang.
 
 ##### Pasal 13
 
-<!-- pasal 13 · hlm 9 · pdf 21 · belum dicocokkan -->
+<!-- pasal 13 · hlm 9 · pdf 21 · dicocokkan -->
 
-(1) Pinangan bel urn menimbulkan akibat hukum dan para pihak bebas memutuskan hubungan peminangan.
+(1) Pinangan belum menimbulkan akibat hukum dan para pihak bebas memutuskan hubungan peminangan.
 
 (2) Kebebasan memutuskan hubungan peminangan dilakukan dengan tata cara yang baik sesuai <!-- hlm - · pdf 22 --> dengan tuntunan dan kebiasaan setempat, sehingga tetap terbina kerukunan dan saling menghargai.
 
@@ -152,7 +162,7 @@ Peminangan dapat langsung dilakukan oleh orang yang berkehendak mencari pasangan
 
 ##### Pasal 14
 
-<!-- pasal 14 · hlm - · pdf 22 · belum dicocokkan -->
+<!-- pasal 14 · hlm - · pdf 22 · dicocokkan -->
 
 Untuk melaksanakan perkawinan harus ada:
 
@@ -164,53 +174,53 @@ c. Wali nikah;
 
 d. Dua orang saksi dan;
 
-e. ljab dan Kabul.
+e. Ijab dan Kabul.
 
 #### Bagian Kedua — Calon Mempelai
 
 ##### Pasal 15
 
-<!-- pasal 15 · hlm - · pdf 22 · belum dicocokkan -->
+<!-- pasal 15 · hlm - · pdf 22 · dicocokkan -->
 
-(1) Untuk kemaslahatan keluarga dan rumah tangga, perkawinan hanya boleh dilakukan lO <!-- hlm 11 · pdf 23 --> calon mempelai yang telah mencapai umur yang ditetapkan dalam pasal 7 Undang-undang No. 1 tahun 1974 yakni calon suami sekurang kurangnya berumur 19 tahun dan calon isteri sekurang-kurangnya berumur 16 tahun
+(1) Untuk kemaslahatan keluarga dan rumah tangga, perkawinan hanya boleh dilakukan <!-- hlm 11 · pdf 23 --> calon mempelai yang telah mencapai umur yang ditetapkan dalam pasal 7 Undang-undang No. 1 tahun 1974 yakni calon suami sekurang-kurangnya berumur 19 tahun dan calon isteri sekurang-kurangnya berumur 16 tahun
 
-(2) Bagi calon mempelai yang belum mencapai umur 21 tahun harus mendapati izin sebagaimana yang diatur dalam pasal6 ayat (2), (3), (4) dan (5) UU No. 1 Tahun 1974.
+(2) Bagi calon mempelai yang belum mencapai umur 21 tahun harus mendapati izin sebagaimana yang diatur dalam pasal 6 ayat (2), (3), (4) dan (5) UU No. 1 Tahun 1974.
 
 ##### Pasal 16
 
-<!-- pasal 16 · hlm 11 · pdf 23 · belum dicocokkan -->
+<!-- pasal 16 · hlm 11 · pdf 23 · dicocokkan -->
 
 (1) Perkawinan didasarkan atas persetujuan calon mempelai.
 
-(2) Bentuk persetujuan calon mempelai wanita, dapat berupa pemyataan tegas dan nyata dengan tulisan, lisan atau isyarat tapi dapat juga berupa diam dalam arti selama tidak ada penolakan yang tegas.
+(2) Bentuk persetujuan calon mempelai wanita, dapat berupa pernyataan tegas dan nyata dengan tulisan, lisan atau isyarat tapi dapat juga berupa diam dalam arti selama tidak ada penolakan yang tegas.
 
 ##### Pasal 17
 
-<!-- pasal 17 · hlm 11 · pdf 23 · belum dicocokkan -->
+<!-- pasal 17 · hlm 11 · pdf 23 · dicocokkan -->
 
 (1) Sebelum berlangsungnya perkawinan Pegawai Pencatat Nikah menanyakan lebih dahulu persetujuan calon mempelai di hadapan dua saksi nikah. <!-- hlm 12 · pdf 24 -->
 
 (2) Bila ternyata perkawinan tidak disetujui oleh salah seorang calon mempelai maka perkawinan itu tidak dapat dilangsungkan.
 
-(3) Bagi calon mempelai yang menderita tuna wicara atau tuna rungu persetujuan dapat di nyatakan dengan tulisan atau isyarat yang dapat dimengerti.
+(3) Bagi calon mempelai yang menderita tuna wicara atau tuna rungu persetujuan dapat dinyatakan dengan tulisan atau isyarat yang dapat dimengerti.
 
 ##### Pasal 18
 
-<!-- pasal 18 · hlm 12 · pdf 24 · belum dicocokkan -->
+<!-- pasal 18 · hlm 12 · pdf 24 · dicocokkan -->
 
-Bagi calon suami dan calon isteri yang akan melangsungkan pernikahan tidak terdapat halangan perkawinan sebagaimana diatur dalam bah VI.
+Bagi calon suami dan calon isteri yang akan melangsungkan pernikahan tidak terdapat halangan perkawinan sebagaimana diatur dalam bab VI.
 
 #### Bagian Ketiga — Wali Nikah
 
 ##### Pasal 19
 
-<!-- pasal 19 · hlm 12 · pdf 24 · belum dicocokkan -->
+<!-- pasal 19 · hlm 12 · pdf 24 · dicocokkan -->
 
 Wali nikah dalam perkawinan merupakan rukun yang harus dipenuhi bagi calon mempelai wanita yang bertindak untuk menikahkannya
 
 ##### Pasal 20
 
-<!-- pasal 20 · hlm 12 · pdf 24 · belum dicocokkan -->
+<!-- pasal 20 · hlm 12 · pdf 24 · dicocokkan -->
 
 (1) Yang bertindak sebagai wali nikah ialah seorang laki-laki yang memenuhi syarat hukum Islam yakni muslim, aqil dan baligh. <!-- hlm 13 · pdf 25 -->
 
@@ -222,11 +232,11 @@ b. Wali hakim.
 
 ##### Pasal 21
 
-<!-- pasal 21 · hlm 13 · pdf 25 · belum dicocokkan -->
+<!-- pasal 21 · hlm 13 · pdf 25 · dicocokkan -->
 
 (1) Wali nasab terdiri dari empat kelompok dalam urutan kedudukan, kelompok yang satu didahulukan dan kelompok yang lain sesuai erat tidaknya susunan kekerabatan dengan calon mempelai wanita. Pertama, kelompok kerabat laki-laki garis lurus keatas yakni ayah, kakek dari pihak ayah dan seterusnya. Kedua, kelompok kerabat saudara laki-laki kandung atau saudara laki-laki seayah, dan keturunan laki-laki mereka. Ketiga, kelompok kerabat paman, yakni saudara laki-laki kandung ayah, saudara seayah dan keturunan laki-laki mereka. Keempat, kelompok saudara laki-laki kandung kakek, saudara laki-laki seayah dan keturunan laki-laki mereka. <!-- hlm 14 · pdf 26 -->
 
-(2) Apabila dalam satu kelompok wali nikah terdapat beberapa orang yang sama-sama berhak menjadi wali, maka yang paling berhak menjadi wali ialah yang lebih dekat derajat kekerabatannya dengan eaton mempelai wanita.
+(2) Apabila dalam satu kelompok wali nikah terdapat beberapa orang yang sama-sama berhak menjadi wali, maka yang paling berhak menjadi wali ialah yang lebih dekat derajat kekerabatannya dengan calon mempelai wanita.
 
 (3) Ababila dalam satu kelompok sama derajat kekerabatan aka yang paling berhak menjadi wali nikah ialah karabat kandung dari kerabat yang seayah.
 
@@ -234,15 +244,15 @@ b. Wali hakim.
 
 ##### Pasal 22
 
-<!-- pasal 22 · hlm 14 · pdf 26 · belum dicocokkan -->
+<!-- pasal 22 · hlm 14 · pdf 26 · dicocokkan -->
 
 Apabila wali nikah yang paling berhak, urutannya tidak memenuhi syarat sebagai wali nikah atau oleh karena wali nikah itu menderita tuna wicara, tuna rungu atau sudah udzur, maka hak menjadi wali bergeser kepada wali nikah yang lain menurut derajat berikutnya. <!-- hlm 15 · pdf 27 -->
 
 ##### Pasal 23
 
-<!-- pasal 23 · hlm 15 · pdf 27 · belum dicocokkan -->
+<!-- pasal 23 · hlm 15 · pdf 27 · dicocokkan -->
 
-(1) Wali hakim baru dapat bertindak sebagai wali nikah apabila wali nasab tidak ada atau tidak mungkin menghadirkannya atau adak diketahui tempat tinggalnya atau gaib atau adlal atau enggan.
+(1) Wali hakim baru dapat bertindak sebagai wali nikah apabila wali nasab tidak ada atau tidak mungkin menghadirkannya atau tidak diketahui tempat tinggalnya atau gaib atau adlal atau enggan.
 
 (2) Dalam hal wali adlal atau enggan maka wali hakim baru dapat bertindak sebagai wali nikah setelah ada putusan pengadilan Agama tentang wali tersebut.
 
@@ -250,7 +260,7 @@ Apabila wali nikah yang paling berhak, urutannya tidak memenuhi syarat sebagai w
 
 ##### Pasal 24
 
-<!-- pasal 24 · hlm 15 · pdf 27 · belum dicocokkan -->
+<!-- pasal 24 · hlm 15 · pdf 27 · dicocokkan -->
 
 (1) Saksi dalam perkawinan merupakan rukun pelaksanaan akad nikah.
 
@@ -258,13 +268,13 @@ Apabila wali nikah yang paling berhak, urutannya tidak memenuhi syarat sebagai w
 
 ##### Pasal 25
 
-<!-- pasal 25 · hlm 15 · pdf 27 · belum dicocokkan -->
+<!-- pasal 25 · hlm 15 · pdf 27 · dicocokkan -->
 
 Yang dapat ditunjuk menjadi saksi dalam akad nikah ialah seorang laki-laki muslim, adil, aqil baligh, tidak terganggu ingatan dan tidak tuna rungu atau tuli. <!-- hlm 16 · pdf 28 -->
 
 ##### Pasal 26
 
-<!-- pasal 26 · hlm 16 · pdf 28 · belum dicocokkan -->
+<!-- pasal 26 · hlm 16 · pdf 28 · dicocokkan -->
 
 Saksi harus hadir dan menyaksikan secara langsung akad nikah serta menandatangani Akta Nikah pada waktu dan ditempat akad nikah dilangsungkan.
 
@@ -272,19 +282,19 @@ Saksi harus hadir dan menyaksikan secara langsung akad nikah serta menandatangan
 
 ##### Pasal 27
 
-<!-- pasal 27 · hlm 16 · pdf 28 · belum dicocokkan -->
+<!-- pasal 27 · hlm 16 · pdf 28 · dicocokkan -->
 
 Ijab dan kabul antara wali dan calon mempelai pria harus jelas beruntun dan tidak berselang waktu.
 
 ##### Pasal 28
 
-<!-- pasal 28 · hlm 16 · pdf 28 · belum dicocokkan -->
+<!-- pasal 28 · hlm 16 · pdf 28 · dicocokkan -->
 
 Akad nikah dilaksanakan sendiri secara pribadi oleh wali nikah yang bersangkutan. Wali nikah mewakilkan kepada orang lain.
 
 ##### Pasal 29
 
-<!-- pasal 29 · hlm 16 · pdf 28 · belum dicocokkan -->
+<!-- pasal 29 · hlm 16 · pdf 28 · dicocokkan -->
 
 (1) Yang berhak mengucapkan kabul ialah calon mempelai pria secara pribadi.
 
@@ -296,25 +306,25 @@ Akad nikah dilaksanakan sendiri secara pribadi oleh wali nikah yang bersangkutan
 
 ##### Pasal 30
 
-<!-- pasal 30 · hlm 17 · pdf 29 · belum dicocokkan -->
+<!-- pasal 30 · hlm 17 · pdf 29 · dicocokkan -->
 
 Calon mempelai pria wajib membayar mahar kepada calon mempelai wanita yang jumlah, bentuk dan jenisnya disepakati oleh kedua belah pihak.
 
 ##### Pasal 31
 
-<!-- pasal 31 · hlm 17 · pdf 29 · belum dicocokkan -->
+<!-- pasal 31 · hlm 17 · pdf 29 · dicocokkan -->
 
 Penentuan mahar berdasarkan atas kesederhanaan dan kemudahan yang dianjurkan oleh ajaran Islam.
 
 ##### Pasal 32
 
-<!-- pasal 32 · hlm 17 · pdf 29 · belum dicocokkan -->
+<!-- pasal 32 · hlm 17 · pdf 29 · dicocokkan -->
 
 Mahar diberikan langsung kepada calon mempelai wanita dan sejak itu menjadi hak pribadinya.
 
 ##### Pasal 33
 
-<!-- pasal 33 · hlm 17 · pdf 29 · belum dicocokkan -->
+<!-- pasal 33 · hlm 17 · pdf 29 · dicocokkan -->
 
 (1) Penyerahan mahar dilakukan dengan tunai.
 
@@ -322,7 +332,7 @@ Mahar diberikan langsung kepada calon mempelai wanita dan sejak itu menjadi hak 
 
 ##### Pasal 34
 
-<!-- pasal 34 · hlm 18 · pdf 30 · belum dicocokkan -->
+<!-- pasal 34 · hlm 18 · pdf 30 · dicocokkan -->
 
 (1) Kewajiban menyerahkan mahar bukan merupakan rukun dalam perkawinan.
 
@@ -330,7 +340,7 @@ Mahar diberikan langsung kepada calon mempelai wanita dan sejak itu menjadi hak 
 
 ##### Pasal 35
 
-<!-- pasal 35 · hlm 18 · pdf 30 · belum dicocokkan -->
+<!-- pasal 35 · hlm 18 · pdf 30 · dicocokkan -->
 
 (1) Suami yang mentalak isterinya qobla al dukhul wajib membayar setengah mahar yang telah ditentukan dalam akad nikah.
 
@@ -338,21 +348,21 @@ Mahar diberikan langsung kepada calon mempelai wanita dan sejak itu menjadi hak 
 
 ##### Pasal 36
 
-<!-- pasal 36 · hlm 18 · pdf 30 · belum dicocokkan -->
+<!-- pasal 36 · hlm 18 · pdf 30 · dicocokkan -->
 
-Apabila mahar hilang sebelum diserahkan, mahar itu dapat diganti dengan barang lain yang sama bentuk dan jenisnya atau dengan barang lain yang sama <!-- hlm 19 · pdf 31 --> nilainya atau dengan uang yang senilai dengan harga barang mahar yang hi lang.
+Apabila mahar hilang sebelum diserahkan, mahar itu dapat diganti dengan barang lain yang sama bentuk dan jenisnya atau dengan barang lain yang sama <!-- hlm 19 · pdf 31 --> nilainya atau dengan uang yang senilai dengan harga barang mahar yang hilang.
 
 ##### Pasal 37
 
-<!-- pasal 37 · hlm 19 · pdf 31 · belum dicocokkan -->
+<!-- pasal 37 · hlm 19 · pdf 31 · dicocokkan -->
 
 Apabila terjadi selisih pendapat mengenai jenis dan nilai mahar yang ditetapkan, penyelesaian diajukan ke Pengadilan Agama.
 
 ##### Pasal 38
 
-<!-- pasal 38 · hlm 19 · pdf 31 · belum dicocokkan -->
+<!-- pasal 38 · hlm 19 · pdf 31 · dicocokkan -->
 
-(1) Apabila mahar yang diserahkan mengandung cacat atau kurang, tetapi caJon mempelai tetap bersedia menerimanya tanpa syarat, penyerahan mahal dianggap lunas.
+(1) Apabila mahar yang diserahkan mengandung cacat atau kurang, tetapi calon mempelai tetap bersedia menerimanya tanpa syarat, penyerahan mahal dianggap lunas.
 
 (2) Apabila isteri menolak untuk menerima mahar karena cacat, suami harus menggantinya dengan mahar lain yang tidak cacat. Selama penggantinya belum diserahkan, mahar dianggap masih belum dibayar.
 
@@ -360,9 +370,9 @@ Apabila terjadi selisih pendapat mengenai jenis dan nilai mahar yang ditetapkan,
 
 ##### Pasal 39
 
-<!-- pasal 39 · hlm 19 · pdf 31 · belum dicocokkan -->
+<!-- pasal 39 · hlm 19 · pdf 31 · dicocokkan -->
 
-Dilarang melangsungkan perkawinan antara seorang pria dengan ~orang wanita disebabkan: <!-- hlm 20 · pdf 32 -->
+Dilarang melangsungkan perkawinan antara seorang pria dengan seorang wanita disebabkan: <!-- hlm 20 · pdf 32 -->
 
 (1) Karena pertalian nasab:
 
@@ -384,19 +394,29 @@ d. dengan seorang wanita bekas isteri keturunannya.
 
 (3) Karena pertalian sesusuan:
 
-a. dengan wanita yang menyusui dan seterusnya menurut garis lurus ke atas; <!-- hlm 21 · pdf 33 --> b. c. seorang wanita sesusuan dan dengan seterusnya menurut garis lurus ke bawah; dengan seorang wanita saudara sesusuan, dan kemanakan sesusuan ke l'>awah;
+a. dengan wanita yang menyusui dan seterusnya menurut garis lurus ke atas; <!-- hlm 21 · pdf 33 --> b. dengan seorang wanita sesusuan dan seterusnya menurut garis lurus ke bawah;
 
-d. dengan seorang wanita bibi sesusuan dan nenek bibi sesusuan ke atas; e. dengan anak yang disusui oleh isterinya dan keturunannya.
+c. dengan seorang wanita saudara sesusuan, dan kemanakan sesusuan ke bawah;
+
+d. dengan seorang wanita bibi sesusuan dan nenek bibi sesusuan ke atas;
+
+e. dengan anak yang disusui oleh isterinya dan keturunannya.
 
 ##### Pasal 40
 
-<!-- pasal 40 · hlm 21 · pdf 33 · belum dicocokkan -->
+<!-- pasal 40 · hlm 21 · pdf 33 · dicocokkan -->
 
-Dilarang melangsungkan perkawinan antara se orang pria dengan seorang wanita karena keadaan tertentu: a. b. karena wanita yang bersangkutan masih terikat satu perkawinan dengan pria lain; seorang wanita yang masih berada dalam masa iddah dengan pria lain; c. seorang wanita yang tidak beragama islam.
+Dilarang melangsungkan perkawinan antara seorang pria dengan seorang wanita karena keadaan tertentu:
+
+a. karena wanita yang bersangkutan masih terikat satu perkawinan dengan pria lain;
+
+b. seorang wanita yang masih berada dalam masa iddah dengan pria lain;
+
+c. seorang wanita yang tidak beragama islam.
 
 ##### Pasal 41
 
-<!-- pasal 41 · hlm 21 · pdf 33 · belum dicocokkan -->
+<!-- pasal 41 · hlm 21 · pdf 33 · dicocokkan -->
 
 (1) Seorang pria dilarang memadu isterinya dengan seoarang wanita yang mempunyai hubungan pertalian nasab atau sesusuan dengan isterinya; <!-- hlm - · pdf 34 -->
 
@@ -404,21 +424,19 @@ a. saudara kandung, seayah atau seibu atau keturunannya;
 
 b. wanita dengan bibinya atau kemenakannya.
 
-(2) Larangan terse but pada ayat (1) tetap berlaku meskipun isteri-isterinya telah ditalak raj' i, tetapi masih dalam masa iddah.
+(2) Larangan tersebut pada ayat (1) tetap berlaku meskipun isteri-isterinya telah ditalak raj'i, tetapi masih dalam masa iddah.
 
 ##### Pasal 42
 
-<!-- pasal 42 · hlm - · pdf 34 · belum dicocokkan -->
+<!-- pasal 42 · hlm - · pdf 34 · dicocokkan -->
 
-Seorang pria dilarang melangsungkan perkawinan dengan seorang wanita apabila pria tersebut sedang mempunyai 4 (empat) orang isteri yang keempat empatnya masih terikat tali perkawinan atau masih dalam iddah talak raj' i ataupun salah seorang dian tara mereka masih terikat tali perkawinan sedang yang lainnya dalam masa iddah talak raj' i.
+Seorang pria dilarang melangsungkan perkawinan dengan seorang wanita apabila pria tersebut sedang mempunyai 4 (empat) orang isteri yang keempat-empatnya masih terikat tali perkawinan atau masih dalam iddah talak raj'i ataupun salah seorang diantara mereka masih terikat tali perkawinan sedang yang lainnya dalam masa iddah talak raj'i.
 
 ##### Pasal 43
 
-<!-- pasal 43 · hlm - · pdf 34 · belum dicocokkan -->
+<!-- pasal 43 · hlm - · pdf 34 · dicocokkan -->
 
-melangsungkan perkawinan an tara
-
-(1) Dilarang seorang pna:
+(1) Dilarang melangsungkan perkawinan antara seorang pria:
 
 a. dengan seorang wanita bekas isterinya yang ditalak tiga kali;
 
@@ -428,99 +446,99 @@ b. dengan seorang wanita bekas isterinya yang dili'an. <!-- hlm 23 · pdf 35 -->
 
 ##### Pasal 44
 
-<!-- pasal 44 · hlm 23 · pdf 35 · belum dicocokkan -->
+<!-- pasal 44 · hlm 23 · pdf 35 · dicocokkan -->
 
-Seorang wanita Islam dilarang melangsungkan per kawinan dengan seorang pria yang tidak beragama Islam.
+Seorang wanita Islam dilarang melangsungkan perkawinan dengan seorang pria yang tidak beragama Islam.
 
 ### BAB VII — PERJANJIAN PERKAWINAN
 
 ##### Pasal 45
 
-<!-- pasal 45 · hlm 23 · pdf 35 · belum dicocokkan -->
+<!-- pasal 45 · hlm 23 · pdf 35 · dicocokkan -->
 
-Kedua caJon mempelai dapat mengadakan petjanjian perkawinan dalam bentuk:
+Kedua calon mempelai dapat mengadakan perjanjian perkawinan dalam bentuk:
 
 1. Taklik talak dan
 
-2. Petjanjian lain yang tidak bertentangan dengan hukum Islam.
+2. Perjanjian lain yang tidak bertentangan dengan hukum Islam.
 
 ##### Pasal 46
 
-<!-- pasal 46 · hlm 23 · pdf 35 · belum dicocokkan -->
+<!-- pasal 46 · hlm 23 · pdf 35 · dicocokkan -->
 
-(1) lsi taklik talak tidak boleh bertentangan dengan hukum Islam.
+(1) Isi taklik talak tidak boleh bertentangan dengan hukum Islam.
 
 (2) Apabila keadaan yang diisyaratkan dalam taklik talak betul-betul terjadi kemudian, tidak <!-- hlm 24 · pdf 36 --> dengan sendirinya talak jatuh. Supaya talak sungguh-sungguh jatuh, isteri harus mengajukan persoalannya ke pengadilan Agama.
 
-(3) Petjanjian taklik talak bukan salah satu yang wajib diadakan pada setiap perkawinan, akan tetapi sekali taklik talak sudah dipetjanjikan tidak dapat dicabut kembali.
+(3) Perjanjian taklik talak bukan salah satu yang wajib diadakan pada setiap perkawinan, akan tetapi sekali taklik talak sudah diperjanjikan tidak dapat dicabut kembali.
 
 ##### Pasal 47
 
-<!-- pasal 47 · hlm 24 · pdf 36 · belum dicocokkan -->
+<!-- pasal 47 · hlm 24 · pdf 36 · dicocokkan -->
 
-(1) Pada waktu atau sebelum perkawinan dilangsungkan kedua calon mempelai dapat membuat petjanjian tertulis yang disahkan Pegawai Pencatat Nikah mengenai kedudukan harta dalam perkawinan.
+(1) Pada waktu atau sebelum perkawinan dilangsungkan kedua calon mempelai dapat membuat perjanjian tertulis yang disahkan Pegawai Pencatat Nikah mengenai kedudukan harta dalam perkawinan.
 
-(2) Petjanjian tersebut dalam ayat (1) dapat meliputi percampuran harta pribadi dan pemisahan harta pencaharian masing-masing sepanjang hal itu tidak bertentangan dengan Islam.
+(2) Perjanjian tersebut dalam ayat (1) dapat meliputi percampuran harta pribadi dan pemisahan harta pencaharian masing-masing sepanjang hal itu tidak bertentangan dengan Islam.
 
 (3) Di samping ketentuan dalam ayat (1) dan (2) di atas, boleh juga isi perjanjian itu menetapkan kewenangan masing-masing untuk mengadakan ikatan hipotik atas harta pribadi dan harta bersama atau harta syarikat. <!-- hlm 25 · pdf 37 -->
 
 ##### Pasal 48
 
-<!-- pasal 48 · hlm 25 · pdf 37 · belum dicocokkan -->
+<!-- pasal 48 · hlm 25 · pdf 37 · dicocokkan -->
 
-(1) Apabila dibuat peijanjian perkawinan mengenai pemisah harta bersama atau harta syarikat, maka peijanjian tersebut tidak boleh menghilangkan kewajiban suami untuk memenuhi kebutuhan rumah tangga.
+(1) Apabila dibuat perjanjian perkawinan mengenai pemisah harta bersama atau harta syarikat, maka perjanjian tersebut tidak boleh menghilangkan kewajiban suami untuk memenuhi kebutuhan rumah tangga.
 
-(2) Apabila dibuat peijanjian perkawinan tidak memenuhi ketentuan terse but pada ayat (1) dianggap tetap teijadi pemisahan harta bersama atau harta syarikat dengan kewajiban suami menanggung biaya kebutuhan rumah tangga.
+(2) Apabila dibuat perjanjian perkawinan tidak memenuhi ketentuan tersebut pada ayat (1) dianggap tetap terjadi pemisahan harta bersama atau harta syarikat dengan kewajiban suami menanggung biaya kebutuhan rumah tangga.
 
 ##### Pasal 49
 
-<!-- pasal 49 · hlm 25 · pdf 37 · belum dicocokkan -->
+<!-- pasal 49 · hlm 25 · pdf 37 · dicocokkan -->
 
-(1) Peijanjian percampuran harta pribadi dapat meliputi semua harta, baik yang dibawa masing-masing ke dalam perkawinan maupun yang diperoleh masing-masing selama perkawinan.
+(1) Perjanjian percampuran harta pribadi dapat meliputi semua harta, baik yang dibawa masing-masing ke dalam perkawinan maupun yang diperoleh masing-masing selama perkawinan.
 
-(2) Dengan tidak mengurangi ketentuan tersebut pada ayat (1) dapat juga dipeijanjikan bahwa percampuran harta pribadi yang dibawa pada saat perkawinan dilangsungkan, sehingga percampuran ini tidak meliputi harta pribadi yang diperoleh selama perkawinan atau sebaliknya. <!-- hlm 26 · pdf 38 -->
+(2) Dengan tidak mengurangi ketentuan tersebut pada ayat (1) dapat juga diperjanjikan bahwa percampuran harta pribadi yang dibawa pada saat perkawinan dilangsungkan, sehingga percampuran ini tidak meliputi harta pribadi yang diperoleh selama perkawinan atau sebaliknya. <!-- hlm 26 · pdf 38 -->
 
 ##### Pasal 50
 
-<!-- pasal 50 · hlm 26 · pdf 38 · belum dicocokkan -->
+<!-- pasal 50 · hlm 26 · pdf 38 · dicocokkan -->
 
 (1) Perjanjian perkawinan mengenai harta, mengikat kepada para pihak dan pihak ketiga terhitung mulai tanggal dilangsungkan perkawinan di hadapan Pegawai Pencatat Nikah
 
-(2) Perjanjian perkawinan mengenai harta dapat suami atas persetujuan bersama dicabut isteri dan wajib mendaftarkannya di Kantor Pegawai Pencatat Nikah tempat perkawinan dilangsungkan
+(2) Perjanjian perkawinan mengenai harta dapat dicabut atas persetujuan bersama suami isteri dan wajib mendaftarkannya di Kantor Pegawai Pencatat Nikah tempat perkawinan dilangsungkan
 
 (3) Sejak pendaftaran tersebut, pencabutan telah mengikat kepada suami isteri tetapi terhadap pihak ketiga pencabutan baru mengikat sejak tanggal pendaftaran itu diumumkan suami isteri dalam suatu surat kabar setempat.
 
-(4) Apabila dalam (enam) bulan tempo 6 pengumuman tidak dilakukan yang bersangkutan, pendaftaran pencabutan dengan sendirinya gugur dan tidak mengikat kepada pihak ketiga.
+(4) Apabila dalam tempo 6 (enam) bulan pengumuman tidak dilakukan yang bersangkutan, pendaftaran pencabutan dengan sendirinya gugur dan tidak mengikat kepada pihak ketiga.
 
 (5) Pencabutan perjanjian perkawinan mengenai harta tidak boleh merugikan perjanjian yang telah diperbuat sebelumnya dengan pihak ketiga. <!-- hlm 27 · pdf 39 -->
 
 ##### Pasal 51
 
-<!-- pasal 51 · hlm 27 · pdf 39 · belum dicocokkan -->
+<!-- pasal 51 · hlm 27 · pdf 39 · dicocokkan -->
 
-Pelanggaran atas petjanjian perkawinan memberi hak kepada isteri untuk meminta pembatalan nikah atau mengajukannya. Sebagai alasan gugatan perceraian ke Pengadilan Agama.
+Pelanggaran atas perjanjian perkawinan memberi hak kepada isteri untuk meminta pembatalan nikah atau mengajukannya. Sebagai alasan gugatan perceraian ke Pengadilan Agama.
 
 ##### Pasal 52
 
-<!-- pasal 52 · hlm 27 · pdf 39 · belum dicocokkan -->
+<!-- pasal 52 · hlm 27 · pdf 39 · dicocokkan -->
 
-Pada saat dilangsungkan perkawinan dengan isteri kedua. ketiga dan keempat, boleh dipetjanjikan mengenai tempat kediaman, waktu giliran dan biaya rumah tangga bagi isteri yang akan dinikahinya itu.
+Pada saat dilangsungkan perkawinan dengan isteri kedua, ketiga dan keempat, boleh diperjanjikan mengenai tempat kediaman, waktu giliran dan biaya rumah tangga bagi isteri yang akan dinikahinya itu.
 
 ### BAB VIII — KAWIN HAMIL
 
 ##### Pasal 53
 
-<!-- pasal 53 · hlm 27 · pdf 39 · belum dicocokkan -->
+<!-- pasal 53 · hlm 27 · pdf 39 · dicocokkan -->
 
 (1) Seorang wanita hamil di luar nikah, dapat dikawinkan dengan pria yang menghamilinya.
 
-(2) Perkawinan dengan wanita hamil yang disebut tanpa pada ayat (1) dapat dilangsungkan menunggu lebih dahulu kelahiran anaknya.
+(2) Perkawinan dengan wanita hamil yang disebut pada ayat (1) dapat dilangsungkan tanpa menunggu lebih dahulu kelahiran anaknya.
 
 (3) Dengan dilangsungkannya perkawinan pada saat wanita hamil, tidak diperlukan perkawinan ulang setelah anak yang dikandung lahir. <!-- hlm 28 · pdf 40 -->
 
 ##### Pasal 54
 
-<!-- pasal 54 · hlm 28 · pdf 40 · belum dicocokkan -->
+<!-- pasal 54 · hlm 28 · pdf 40 · dicocokkan -->
 
 (1) Selama seseorang masih dalam keadaan ihram, tidak boleh melangsungkan perkawinan dan juga boleh bertindak sebagai wali nikah.
 
@@ -530,7 +548,7 @@ Pada saat dilangsungkan perkawinan dengan isteri kedua. ketiga dan keempat, bole
 
 ##### Pasal 55
 
-<!-- pasal 55 · hlm 28 · pdf 40 · belum dicocokkan -->
+<!-- pasal 55 · hlm 28 · pdf 40 · dicocokkan -->
 
 (1) Beristeri lebih satu orang pada waktu bersamaan, terbatas hanya sampai empat isteri.
 
@@ -540,17 +558,17 @@ Pada saat dilangsungkan perkawinan dengan isteri kedua. ketiga dan keempat, bole
 
 ##### Pasal 56
 
-<!-- pasal 56 · hlm 28 · pdf 40 · belum dicocokkan -->
+<!-- pasal 56 · hlm 28 · pdf 40 · dicocokkan -->
 
 (1) Suami yang hendak beristeri lebih dari satu orang harus mendapat izin dari Pengadilan Agama. <!-- hlm 29 · pdf 41 -->
 
-(2) Pengajuan pennohonan izin dimaksud pada ayat (1) dilakukan menurut pada tata cara sebagaimana diatur dalam Bab VIII Peraturan Pemeritah No. 9 Tahun 1975.
+(2) Pengajuan permohonan izin dimaksud pada ayat (1) dilakukan menurut pada tata cara sebagaimana diatur dalam Bab VIII Peraturan Pemeritah No. 9 Tahun 1975.
 
 (3) Perkawinan yang dilakukan dengan isteri kedua, ketiga atau keempat tanpa izin dari Pengadilan Agama, tidak mempunyai kekuatan hukum.
 
 ##### Pasal 57
 
-<!-- pasal 57 · hlm 29 · pdf 41 · belum dicocokkan -->
+<!-- pasal 57 · hlm 29 · pdf 41 · dicocokkan -->
 
 Pengadilan Agama hanya memberikan izin kepada seorang suami yang akan beristeri lebih dari seorang apabila:
 
@@ -562,7 +580,7 @@ c. isteri tidak dapat melahirkan keturunan.
 
 ##### Pasal 58
 
-<!-- pasal 58 · hlm 29 · pdf 41 · belum dicocokkan -->
+<!-- pasal 58 · hlm 29 · pdf 41 · dicocokkan -->
 
 (1) Selain syarat utama yang disebut pada pasal 55 ayat (2) maka untuk memperoleh izin pengadilan Agama, harus pula dipenuhi syarat-syarat yang <!-- hlm 30 · pdf 42 --> ditentukan pada pasal 5 Undang-Undang No. 1 Tahun 1974 yaitu:
 
@@ -570,35 +588,35 @@ a. adanya pesetujuan isteri;
 
 b. adanya kepastian bahwa suami mampu menjamin keperluan hidup isteri-isteri dan anak-anak mereka.
 
-(2) Dengan tidak mengurangi ketentuan pasal 41 hurufb Peraturan Pemerintah No. 9 Tahun 1975, persetujuan isteri atau isteri-isteri dapat diberikan secara tertulis atau dengan lisan, tetapi sekalipun telah ada persetujuan tertulis, persetujuan ini dipertegas dengan persetujuan lisan isteri pada sidang Pengadilan Agama.
+(2) Dengan tidak mengurangi ketentuan pasal 41 huruf b Peraturan Pemerintah No. 9 Tahun 1975, persetujuan isteri atau isteri-isteri dapat diberikan secara tertulis atau dengan lisan, tetapi sekalipun telah ada persetujuan tertulis, persetujuan ini dipertegas dengan persetujuan lisan isteri pada sidang Pengadilan Agama.
 
-(3) Persetujuan dimaksud pada ayat (1) huruf a tidak diperlukan bagi seorang suami apabila isteri atau isteri-isterinya tidak mungkin di mintai persetujuannya dan tidak dapat menjadi pihak dalam perjanjian atau apabila tidak ada kabar dari isteri atau isteri-isterinya sekurang kurangnya 2 tahun atau karena sebab lain yang perlu mendapat penilaian Hakim. <!-- hlm 31 · pdf 43 -->
+(3) Persetujuan dimaksud pada ayat (1) huruf a tidak diperlukan bagi seorang suami apabila isteri atau isteri-isterinya tidak mungkin dimintai persetujuannya dan tidak dapat menjadi pihak dalam perjanjian atau apabila tidak ada kabar dari isteri atau isteri-isterinya sekurang-kurangnya 2 tahun atau karena sebab lain yang perlu mendapat penilaian Hakim. <!-- hlm 31 · pdf 43 -->
 
 ##### Pasal 59
 
-<!-- pasal 59 · hlm 31 · pdf 43 · belum dicocokkan -->
+<!-- pasal 59 · hlm 31 · pdf 43 · dicocokkan -->
 
-Dalam hal istri tidak mau memberikan persetujuan, dan pennohonan izin untuk beristeri lebih dari satu orang berdasarkan atas salah satu alasan yang diatur dalam pasal 55 ayat (2) dan 57, Pengadilan Agama dapat menetapkan tentang pemberian izin setelah memeriksa dan mendengar isteri yang bersangkutan di persidangan Pengadilan Agarria, dan terhadap penetapan ini isteri atau suami dapat mengajukan banding atau kasasi.
+Dalam hal istri tidak mau memberikan persetujuan, dan permohonan izin untuk beristeri lebih dari satu orang berdasarkan atas salah satu alasan yang diatur dalam pasal 55 ayat (2) dan 57, Pengadilan Agama dapat menetapkan tentang pemberian izin setelah memeriksa dan mendengar isteri yang bersangkutan di persidangan Pengadilan Agama, dan terhadap penetapan ini isteri atau suami dapat mengajukan banding atau kasasi.
 
 ### BAB X — PENCEGAHAN PERKAWINAN
 
 ##### Pasal 60
 
-<!-- pasal 60 · hlm 31 · pdf 43 · belum dicocokkan -->
+<!-- pasal 60 · hlm 31 · pdf 43 · dicocokkan -->
 
-(1) Peneegahan perkawinan bertujuan untuk meng hindari suatu perkawinan yang dilarang hukum Islam dan Peraturan Perundang-undangan.
+(1) Pencegahan perkawinan bertujuan untuk menghindari suatu perkawinan yang dilarang hukum Islam dan Peraturan Perundang-undangan.
 
-(2) Pencegahan perkawinan dapat dilakukan bila eaton suami atau eaton isteri yang akan . melangsungkan perkawinan tidak memenuhi syarat-syarat untuk melangsungkan perkawinan menurut hukum Islam dan peraturan Perundang undangan. <!-- hlm 32 · pdf 44 -->
+(2) Pencegahan perkawinan dapat dilakukan bila calon suami atau calon isteri yang akan melangsungkan perkawinan tidak memenuhi syarat-syarat untuk melangsungkan perkawinan menurut hukum Islam dan peraturan Perundang-undangan. <!-- hlm 32 · pdf 44 -->
 
 ##### Pasal 61
 
-<!-- pasal 61 · hlm 32 · pdf 44 · belum dicocokkan -->
+<!-- pasal 61 · hlm 32 · pdf 44 · dicocokkan -->
 
 Tidak sekufu tidak dapat dijadikan alasan untuk mencegah perkawinan, kecuali tidak sekufu karena perbedaan agama atau ikhtilaafu al dien.
 
 ##### Pasal 62
 
-<!-- pasal 62 · hlm 32 · pdf 44 · belum dicocokkan -->
+<!-- pasal 62 · hlm 32 · pdf 44 · dicocokkan -->
 
 (1) Yang dapat mencegah perkawinan ialah para keluarga dalam garis keturunan lurus ke atas dan lurus ke bawah, saudara, wali nikah, wali pengampu dari salah seorang calon mempelai dan pihak-pihak yang bersangkutan
 
@@ -606,19 +624,19 @@ Tidak sekufu tidak dapat dijadikan alasan untuk mencegah perkawinan, kecuali tid
 
 ##### Pasal 63
 
-<!-- pasal 63 · hlm 32 · pdf 44 · belum dicocokkan -->
+<!-- pasal 63 · hlm 32 · pdf 44 · dicocokkan -->
 
 Pencegahan perkawinan dapat dilakukan oleh suami atau isteri yang masih terikat dalam perkawinan dalam perkawinan dengan salah seorang calon isteri atau calon suami yang akan melangsungkan perkawinan. <!-- hlm 33 · pdf 45 -->
 
 ##### Pasal 64
 
-<!-- pasal 64 · hlm 33 · pdf 45 · belum dicocokkan -->
+<!-- pasal 64 · hlm 33 · pdf 45 · dicocokkan -->
 
 Pejabat yang ditunjuk untuk mengawasi perkawinan berkewajiban mencegah perkawinan bila rukun dan syarat perkawinan tidak terpenuhi.
 
 ##### Pasal 65
 
-<!-- pasal 65 · hlm 33 · pdf 45 · belum dicocokkan -->
+<!-- pasal 65 · hlm 33 · pdf 45 · dicocokkan -->
 
 (1) Pencegahan perkawinan diajukan kepada Pengadilan Agama dalam daerah Hukum di mana perkawinan akan dilangsungkan dengan memberitahukan juga kepada Pegawai Pencatat Nikah.
 
@@ -626,27 +644,27 @@ Pejabat yang ditunjuk untuk mengawasi perkawinan berkewajiban mencegah perkawina
 
 ##### Pasal 66
 
-<!-- pasal 66 · hlm 33 · pdf 45 · belum dicocokkan -->
+<!-- pasal 66 · hlm 33 · pdf 45 · dicocokkan -->
 
 Perkawinan tidak dapat dilangsungkan apabila pencegahan belum dicabut.
 
 ##### Pasal 67
 
-<!-- pasal 67 · hlm 33 · pdf 45 · belum dicocokkan -->
+<!-- pasal 67 · hlm 33 · pdf 45 · dicocokkan -->
 
 Pencegahan perkawinan dapat dicabut dengan menarik kembali permohonan pencegahan pada Pengadilan Agama oleh yang mencegah atau dengan putusan Pengadilan Agama. <!-- hlm 34 · pdf 46 -->
 
 ##### Pasal 68
 
-<!-- pasal 68 · hlm 34 · pdf 46 · belum dicocokkan -->
+<!-- pasal 68 · hlm 34 · pdf 46 · dicocokkan -->
 
-Pegawai Pencatat Nikah tidak diperbolehkan melangsungkan atau membantu melangsungkan perkawinan bila ia mengetahui adanya pelanggaran dari ketentuan pasal 7 ayat (1), pasal8, pasal9, pasal 10 atau pasal I2 Undang-undang No. I Tahun I974 meskipun tidak ada pencegahan perkawinan.
+Pegawai Pencatat Nikah tidak diperbolehkan melangsungkan atau membantu melangsungkan perkawinan bila ia mengetahui adanya pelanggaran dari ketentuan pasal 7 ayat (1), pasal 8, pasal 9, pasal 10 atau pasal 12 Undang-undang No. 1 Tahun 1974 meskipun tidak ada pencegahan perkawinan.
 
 ##### Pasal 69
 
-<!-- pasal 69 · hlm 34 · pdf 46 · belum dicocokkan -->
+<!-- pasal 69 · hlm 34 · pdf 46 · dicocokkan -->
 
-(1) Apabila pencatat Nikah berpendapat bahwa terhadap perkawinan tersebut ada larangan menurut Undang-undang No. I Tahun 1974 maka ia akan menolak melangsungkan per kawinan.
+(1) Apabila pencatat Nikah berpendapat bahwa terhadap perkawinan tersebut ada larangan menurut Undang-undang No. 1 Tahun 1974 maka ia akan menolak melangsungkan perkawinan.
 
 (2) Dalam hal penolakan, maka permintaan salah satu pihak yang ingin melangsungkan perkawinan oleh Pegawai Pencatat Nikah akan diberikan suatu keterangan tertulis dari penolakan tersebut disertai dengan alasan-alasan penolakannya.
 
@@ -654,37 +672,37 @@ Pegawai Pencatat Nikah tidak diperbolehkan melangsungkan atau membantu melangsun
 
 (4) Pengadilan Agama akan memeriksa perkaranya dengan acara singkat dan akan memberikan ketetapan, apabila akan menguatkan penolakan tersebut ataukah memerintahkan agar supaya perkawinan dilangsungkan.
 
-(5) Ketetapan ini hilang kekuatannya,jika rintangan-rintangan yang mengakibatkan penolakan tersebut hilang dan para pihak yang ingin kawin dapat mengulangi pemberitahuan tentang maksud mereka.
+(5) Ketetapan ini hilang kekuatannya, jika rintangan-rintangan yang mengakibatkan penolakan tersebut hilang dan para pihak yang ingin kawin dapat mengulangi pemberitahuan tentang maksud mereka.
 
 ### BAB XI — BATALNYA PERKAWINAN
 
 ##### Pasal 70
 
-<!-- pasal 70 · hlm 35 · pdf 47 · belum dicocokkan -->
+<!-- pasal 70 · hlm 35 · pdf 47 · dicocokkan -->
 
 Perkawinan batal apabila:
 
-a. Suami melakukan perkawinan, sedang ia tidak berhak melakukan akad nikah karena sudah mempunyai empat orang isteri sekalipun salah satu dari keempat isterinya dalam iddah talak raj' i; <!-- hlm 36 · pdf 48 -->
+a. Suami melakukan perkawinan, sedang ia tidak berhak melakukan akad nikah karena sudah mempunyai empat orang isteri sekalipun salah satu dari keempat isterinya dalam iddah talak raj'i; <!-- hlm 36 · pdf 48 -->
 
-b. seseorang menikah bekas isterinya yang telah dili' annya;
+b. seseorang menikah bekas isterinya yang telah dili'annya;
 
-c. seseorang menikah bekas isterinya yang pernah dijatuhi tiga kali talak olehnya, kecuali bila bekas isteri tersebut pernah menikah dengan pria lain kemudian bercerai lagi ba' da al dukhul dan pria tersebut dan telah habis masa iddahnya;
+c. seseorang menikah bekas isterinya yang pernah dijatuhi tiga kali talak olehnya, kecuali bila bekas isteri tersebut pernah menikah dengan pria lain kemudian bercerai lagi ba'da al dukhul dan pria tersebut dan telah habis masa iddahnya;
 
 d. perkawinan dilakukan antara dua orang yang mempunyai hubungan darah; semenda dan sesusuan sampai derajat tertentu yang menghalangi perkawinan menurut pasal 8 Undang-undang No.1 Tahun 1974, yaitu:
 
 1. berhubungan darah dalam garis keturunan lurus kebawah atau keatas.
 
-2. berhubugan darah dalam garis keturunan menyimpang yaitu antara saudara, antara seorang dengan saudara orang tua dan an tara seorang dengan saudara neneknya.
+2. berhubugan darah dalam garis keturunan menyimpang yaitu antara saudara, antara seorang dengan saudara orang tua dan antara seorang dengan saudara neneknya.
 
 3. berhubungan semenda, yaitu mertua, anak tiri, menantu dan ibu atau ayah tiri.
 
-4. berhubungan sesusuan, yaitu omg tua sesusuan, anak sesusuan dan bibi atau paman sesusuan. <!-- hlm 37 · pdf 49 -->
+4. berhubungan sesusuan, yaitu orng tua sesusuan, anak sesusuan dan bibi atau paman sesusuan. <!-- hlm 37 · pdf 49 -->
 
 e. isteri adalah saudara kandung atau sebagai bibi atau kemenakan dan isteri atau isteri-isterinya.
 
 ##### Pasal 71
 
-<!-- pasal 71 · hlm 37 · pdf 49 · belum dicocokkan -->
+<!-- pasal 71 · hlm 37 · pdf 49 · dicocokkan -->
 
 Suatu perkawinan dapat dibatalkan apabila:
 
@@ -694,7 +712,7 @@ b. perempuan yang dikawini ternyata kemudian diketahui masih menjadi isteri pria
 
 c. perempuan yang dikawini ternyata masih dalam iddah dan suami lain;
 
-d. perkawinan yang melanggar batas umur perkawinan sebagaimana ditetapkan dalam pasal 7 Undang-undang-undang No. I tahun I974;
+d. perkawinan yang melanggar batas umur perkawinan sebagaimana ditetapkan dalam pasal 7 Undang-undang-undang No. 1 tahun 1974;
 
 e. perkawinan dilangsungkan tanpa wali atau dilaksanakan oleh wali yang tidak berhak;
 
@@ -702,7 +720,7 @@ f. perkawinan yang dilaksanakan dengan paksaan.
 
 ##### Pasal 72
 
-<!-- pasal 72 · hlm 37 · pdf 49 · belum dicocokkan -->
+<!-- pasal 72 · hlm 37 · pdf 49 · dicocokkan -->
 
 (1) Seorang suami atau isteri dapat mengajukan permohonan pembatalan perkawinan apabila perkawinan dilangsungkan dibawah ancaman yang melanggar hukum. <!-- hlm 38 · pdf 50 -->
 
@@ -712,7 +730,7 @@ f. perkawinan yang dilaksanakan dengan paksaan.
 
 ##### Pasal 73
 
-<!-- pasal 73 · hlm 38 · pdf 50 · belum dicocokkan -->
+<!-- pasal 73 · hlm 38 · pdf 50 · dicocokkan -->
 
 Yang dapat mengajukan permohonan pembatalan perkawinan adalah:
 
@@ -726,27 +744,27 @@ d. para pihak yang berkepentingan yang mengetahui adanya cacat dalam rukun dan s
 
 ##### Pasal 74
 
-<!-- pasal 74 · hlm 39 · pdf 51 · belum dicocokkan -->
+<!-- pasal 74 · hlm 39 · pdf 51 · dicocokkan -->
 
-(1) Pennohonan pembatalan perkawinan dapat diajukan kepada Pengadilan Agama yang mewilayahi tempat tinggal suami atau isteri atau perkawinan dilangsungkan.
+(1) Permohonan pembatalan perkawinan dapat diajukan kepada Pengadilan Agama yang mewilayahi tempat tinggal suami atau isteri atau perkawinan dilangsungkan.
 
 (2) Batalnya suatu perkawinan dimulai setelah putusan pengadilan Agama mempunyai kekuatan hukum yang tetap dan berlaku sejak saat berlangsungnya perkawinan.
 
 ##### Pasal 75
 
-<!-- pasal 75 · hlm 39 · pdf 51 · belum dicocokkan -->
+<!-- pasal 75 · hlm 39 · pdf 51 · dicocokkan -->
 
 Keputusan pembatalan perkawinan tidak berlaku surut terhadap:
 
 a. perkawinan yang batal karena salah satu suami atau isteri murtad;
 
-b. anak-anak yang dilahirkan dari perkawinan terseb ut;
+b. anak-anak yang dilahirkan dari perkawinan tersebut;
 
 c. pihak ketiga sepanjang mereka memperoleh hak-hak dengan ber' itikad baik, sebelum keputusan pembatalan perkawinan kekutan hukum yang tetap. <!-- hlm 40 · pdf 52 -->
 
 ##### Pasal 76
 
-<!-- pasal 76 · hlm 40 · pdf 52 · belum dicocokkan -->
+<!-- pasal 76 · hlm 40 · pdf 52 · dicocokkan -->
 
 Batalnya suatu perkawinan tidak akan memutuskan hubungan hukum antara anak dengan orang tuanya.
 
@@ -756,13 +774,13 @@ Batalnya suatu perkawinan tidak akan memutuskan hubungan hukum antara anak denga
 
 ##### Pasal 77
 
-<!-- pasal 77 · hlm 40 · pdf 52 · belum dicocokkan -->
+<!-- pasal 77 · hlm 40 · pdf 52 · dicocokkan -->
 
 (1) Suami isteri memikul kewjiban yang luhur untuk menegakkan rumah tangga yang sakinah, mawaddah dan rahmah yang menjadi sendi dasar dan susunan masyarakat
 
 (2) Suami isteri wajib saling cinta mencintai, hormat menghormati, setia dan memberi bantuan lahir bathin yang satu kepada yang lain;
 
-(3) Suami kewajiban isteri memikul untuk mengasuh dan memelihara anak-anak mereka, baik mengenai pertumbuhan jasmani, rohani maupun pendidikan agamanya; kecerdasannya dan
+(3) Suami isteri memikul kewajiban untuk mengasuh dan memelihara anak-anak mereka, baik mengenai pertumbuhan jasmani, rohani maupun kecerdasannya dan pendidikan agamanya;
 
 (4) suami isteri wajib memelihara kehormatannya; <!-- hlm 41 · pdf 53 -->
 
@@ -770,9 +788,9 @@ Batalnya suatu perkawinan tidak akan memutuskan hubungan hukum antara anak denga
 
 ##### Pasal 78
 
-<!-- pasal 78 · hlm 41 · pdf 53 · belum dicocokkan -->
+<!-- pasal 78 · hlm 41 · pdf 53 · dicocokkan -->
 
-(1) Suami isteri harus mempunyai tempat kediaman yangtetap.
+(1) Suami isteri harus mempunyai tempat kediaman yang tetap.
 
 (2) Rumah kediaman yang dimaksud dalam ayat (1), ditentukan oleh suami isteri bersama.
 
@@ -780,7 +798,7 @@ Batalnya suatu perkawinan tidak akan memutuskan hubungan hukum antara anak denga
 
 ##### Pasal 79
 
-<!-- pasal 79 · hlm 41 · pdf 53 · belum dicocokkan -->
+<!-- pasal 79 · hlm 41 · pdf 53 · dicocokkan -->
 
 (1) Suami adalah kepala keluarga dan isteri ibu rumah tangga.
 
@@ -792,25 +810,25 @@ Batalnya suatu perkawinan tidak akan memutuskan hubungan hukum antara anak denga
 
 ##### Pasal 80
 
-<!-- pasal 80 · hlm - · pdf 54 · belum dicocokkan -->
+<!-- pasal 80 · hlm - · pdf 54 · dicocokkan -->
 
-(1) Suami adalah pembimbing, terhadap isteri dan hal rumah tangganya, akan tetap mengenai hal urusan rumah tangga yang penting-penting diputuskan oleh suami isteri bersama.
+(1) Suami adalah pembimbing, terhadap isteri dan rumah tangganya, akan tetap mengenai hal-hal urusan rumah tangga yang penting-penting diputuskan oleh suami isteri bersama.
 
 (2) Suami wajib melidungi isterinya dan memberikan segala sesuatu keperluan hidup berumah tangga sesuai dengan kemampuannya
 
 (3) Suami wajib memberikan pendidikan agama kepada isterinya dan memberi kesempatan belajar pengetahuan yang berguna dan bermanfaat bagi agama, nusa dan bangsa.
 
-(4) sesuat dengan penghasilannya suamt menanggung:
+(4) sesuai dengan penghasilannya suami menanggung:
 
-a. natkah, kiswah dan tempat kediaman bagi isteri;
+a. nafkah, kiswah dan tempat kediaman bagi isteri;
 
 b. biaya rumah tangga, biaya perawatan dan biaya pengobatan bagi isteri dan anak;
 
 c. biaya pendidikan bagi anak. <!-- hlm 43 · pdf 55 -->
 
-(5) Kewajiban suami terhadap isterinya seperti tersebut pada ayat (4) hurufa dan b di atas mulai berlaku sesudah ada tamkin sempuma dari isterinya.
+(5) Kewajiban suami terhadap isterinya seperti tersebut pada ayat (4) huruf a dan b di atas mulai berlaku sesudah ada tamkin sempurna dari isterinya.
 
-(6) Isteri dapat membebaskan suaminya dari kewajiban terhadap dirinya sebagaimana tersebut pada ayat (4) hurufa dan b.
+(6) Isteri dapat membebaskan suaminya dari kewajiban terhadap dirinya sebagaimana tersebut pada ayat (4) huruf a dan b.
 
 (7) Kewajiban suami sebagaimana dimaksud ayat (5) gugur apabila isteri nusyuz.
 
@@ -818,7 +836,7 @@ c. biaya pendidikan bagi anak. <!-- hlm 43 · pdf 55 -->
 
 ##### Pasal 81
 
-<!-- pasal 81 · hlm 43 · pdf 55 · belum dicocokkan -->
+<!-- pasal 81 · hlm 43 · pdf 55 · dicocokkan -->
 
 (1) Suami wajib menyediakan tempat kediaman bagi isteri dan anak-anaknya atau bekas isteri yang masih dalam iddah.
 
@@ -826,11 +844,11 @@ c. biaya pendidikan bagi anak. <!-- hlm 43 · pdf 55 -->
 
 (3) Tempat kediaman disediakan untuk melindungi isteri dan anak-anaknya dari gangguan pihak lain, sehingga mereka merasa aman dan <!-- hlm 44 · pdf 56 --> tenteram. Tempat kediaman juga berfungsi sebagai tempat menyimpan harta kekayaan, sebagai tempat menata dan mengatur alat-alat rumah tangga.
 
-(4) Suami wajib melengkapi tempat kediaman sesuai dengan kemampuannya serta disesuaikan dengan keadaan lingkungan tempat tinggalnya, baik berupa alat perlengkapan rumah tangga maupun sarana penunjang lainnya. Bagian KeUma Kewajiban Suami yang Beristeri Lebih Dan Seorang
+(4) Suami wajib melengkapi tempat kediaman sesuai dengan kemampuannya serta disesuaikan dengan keadaan lingkungan tempat tinggalnya, baik berupa alat perlengkapan rumah tangga maupun sarana penunjang lainnya. Bagian Kelima Kewajiban Suami yang Beristeri Lebih Dan Seorang
 
 ##### Pasal 82
 
-<!-- pasal 82 · hlm 44 · pdf 56 · belum dicocokkan -->
+<!-- pasal 82 · hlm 44 · pdf 56 · dicocokkan -->
 
 (1) Suami yang mempunyai isteri lebih dari seorang berkewajiban memberikan tempat tinggal dan biaya hidup kepada masing-masing isteri secara berimbang menurut besar kecilnya jumlah keluarga yang ditanggung masing-masing isteri, kecuali jika ada perjanjian perkawinan.
 
@@ -840,23 +858,23 @@ c. biaya pendidikan bagi anak. <!-- hlm 43 · pdf 55 -->
 
 ##### Pasal 83
 
-<!-- pasal 83 · hlm 45 · pdf 57 · belum dicocokkan -->
+<!-- pasal 83 · hlm 45 · pdf 57 · dicocokkan -->
 
-(1) Kewajibn utama bagi seoarang ialah berbakti lahir dan batin kepada suami di dalam yang dibenarkan oleh hukum islam. isteri
+(1) Kewajibn utama bagi seoarang isteri ialah berbakti lahir dan batin kepada suami di dalam yang dibenarkan oleh hukum islam.
 
 (2) Isteri menyelenggarakan dan mengatur keperluan rumah tangga sehari-hari dengan sebaik-baiknya.
 
 ##### Pasal 84
 
-<!-- pasal 84 · hlm 45 · pdf 57 · belum dicocokkan -->
+<!-- pasal 84 · hlm 45 · pdf 57 · dicocokkan -->
 
 (1) Isteri dapat dianggap nusyuz jika ia tidak mau melaksanakan kewajiban-kewajiban sebagaimana dimaksud dalam pasal 83 ayat (1) kecuali dengan alasan yang sah
 
-(2) Selama isteri dalam nusyuz, kewajiban suami terhadap isterinya terse but pada pasal 80 ayat (4) huruf a dan b tidak berlaku kecuali hal-hal untuk kepentingan anaknya.
+(2) Selama isteri dalam nusyuz, kewajiban suami terhadap isterinya tersebut pada pasal 80 ayat (4) huruf a dan b tidak berlaku kecuali hal-hal untuk kepentingan anaknya.
 
 (3) Kewajiban suami tersebut pada ayat (2) di atas berlaku kembali sesudah isteri nusyuz
 
-(4) Ketentuan ten tang ada atau tidak adanya nusyuz dari isteri harus didasarkan atas bukti yang sah. <!-- hlm 46 · pdf 58 -->
+(4) Ketentuan tentang ada atau tidak adanya nusyuz dari isteri harus didasarkan atas bukti yang sah. <!-- hlm 46 · pdf 58 -->
 
 ### BAB XIII — HARTA KEKAYAAN DALAM PERKAWINAN
 
@@ -966,9 +984,9 @@ Janda atau duda cerai masing-masing berhak seperdua dari harta bersama sepanjang
 
 ##### Pasal 98
 
-<!-- pasal 98 · hlm 50 · pdf 62 · belum dicocokkan -->
+<!-- pasal 98 · hlm 50 · pdf 62 · dicocokkan -->
 
-(1) Batas usia anak yang mampu berdiri sendiri a tau dewasa adalah 21 tahun, sepanjang anak tersebut tidak bercacat fisik maupun mental atau belum pernah melangsungkan perkawinan.
+(1) Batas usia anak yang mampu berdiri sendiri atau dewasa adalah 21 tahun, sepanjang anak tersebut tidak bercacat fisik maupun mental atau belum pernah melangsungkan perkawinan.
 
 (2) Orang tuanya mewakili anak tersebut mengenai segala perbuatan hukum di dalam dan di luar Pengadilan.
 
@@ -976,25 +994,25 @@ Janda atau duda cerai masing-masing berhak seperdua dari harta bersama sepanjang
 
 ##### Pasal 99
 
-<!-- pasal 99 · hlm 50 · pdf 62 · belum dicocokkan -->
+<!-- pasal 99 · hlm 50 · pdf 62 · dicocokkan -->
 
 Anak yang sah adalah: a. anak yang dilahirkan dalam atau akibat perkawinan yang sah; <!-- hlm 51 · pdf 63 --> b. hasil perbuatan suami isteri yang sah diluar rahim dan dilahirkan oleh isteri tersebut.
 
 ##### Pasal 100
 
-<!-- pasal 100 · hlm 51 · pdf 63 · belum dicocokkan -->
+<!-- pasal 100 · hlm 51 · pdf 63 · dicocokkan -->
 
 Anak yang lahir di luar perkawinan hanya mempunyai hubungan nasab dengan ibunya dan keluarga ibunya.
 
 ##### Pasal 101
 
-<!-- pasal 101 · hlm 51 · pdf 63 · belum dicocokkan -->
+<!-- pasal 101 · hlm 51 · pdf 63 · dicocokkan -->
 
 Seorang suami yang mengingkari sahnya anak, sedang isteri tidak menyangkalnya, dapat meneguhkan pengingkarannya dengan li'an.
 
 ##### Pasal 102
 
-<!-- pasal 102 · hlm 51 · pdf 63 · belum dicocokkan -->
+<!-- pasal 102 · hlm 51 · pdf 63 · dicocokkan -->
 
 (1) Suami yang akan mengingkari seorang anak yang lahir dari isterinya, mengajukan gugatan kepada Pengadilan Agama dalam jangka waktu 180 hari sesudah hari lahirnya atau 360 hari sesudah putusnya perkawinan atau setelah suami itu mengetahui bahwa istrinya melahirkan anak dan berada di tempat yang memungkinkan dia mengajukan perkaranya kepada Pengadilan Agama.
 
@@ -1002,27 +1020,27 @@ Seorang suami yang mengingkari sahnya anak, sedang isteri tidak menyangkalnya, d
 
 ##### Pasal 103
 
-<!-- pasal 103 · hlm 52 · pdf 64 · belum dicocokkan -->
+<!-- pasal 103 · hlm 52 · pdf 64 · dicocokkan -->
 
 (1) Asal usul seorang anak hanya dapat dibuktikan dengan akta kelahiran atau alat bukti lainnya.
 
-(2) Bila akta kelahiram alat bukti lainnya tersebut dalam ayat (1) tidak ada, maka PengadilanAgama dapat mengeluarkan penetapan tentang asal usul seorang anak setelah mengadakan pemeriksaan yang teliti berdasarkan bukti yang sah.
+(2) Bila akta kelahiram alat bukti lainnya tersebut dalam ayat (1) tidak ada, maka Pengadilan Agama dapat mengeluarkan penetapan tentang asal usul seorang anak setelah mengadakan pemeriksaan yang teliti berdasarkan bukti yang sah.
 
 (3) Atas dasar ketetapan pengadilan Agama tersebut ayat (2), maka instansi Pencatat Kelahiran yang ada dalam daerah hukum Pengadilan Agama tersebut mengeluarkan akta kelahiran bagi anak yang bersangkutan.
 
 ##### Pasal 104
 
-<!-- pasal 104 · hlm 52 · pdf 64 · belum dicocokkan -->
+<!-- pasal 104 · hlm 52 · pdf 64 · dicocokkan -->
 
-(1) Semua biaya penyusuan anak dipertanggung jawabkan kepada ayahnya. Apabila ayahya setelah meninggal dunia, maka biaya penyusuan dibebankan kepada orang yang berkewajiban memberi nafkah kepada ayahnya atau walinya.
+(1) Semua biaya penyusuan anak dipertanggungjawabkan kepada ayahnya. Apabila ayahya setelah meninggal dunia, maka biaya penyusuan dibebankan kepada orang yang berkewajiban memberi nafkah kepada ayahnya atau walinya.
 
 (2) Penyusuan dilakukan untuk paling lama dua tahun, dan dapat dilakukan penyapihan dalam masa kurang dua tahun dengan persetujuan ayah dan ibunya. <!-- hlm 53 · pdf 65 -->
 
 ##### Pasal 105
 
-<!-- pasal 105 · hlm 53 · pdf 65 · belum dicocokkan -->
+<!-- pasal 105 · hlm 53 · pdf 65 · dicocokkan -->
 
-Dalam hal tetjadinya perceraian:
+Dalam hal terjadinya perceraian:
 
 a. Pemeliharaan anak yang belum mumayyiz atau belum berumur 12 tahun adalah hak ibunya;
 
@@ -1032,53 +1050,53 @@ c. biaya pemeliharaan ditanggung oleh ayahnya.
 
 ##### Pasal 106
 
-<!-- pasal 106 · hlm 53 · pdf 65 · belum dicocokkan -->
+<!-- pasal 106 · hlm 53 · pdf 65 · dicocokkan -->
 
 (1) Orang tua berkewajiban merawat dan mengembangkan harta anaknya yang belum dewasa atau dibawah pengampunan, dan tidak diperbolehkan memindahkan atau menggadaikannya kecuali karena keperluan yang mendesak jika kepentingan dan keselamatan anak itu menghendaki atau suatu kenyataan yang tidak dapat dihindarkan lagi.
 
-(2) Orang tua bertanggungjawab atas kerugian yang ditimbulkan karena kesalahan dan kelalaian dari kewajiban tersebut pada ayat (1). <!-- hlm 54 · pdf 66 -->
+(2) Orang tua bertanggung jawab atas kerugian yang ditimbulkan karena kesalahan dan kelalaian dari kewajiban tersebut pada ayat (1). <!-- hlm 54 · pdf 66 -->
 
 ### BAB XV — PERWALIAN
 
 ##### Pasal 107
 
-<!-- pasal 107 · hlm 54 · pdf 66 · belum dicocokkan -->
+<!-- pasal 107 · hlm 54 · pdf 66 · dicocokkan -->
 
 (1) Perwalian hanya terhadap anak yang belum mencapai umur 21 tahun dan atau belum pernah melangsungkan perkawinan.
 
-(2) Perwalian meliputi perwalian terhadap diri dan harta kekayaanya. wali tidak mampu berbuat atau lalai
+(2) Perwalian meliputi perwalian terhadap diri dan harta kekayaanya.
 
-(3) Bila melaksanakan tugas perwaliannya, maka pengadilan Agama dapat menunjuk salah seorang kerabat untuk bertindak sebagai wali atas permohonan kerabat tersebut.
+(3) Bila wali tidak mampu berbuat atau lalai melaksanakan tugas perwaliannya, maka pengadilan Agama dapat menunjuk salah seorang kerabat untuk bertindak sebagai wali atas permohonan kerabat tersebut.
 
-(4) Wali sedapat-dapatnya diambil dari keluarga anak tersebut atau orang lain yang sudah dewasa, berpikiran sehat, adil,jujur dan berkelakuan baik, atau badan hukum.
+(4) Wali sedapat-dapatnya diambil dari keluarga anak tersebut atau orang lain yang sudah dewasa, berpikiran sehat, adil, jujur dan berkelakuan baik, atau badan hukum.
 
 ##### Pasal 108
 
-<!-- pasal 108 · hlm 54 · pdf 66 · belum dicocokkan -->
+<!-- pasal 108 · hlm 54 · pdf 66 · dicocokkan -->
 
-Orang tua dapat mewasiatkan kepada seseorang atau badan hukum untuk melakukan perwalian atas diri dan kekayaan anak atau anak-anaknya sesudah ta meninggal dunia. <!-- hlm 55 · pdf 67 -->
+Orang tua dapat mewasiatkan kepada seseorang atau badan hukum untuk melakukan perwalian atas diri dan kekayaan anak atau anak-anaknya sesudah ia meninggal dunia. <!-- hlm 55 · pdf 67 -->
 
 ##### Pasal 109
 
-<!-- pasal 109 · hlm 55 · pdf 67 · belum dicocokkan -->
+<!-- pasal 109 · hlm 55 · pdf 67 · dicocokkan -->
 
-Pengadilan Agama dapat mencabut hak petwalian seseorang atau badan hukum dan memindahkan nya kepada pihak lain atas pennohonan kerahatnya bila wali tersebut pemahuk, penjudi, pemhoros, gila dan atau melalaikan atau menyalah gunakan hak dan wewenangnya sebagai wali demi kepentingan orang yang berada di hawah petwaliannya.
+Pengadilan Agama dapat mencabut hak perwalian seseorang atau badan hukum dan memindahkannya kepada pihak lain atas permohonan kerabatnya bila wali tersebut pemabuk, penjudi, pemboros, gila dan atau melalaikan atau menyalah gunakan hak dan wewenangnya sebagai wali demi kepentingan orang yang berada di bawah perwaliannya.
 
 ##### Pasal 110
 
-<!-- pasal 110 · hlm 55 · pdf 67 · belum dicocokkan -->
+<!-- pasal 110 · hlm 55 · pdf 67 · dicocokkan -->
 
-(1) Wali berkewajiban mengurus diri dan harta orang yang berada di hawah petwaliannya dengan sebaik-haiknya dan berkewajiban memberikan himhingan agama, pendidikan dan keterampilan lainnya untuk masa depan orang yang berada di hawah petwaliannya.
+(1) Wali berkewajiban mengurus diri dan harta orang yang berada di bawah perwaliannya dengan sebaik-baiknya dan berkewajiban memberikan bimbingan agama, pendidikan dan keterampilan lainnya untuk masa depan orang yang berada di bawah perwaliannya.
 
-(2) Wali dilarang mengikatkan, memhehani dan mengasingkan harta orang yang berada dibawah petwaliannya, kecuali bila perbuatan tersebut menguntungkan bagi orang yang berada di hawah petwaliannya yang tidak dapat di hindarkan.
+(2) Wali dilarang mengikatkan, membebani dan mengasingkan harta orang yang berada dibawah perwaliannya, kecuali bila perbuatan tersebut menguntungkan bagi orang yang berada di bawah perwaliannya yang tidak dapat dihindarkan.
 
-(3) Wali bertanggung jawab terhadap harta orang yang berada di hawah petwaliannya, dan <!-- hlm 56 · pdf 68 --> mengganti kerugian yang timbul sebagai akibat kesalahan atau kelalaiannya.
+(3) Wali bertanggung jawab terhadap harta orang yang berada di bawah perwaliannya, dan <!-- hlm 56 · pdf 68 --> mengganti kerugian yang timbul sebagai akibat kesalahan atau kelalaiannya.
 
-(4) Dengan tidak mengurangi kententuan yang diatur dalam pasal 51 ayat (4) Undang-undang No.I tahun 1974, pertanggungjawaban wali tersebut ayat (3) harus dibuktikan dengan pembukuan yang ditutup tiap satu tahun satu kali.
+(4) Dengan tidak mengurangi kententuan yang diatur dalam pasal 51 ayat (4) Undang-undang No.1 tahun 1974, pertanggungjawaban wali tersebut ayat (3) harus dibuktikan dengan pembukuan yang ditutup tiap satu tahun satu kali.
 
 ##### Pasal 111
 
-<!-- pasal 111 · hlm 56 · pdf 68 · belum dicocokkan -->
+<!-- pasal 111 · hlm 56 · pdf 68 · dicocokkan -->
 
 (1) Wali berkewajiban menyerahkan seluruh harta orang yang berada di bawah perwaliannya, bila yang bersangkutan telah mencapai umur 21 tahun atau telah menikah.
 
@@ -1086,9 +1104,9 @@ Pengadilan Agama dapat mencabut hak petwalian seseorang atau badan hukum dan mem
 
 ##### Pasal 112
 
-<!-- pasal 112 · hlm 56 · pdf 68 · belum dicocokkan -->
+<!-- pasal 112 · hlm 56 · pdf 68 · dicocokkan -->
 
-Wali dapat mempergunakan harta orang yang berada di bawah perwaliannya, sepanjang diperlukan untuk kepentingannya menurut kepatutan atau bil rna· ruf kalau wali fakir. <!-- hlm 57 · pdf 69 -->
+Wali dapat mempergunakan harta orang yang berada di bawah perwaliannya, sepanjang diperlukan untuk kepentingannya menurut kepatutan atau bil ma'ruf kalau wali fakir. <!-- hlm 57 · pdf 69 -->
 
 ### BAB XVI — PUTUSNYA PERKAWINAN
 
@@ -1096,7 +1114,7 @@ Wali dapat mempergunakan harta orang yang berada di bawah perwaliannya, sepanjan
 
 ##### Pasal 113
 
-<!-- pasal 113 · hlm 57 · pdf 69 · belum dicocokkan -->
+<!-- pasal 113 · hlm 57 · pdf 69 · dicocokkan -->
 
 Perkawinan dapat putus karena:
 
@@ -1106,19 +1124,19 @@ b. Perceraian, dan c. atas putusan Pengadilan.
 
 ##### Pasal 114
 
-<!-- pasal 114 · hlm 57 · pdf 69 · belum dicocokkan -->
+<!-- pasal 114 · hlm 57 · pdf 69 · dicocokkan -->
 
 Putusnya perkawinan yang disebabkan karena perceraian dapat terjadi karena talak atau berdasarkan gugatan perceraian.
 
 ##### Pasal 115
 
-<!-- pasal 115 · hlm 57 · pdf 69 · belum dicocokkan -->
+<!-- pasal 115 · hlm 57 · pdf 69 · dicocokkan -->
 
 Perceraian hanya dapat dilakukan di depan sidang Pengadilan Agama setelah Pengadilan Agama tersebut berusaha dan tidak berhasil mendamaikan kedua belah pihak.
 
 ##### Pasal 116
 
-<!-- pasal 116 · hlm 57 · pdf 69 · belum dicocokkan -->
+<!-- pasal 116 · hlm 57 · pdf 69 · dicocokkan -->
 
 Perceraian dapat terjadi karena alasan atau alasan-alasan: <!-- hlm 58 · pdf 70 -->
 
@@ -1140,23 +1158,23 @@ k. peralihan agama atau murtad yang menyebabkan terjadinya ketidak rukunan dalam
 
 ##### Pasal 117
 
-<!-- pasal 117 · hlm 59 · pdf 71 · belum dicocokkan -->
+<!-- pasal 117 · hlm 59 · pdf 71 · dicocokkan -->
 
-Talak adalah ikrar suami di hadapan sidang Pengadilan Agama yang menjadi salah satu sebab putusnya perkawinan, dengan cara sebagaimana dimaksud dalam pasal129, 130, dan 131.
+Talak adalah ikrar suami di hadapan sidang Pengadilan Agama yang menjadi salah satu sebab putusnya perkawinan, dengan cara sebagaimana dimaksud dalam pasal 129, 130, dan 131.
 
 ##### Pasal 118
 
-<!-- pasal 118 · hlm 59 · pdf 71 · belum dicocokkan -->
+<!-- pasal 118 · hlm 59 · pdf 71 · dicocokkan -->
 
-Talak Raj' I adalah talak kesatu atau kedua, dimana suami berhak rujuk selama isteri dalam masa iddah.
+Talak Raj'i adalah talak kesatu atau kedua, dimana suami berhak rujuk selama isteri dalam masa iddah.
 
 ##### Pasal 119
 
-<!-- pasal 119 · hlm 59 · pdf 71 · belum dicocokkan -->
+<!-- pasal 119 · hlm 59 · pdf 71 · dicocokkan -->
 
 1. Talak Ba'in Shughraa adalah talak yang tidak boleh dirujuk tapi boleh akad nikah baru dengan bekas suaminya meskipun dalam iddah.
 
-2. Talak Ba' in Shughraa sebagaimana terseb ut pada ayat (1) adalah:
+2. Talak Ba' in Shughraa sebagaimana tersebut pada ayat (1) adalah:
 
 a. talak yang terjadi qabla al dukhul;
 
@@ -1166,25 +1184,25 @@ c. talak yang dijatuhkan oleh Pengadilan Agama.
 
 ##### Pasal 120
 
-<!-- pasal 120 · hlm 59 · pdf 71 · belum dicocokkan -->
+<!-- pasal 120 · hlm 59 · pdf 71 · dicocokkan -->
 
-Talak Ba'in Kubraa adalah talak yang terjadi untuk ketiga kalinya. Talak jenis ini tidak dapat dirujuk <!-- hlm 60 · pdf 72 --> dan tidak dapat dinikahkan kembali, kecuali apabila pernikahan itu dilakukan setelah bekas isteri, menikah dengan orang lain dan kemudian terjadi perceraian ba · da al dukhul dan hadis masa iddahnya.
+Talak Ba'in Kubraa adalah talak yang terjadi untuk ketiga kalinya. Talak jenis ini tidak dapat dirujuk <!-- hlm 60 · pdf 72 --> dan tidak dapat dinikahkan kembali, kecuali apabila pernikahan itu dilakukan setelah bekas isteri, menikah dengan orang lain dan kemudian terjadi perceraian ba'da al dukhul dan hadis masa iddahnya.
 
 ##### Pasal 121
 
-<!-- pasal 121 · hlm 60 · pdf 72 · belum dicocokkan -->
+<!-- pasal 121 · hlm 60 · pdf 72 · dicocokkan -->
 
 Talak sunny adalah talak yang dibolehkan yaitu talak yang dijatuhkan terhadap isteri yang sedang suci dan tidak dicampuri dalam waktu suci tersebut.
 
 ##### Pasal 122
 
-<!-- pasal 122 · hlm 60 · pdf 72 · belum dicocokkan -->
+<!-- pasal 122 · hlm 60 · pdf 72 · dicocokkan -->
 
 Talak bid'i adalah talak yang dilarang, yaitu talak yang dijatuhkan pada waktu isteri dalam keadaan haid atau isteri dalam keadaan suci tapi sudah dicampuri pada waktu suci tersebut.
 
 ##### Pasal 123
 
-<!-- pasal 123 · hlm 60 · pdf 72 · belum dicocokkan -->
+<!-- pasal 123 · hlm 60 · pdf 72 · dicocokkan -->
 
 Perceraian itu terjadi terhitung pada saat perceraian itu dinyatakan di depan sidang pengadilan.
 
@@ -1192,33 +1210,33 @@ Perceraian itu terjadi terhitung pada saat perceraian itu dinyatakan di depan si
 
 ##### Pasal 125
 
-<!-- pasal 125 · hlm 60 · pdf 72 · belum dicocokkan -->
+<!-- pasal 125 · hlm 60 · pdf 72 · dicocokkan -->
 
-Li ·an menyebabkan putusnya perkawinan an tara suami isteri untuk selama-lamanya. <!-- hlm 61 · pdf 73 -->
+Li'an menyebabkan putusnya perkawinan antara suami isteri untuk selama-lamanya. <!-- hlm 61 · pdf 73 -->
 
 ##### Pasal 126
 
-<!-- pasal 126 · hlm 61 · pdf 73 · belum dicocokkan -->
+<!-- pasal 126 · hlm 61 · pdf 73 · dicocokkan -->
 
-Li'an teijadi karena suami menuduh isteri berbuat zinah dan atau mengingkari anak dalam kandungan atau yang sudah lahir dari isterinya, sedangkan isteri menolak tuduhan dan atau pengingkaran tersebut.
+Li'an terjadi karena suami menuduh isteri berbuat zinah dan atau mengingkari anak dalam kandungan atau yang sudah lahir dari isterinya, sedangkan isteri menolak tuduhan dan atau pengingkaran tersebut.
 
 ##### Pasal 127
 
-<!-- pasal 127 · hlm 61 · pdf 73 · belum dicocokkan -->
+<!-- pasal 127 · hlm 61 · pdf 73 · dicocokkan -->
 
-Tata cara li' an diatur sebagai berikut:
+Tata cara li'an diatur sebagai berikut:
 
-a. Suami bersumpah empat kali dengan kata tuduhan zina dan atau pengingkaran anak tersebut diikuti sumpah kelima dengan kata-kata ..l aknat Allah atas dirinya apabila tuduhan dan atau pengingkaran tersebut dusta"
+a. Suami bersumpah empat kali dengan kata tuduhan zina dan atau pengingkaran anak tersebut diikuti sumpah kelima dengan kata-kata "laknat Allah atas dirinya apabila tuduhan dan atau pengingkaran tersebut dusta"
 
 b. Isteri menolak tuduhan dan atau pengingkaran tersebut dengan sumpah empat kali dengan kata ''tuduhan dan atau pengingkaran tersebut tidak benar", diikuti sumpah kelima dengan kata-kata murka Allah atas dirinya: tuduhan dan atau pengingkaran tersebut benar";
 
 c. tata cara pada huruf a dan huruf b tersebut merupakan satu kesatuan yang tak terpisahkan;
 
-d. apabila tata cara huruf a tidak diikuti dengan tata cara hurufb, maka dianggap tidak teijadi li'an. <!-- hlm 62 · pdf 74 -->
+d. apabila tata cara huruf a tidak diikuti dengan tata cara huruf b, maka dianggap tidak terjadi li'an. <!-- hlm 62 · pdf 74 -->
 
 ##### Pasal 128
 
-<!-- pasal 128 · hlm 62 · pdf 74 · belum dicocokkan -->
+<!-- pasal 128 · hlm 62 · pdf 74 · dicocokkan -->
 
 Li'an hanya sah apabila dilakukann di hadapan sidang Pengadilan Agama.
 
@@ -1226,25 +1244,25 @@ Li'an hanya sah apabila dilakukann di hadapan sidang Pengadilan Agama.
 
 ##### Pasal 129
 
-<!-- pasal 129 · hlm 62 · pdf 74 · belum dicocokkan -->
+<!-- pasal 129 · hlm 62 · pdf 74 · dicocokkan -->
 
 Seorang suami yang akan menjatuhkan talak kepada isterinya mengajukan permohonan baik lisan maupun tertulis kepada Pengadilan Agama yang mewilayahi tempat tinggal isteri disertai dengan alasan serta meminta agar diadakan sidang untuk keperluan itu.
 
 ##### Pasal 130
 
-<!-- pasal 130 · hlm 62 · pdf 74 · belum dicocokkan -->
+<!-- pasal 130 · hlm 62 · pdf 74 · dicocokkan -->
 
 Pengadilan Agama dapat mengabulkan atau menolak permohonan tersebut, dan terhadap keputusan tersebut dapat diminta upaya hukum banding dan kasasi
 
 ##### Pasal 131
 
-<!-- pasal 131 · hlm 62 · pdf 74 · belum dicocokkan -->
+<!-- pasal 131 · hlm 62 · pdf 74 · dicocokkan -->
 
-1. Pengadilan agama yang bersangkutan mem pelajari permohonan dimaksud pasal 129 dan dalam waktu selambat-lambatnya tiga puluh hari memanggil pemohon dan isterinya untuk meminta penjelasan tentang segala sesuatu yang <!-- hlm 63 · pdf 75 --> berhubungan dengan talak. maksud menjatuhkan
+1. Pengadilan agama yang bersangkutan mempelajari permohonan dimaksud pasal 129 dan dalam waktu selambat-lambatnya tiga puluh hari memanggil pemohon dan isterinya untuk meminta penjelasan tentang segala sesuatu yang <!-- hlm 63 · pdf 75 --> berhubungan dengan maksud menjatuhkan talak.
 
 2. Setelah Pengadilan Agama tidak berhasil menasehati kedua belah pihak dan ternyata cukup alasan untuk menjatuhkan talak serta yang bersangkutan tidak mungkin lagi hidup rukun dalam rumah tangga, pengadilan Agama menjatuhkan keputusannya tentang izin bagi suami untuk mengikrarkan talak.
 
-3. Setelah keputusannya tetap suami mempunyai kekuatan hukum talaknya didepan sidang Pengadilan Agama, dihadiri oleh isteri atau kuasanya. mengikrarkan
+3. Setelah keputusannya mempunyai kekuatan hukum tetap suami mengikrarkan talaknya didepan sidang Pengadilan Agama, dihadiri oleh isteri atau kuasanya.
 
 4. Bila suami tidak mengucapkan ikrar talak dalam tempo 6 (enam) bulah terhitung sejak putusan Pengadilan Agama tentang izin ikrar talak baginya mempunyai kekuatan hukum yang tetap maka hak suami untuk mengikrarkan talak gugur dan ikatan perkawinan yang tetap utuh.
 
@@ -1252,7 +1270,7 @@ Pengadilan Agama dapat mengabulkan atau menolak permohonan tersebut, dan terhada
 
 ##### Pasal 132
 
-<!-- pasal 132 · hlm - · pdf 76 · belum dicocokkan -->
+<!-- pasal 132 · hlm - · pdf 76 · dicocokkan -->
 
 1. Gugatan perceraian diajukan oleh isteri atau kuasanya pada Pengadilan Agama. Yang daerah hukumnya mewilayahi tempat tinggal penggugat kecuali isteri meninggalkan tempat kediaman bersama tanpa izin suami.
 
@@ -1260,27 +1278,27 @@ Pengadilan Agama dapat mengabulkan atau menolak permohonan tersebut, dan terhada
 
 ##### Pasal 133
 
-<!-- pasal 133 · hlm - · pdf 76 · belum dicocokkan -->
+<!-- pasal 133 · hlm - · pdf 76 · dicocokkan -->
 
-1. Gugatan perceraian karena alasan tersebut dalam pasal 116 huruf b, dapat diajukan setelah 1ampau 2 (dua) tahun terhitung sejak tergugat meninggalkan gugatan meninggalkan rumah. <!-- hlm 65 · pdf 77 -->
+1. Gugatan perceraian karena alasan tersebut dalam pasal 116 huruf b, dapat diajukan setelah lampau 2 (dua) tahun terhitung sejak tergugat meninggalkan gugatan meninggalkan rumah. <!-- hlm 65 · pdf 77 -->
 
 2. Gugatan dapat diterima apabila tergugat menyatakan atau menunjukkan sikap tidak mau lagi kembali ke rumah kediaman besama.
 
 ##### Pasal 134
 
-<!-- pasal 134 · hlm 65 · pdf 77 · belum dicocokkan -->
+<!-- pasal 134 · hlm 65 · pdf 77 · dicocokkan -->
 
 Gugatan perceraian karena alasan tersebut dalam pasal 116 huruf f, dapat diterima apabila telah cukup jelas bagi Pengadilan Agama mengenai sebab-sebab perselisihan dan pertengkaran itu dan setelah mendengar pihak keluarga serta orang-orang yang dekat dengan suami isteri tersebut.
 
 ##### Pasal 135
 
-<!-- pasal 135 · hlm 65 · pdf 77 · belum dicocokkan -->
+<!-- pasal 135 · hlm 65 · pdf 77 · dicocokkan -->
 
-Gugatan perceraian karena alasan suami mendapat hukuman penjara 5 (lima) tahun atau hukuman yang lebih berat sebagai dimaksud dalam pasal 116 huruf c, maka untuk mendapatkan putusan perceraian sebagai salinan bukti penggugat cukup menyampaikan Pengadilan yang memutuskan perkara putusan disertai keterangan yang menyatakan bahwa putusan itu telah mempunyai kekuatan hukum yang tetap.
+Gugatan perceraian karena alasan suami mendapat hukuman penjara 5 (lima) tahun atau hukuman yang lebih berat sebagai dimaksud dalam pasal 116 huruf c, maka untuk mendapatkan putusan perceraian sebagai bukti penggugat cukup menyampaikan salinan putusan Pengadilan yang memutuskan perkara disertai keterangan yang menyatakan bahwa putusan itu telah mempunyai kekuatan hukum yang tetap.
 
 ##### Pasal 136
 
-<!-- pasal 136 · hlm 65 · pdf 77 · belum dicocokkan -->
+<!-- pasal 136 · hlm 65 · pdf 77 · dicocokkan -->
 
 1. Selama berlangsungnya gugatan perceraian atas permohonan penggugat atau tergugat <!-- hlm 66 · pdf 78 --> berdasarkan pertimbangan bahaya yang mungkin ditimbulkan, Penghadilan Agama dapat mengizinkan suami isteri tersebut untuk tidak tinggal dalam satu rumah.
 
@@ -1292,17 +1310,17 @@ b. menentukan hal-hal yang perlu untuk menjamin terpeliharanya barang-barang yan
 
 ##### Pasal 137
 
-<!-- pasal 137 · hlm 66 · pdf 78 · belum dicocokkan -->
+<!-- pasal 137 · hlm 66 · pdf 78 · dicocokkan -->
 
 Gugatan perceraian gugur apabila suami atau isteri meninggal sebelum adanya putusan pengadilan Agama mengenai gugatan perceraian itu.
 
 ##### Pasal 138
 
-<!-- pasal 138 · hlm 66 · pdf 78 · belum dicocokkan -->
+<!-- pasal 138 · hlm 66 · pdf 78 · dicocokkan -->
 
-1. Apabila tempat kediaman tergugat tidak jelas atau tergugat tidak mempunyai tempat kediaman <!-- hlm 67 · pdf 79 --> yang tetap, panggilan dilakukan dengan cara menempelkan gugatan pada papan pengumuman di Pengadilan Agama dan mengumumkannya melalui satu atau beberapa surat kabar atau mass media lain yang ditetapkan oleh Pengadilan A gama .
+1. Apabila tempat kediaman tergugat tidak jelas atau tergugat tidak mempunyai tempat kediaman <!-- hlm 67 · pdf 79 --> yang tetap, panggilan dilakukan dengan cara menempelkan gugatan pada papan pengumuman di Pengadilan Agama dan mengumumkannya melalui satu atau beberapa surat kabar atau mass media lain yang ditetapkan oleh Pengadilan Agama.
 
-2. Pengumuman melalui surat kabar atau surat-surat kabar atau mass media tersebut ayat (1) dilakukan sebanyak 2 ( dua) kali dengan tenggang waktu satu bulan antara pengumuman pertama dan kedua
+2. Pengumuman melalui surat kabar atau surat-surat kabar atau mass media tersebut ayat (1) dilakukan sebanyak 2 (dua) kali dengan tenggang waktu satu bulan antara pengumuman pertama dan kedua
 
 3. Tenggang waktu antara penggilan terakhir sebagaimana dimaksud pada ayat (2) dengan persidangan ditetapkan sekurang-kurangnya 3 (tiga) bulan.
 
@@ -1312,13 +1330,13 @@ Gugatan perceraian gugur apabila suami atau isteri meninggal sebelum adanya putu
 
 ##### Pasal 140
 
-<!-- pasal 140 · hlm 67 · pdf 79 · belum dicocokkan -->
+<!-- pasal 140 · hlm 67 · pdf 79 · dicocokkan -->
 
 Apabila tergugat berada dalam keadaan sebagaimana dimaksud dalam pasal 132 ayat (2), panggilan <!-- hlm - · pdf 80 --> disampaikan melalui perwakilan Republik Indonesia setempat
 
 ##### Pasal 141
 
-<!-- pasal 141 · hlm - · pdf 80 · belum dicocokkan -->
+<!-- pasal 141 · hlm - · pdf 80 · dicocokkan -->
 
 1. Pemeriksaan gugatan perceraian dilakukan oleh hakim selambat-lambatnya 30 (tiga puluh) hari setelah diterimanya berkas atau surat gugatan perceraian
 
@@ -1328,7 +1346,7 @@ Apabila tergugat berada dalam keadaan sebagaimana dimaksud dalam pasal 132 ayat 
 
 ##### Pasal 142
 
-<!-- pasal 142 · hlm - · pdf 80 · belum dicocokkan -->
+<!-- pasal 142 · hlm - · pdf 80 · dicocokkan -->
 
 1. Pada sidang pemeriksaan gugatan perceraian, suami isteri datang sendiri atau mewakilkan kepada kuasanya. <!-- hlm 69 · pdf 81 -->
 
@@ -1336,27 +1354,27 @@ Apabila tergugat berada dalam keadaan sebagaimana dimaksud dalam pasal 132 ayat 
 
 ##### Pasal 143
 
-<!-- pasal 143 · hlm 69 · pdf 81 · belum dicocokkan -->
+<!-- pasal 143 · hlm 69 · pdf 81 · dicocokkan -->
 
 1. Dalam pemeriksaan gugatan perceraian Hakim berusaha mendamaikan kedua belah pihak.
 
-2. Selama perkara belum diputuskan usaha men damaikan dapat dilakukan pada setiap sidang pemeriksaan.
+2. Selama perkara belum diputuskan usaha mendamaikan dapat dilakukan pada setiap sidang pemeriksaan.
 
 ##### Pasal 144
 
-<!-- pasal 144 · hlm 69 · pdf 81 · belum dicocokkan -->
+<!-- pasal 144 · hlm 69 · pdf 81 · dicocokkan -->
 
 Apabila terjadi pedamaian, maka tidak dapat diajukan gugatan perceraian baru berdasarkan alasan atau alasan-alasan yang ada sebelum perdamaian dan telah diketahui oleh penggugat pada waktu dicapainya perdamaian.
 
 ##### Pasal 145
 
-<!-- pasal 145 · hlm 69 · pdf 81 · belum dicocokkan -->
+<!-- pasal 145 · hlm 69 · pdf 81 · dicocokkan -->
 
 Apabila tidak dicapai perdamaian, pemeriksaan gugatan perceraian dilakukan dalam sidang tertutup.
 
 ##### Pasal 146
 
-<!-- pasal 146 · hlm 69 · pdf 81 · belum dicocokkan -->
+<!-- pasal 146 · hlm 69 · pdf 81 · dicocokkan -->
 
 (1) Putusan mengenai gugatan perceraian dilakukan dalam sidang terbuka. <!-- hlm 70 · pdf 82 -->
 
@@ -1364,11 +1382,11 @@ Apabila tidak dicapai perdamaian, pemeriksaan gugatan perceraian dilakukan dalam
 
 ##### Pasal 147
 
-<!-- pasal 147 · hlm 70 · pdf 82 · belum dicocokkan -->
+<!-- pasal 147 · hlm 70 · pdf 82 · dicocokkan -->
 
 (1) Setelah perkara perceraian itu diputuskan, maka panitera Pengadilan Agama menyampaikan salinan surat putusan tersebut kepada suami isteri atau kuasanya dengan menarik Kutipan Akta Nikah dari masing-masing yang bersangkutan.
 
-(2) Panitera Pengadilan Agama berkewajiban mengirimkan satu helai salinan putusan Pengadilan Agama yang telah mempunyai kekuatan hukum yang tetap tanpa bermaterai kepada Pegawai Pencatat Nikah yang me wilayahi tempat tinggal isteri untuk diadakan pencatatan.
+(2) Panitera Pengadilan Agama berkewajiban mengirimkan satu helai salinan putusan Pengadilan Agama yang telah mempunyai kekuatan hukum yang tetap tanpa bermaterai kepada Pegawai Pencatat Nikah yang mewilayahi tempat tinggal isteri untuk diadakan pencatatan.
 
 (3) Panitera Pengadilan Agama mengirimkan surat Keterangan kepada masing-masing suami isteri atau kuasanya bahwa putusan tersebut ayat (1) telah mempunyai kekuatan hukum yang tetap dan merupakan bukti perceraian bagi suami dan bekas istri. <!-- hlm 71 · pdf 83 -->
 
@@ -1380,7 +1398,7 @@ Apabila tidak dicapai perdamaian, pemeriksaan gugatan perceraian dilakukan dalam
 
 ##### Pasal 148
 
-<!-- pasal 148 · hlm - · pdf 84 · belum dicocokkan -->
+<!-- pasal 148 · hlm - · pdf 84 · dicocokkan -->
 
 1. Seorang isteri yang mengajukan gugatan perceraian dengan jalan khuluk, menyanpaikan permohonannya kepada Pengadilan Agama yang mewilayahi tempat tinggalnya disertai alasan atau alasan-alasannya.
 
@@ -1400,11 +1418,11 @@ Apabila tidak dicapai perdamaian, pemeriksaan gugatan perceraian dilakukan dalam
 
 ##### Pasal 149
 
-<!-- pasal 149 · hlm 73 · pdf 85 · belum dicocokkan -->
+<!-- pasal 149 · hlm 73 · pdf 85 · dicocokkan -->
 
 Bilamana perkawinan putus karena talak, maka bekas suami wajib:
 
-a. memberikan mut' ah yang Ia yak kepada bekas isterinya, baik berupa uang atau benda, kecuali bekas isteri tersebut qobla al dukhul;
+a. memberikan mut'ah yang layak kepada bekas isterinya, baik berupa uang atau benda, kecuali bekas isteri tersebut qobla al dukhul;
 
 b. memberi nafkah, maskan dan kiswah kepada bekas isteri selama dalam iddah, kecuali bekas isteri telah di jatuhi talak bal'in atau nusyur dan dalam keadaan tidak hamil;
 
@@ -1414,19 +1432,19 @@ d. memberikan biaya hadhanan untuk anak-anaknya yang belum mencapai umur 21 tahu
 
 ##### Pasal 150
 
-<!-- pasal 150 · hlm 74 · pdf 86 · belum dicocokkan -->
+<!-- pasal 150 · hlm 74 · pdf 86 · dicocokkan -->
 
 Bekas suami berhak melakukan ruju' kepada bekas istrinya yang masih dalam iddah.
 
 ##### Pasal 151
 
-<!-- pasal 151 · hlm 74 · pdf 86 · belum dicocokkan -->
+<!-- pasal 151 · hlm 74 · pdf 86 · dicocokkan -->
 
 Bekas isteri selama dalam iddah, wajib menjaga dirinya, tidak menerima pinangan dan tidak menikah dengan pria lain.
 
 ##### Pasal 152
 
-<!-- pasal 152 · hlm 74 · pdf 86 · belum dicocokkan -->
+<!-- pasal 152 · hlm 74 · pdf 86 · dicocokkan -->
 
 Bekas isteri berhak mendapatkan nafkah iddah dari bekas suaminya kecuali ia nusyuz.
 
@@ -1434,15 +1452,15 @@ Bekas isteri berhak mendapatkan nafkah iddah dari bekas suaminya kecuali ia nusy
 
 ##### Pasal 153
 
-<!-- pasal 153 · hlm 74 · pdf 86 · belum dicocokkan -->
+<!-- pasal 153 · hlm 74 · pdf 86 · dicocokkan -->
 
 1. Bagi seorang isteri yang putus perkawinannya berlaku waktu tunggu atau iddah, kecuali qobla al dukhul dan perkawinannya putus bukan karena kematian suami.
 
 2. Waktu tunggu bagi seorang janda ditentukan sebagai berikut:
 
-a. Apabila perkawinan putus karena ke matian, walaupun qobla al dukhul, waktu <!-- hlm 75 · pdf 87 --> tunggu ditetapkan 130 (seratus tiga puluh) hari:
+a. Apabila perkawinan putus karena kematian, walaupun qobla al dukhul, waktu <!-- hlm 75 · pdf 87 --> tunggu ditetapkan 130 (seratus tiga puluh) hari:
 
-b. Apabila putus perkawinan karena perceraian, waktu tunggu bagi yang masih haid ditetapkan 3 (tiga) kali suci dengan sekurang-kurangnya 90 (sembilan puluh) hari, dan bagi yang tidak haid ditetapkan 90 (sembilan puluh) hari;
+b. Apabila perkawinan putus karena perceraian, waktu tunggu bagi yang masih haid ditetapkan 3 (tiga) kali suci dengan sekurang-kurangnya 90 (sembilan puluh) hari, dan bagi yang tidak haid ditetapkan 90 (sembilan puluh) hari;
 
 c. Apabila perkawinan putus karena perceraian sedang janda tersebut dalam keadaan hamil, waktu tunggu ditetapkan sampai melahirkan;
 
@@ -1458,21 +1476,21 @@ d. Apabila perkawinan putus karena kematian, sedang janda tersebut dalam keadaan
 
 ##### Pasal 154
 
-<!-- pasal 154 · hlm 76 · pdf 88 · belum dicocokkan -->
+<!-- pasal 154 · hlm 76 · pdf 88 · dicocokkan -->
 
-Apabila isteri bertalak raj' i kemudian dalam waktu iddah sebagaimana yang dimaksud dalam ayat (2) huruf b, ayat (5) dan ayat (6) pasal 153, di tinggal mati oleh suaminya, maka iddahnya berubah menjadi empat bulan sepuluh hari terhitung saat matinya bekas suaminya.
+Apabila isteri bertalak raj'i kemudian dalam waktu iddah sebagaimana yang dimaksud dalam ayat (2) huruf b, ayat (5) dan ayat (6) pasal 153, di tinggal mati oleh suaminya, maka iddahnya berubah menjadi empat bulan sepuluh hari terhitung saat matinya bekas suaminya.
 
 ##### Pasal 155
 
-<!-- pasal 155 · hlm 76 · pdf 88 · belum dicocokkan -->
+<!-- pasal 155 · hlm 76 · pdf 88 · dicocokkan -->
 
-Waktu iddah bagi janda yang putus perkawinannya karena khuluk, tasakh dan li' an berlaku iddah talak. <!-- hlm 77 · pdf 89 -->
+Waktu iddah bagi janda yang putus perkawinannya karena khuluk, fasakh dan li'an berlaku iddah talak. <!-- hlm 77 · pdf 89 -->
 
 #### Bagian Ketiga — Akibat Perceraian
 
 ##### Pasal 156
 
-<!-- pasal 156 · hlm 77 · pdf 89 · belum dicocokkan -->
+<!-- pasal 156 · hlm 77 · pdf 89 · dicocokkan -->
 
 Akibat putusnya perkawinan karena perceraian ialah:
 
@@ -1492,53 +1510,53 @@ b. anak yang sudah mumayyiz berhak memilih untuk mendapatkan hadhanah dari ayah 
 
 c. apabila pemegang hadhanah ternyata tidak dapat menjamin keselamatan jasmani dan rohani anak, meskipun biaya nafkah dan hadhanah telah dicukupi, maka atas permintaan kerabat yang bersangkutan Pengadilan Agama dapat memindahkan hak hadhanah kepada kerabat lain yang mempunyai hak hadhanah pula;
 
-d. semua biaya hadhanah dan natkah anak menjadi tanggung jawab ayah menurut kemampuannya. sekurang-kurangnya sampai anak tersebut dewasa dapat mengurus diri sendiri (21 tahun)
+d. semua biaya hadhanah dan nafkah anak menjadi tanggung jawab ayah menurut kemampuannya. sekurang-kurangnya sampai anak tersebut dewasa dapat mengurus diri sendiri (21 tahun)
 
-e. bilamana terjadi perselisihan mengenai hadhanah dan natkah anak, Pengadilan Agama memberikan putusannya berdasarkan huruf (a), (b), dan (d);
+e. bilamana terjadi perselisihan mengenai hadhanah dan nafkah anak, Pengadilan Agama memberikan putusannya berdasarkan huruf (a), (b), dan (d);
 
 f. pengadilan dapat pula dengan mengingat kemampuan ayahnya menetapkan jumlah biaya untuk pemeliharaan dan pendidikan anak-anak yang tidak turut padanya.
 
 ##### Pasal 157
 
-<!-- pasal 157 · hlm 78 · pdf 90 · belum dicocokkan -->
+<!-- pasal 157 · hlm 78 · pdf 90 · dicocokkan -->
 
-Harta bersama dibagi menurut ketentuan sebagaimana terse but dalam pasal 96, 97. <!-- hlm 79 · pdf 91 -->
+Harta bersama dibagi menurut ketentuan sebagaimana tersebut dalam pasal 96, 97. <!-- hlm 79 · pdf 91 -->
 
 #### Bagian Keempat — Mut'ah
 
 ##### Pasal 158
 
-<!-- pasal 158 · hlm 79 · pdf 91 · belum dicocokkan -->
+<!-- pasal 158 · hlm 79 · pdf 91 · dicocokkan -->
 
-Mufah wajib diberikan oleh bekas suami dengan syarat: a. belum ditetapkan mahar bagi isteri ba' da al dukhul;
+Mut'ah wajib diberikan oleh bekas suami dengan syarat: a. belum ditetapkan mahar bagi isteri ba'da al dukhul;
 
 b. perceraian itu atas kehendak suami.
 
 ##### Pasal 159
 
-<!-- pasal 159 · hlm 79 · pdf 91 · belum dicocokkan -->
+<!-- pasal 159 · hlm 79 · pdf 91 · dicocokkan -->
 
-Mufah sunnat diberikan oleh bekas suami tanpa syarat tersebut pada pasal158.
+Mut'ah sunnat diberikan oleh bekas suami tanpa syarat tersebut pada pasal 158.
 
 ##### Pasal 160
 
-<!-- pasal 160 · hlm 79 · pdf 91 · belum dicocokkan -->
+<!-- pasal 160 · hlm 79 · pdf 91 · dicocokkan -->
 
-Besarnya mut' ah disesuaikan dengan kepatutan dan kemampuan suami.
+Besarnya mut'ah disesuaikan dengan kepatutan dan kemampuan suami.
 
 #### Bagian Kelima — Akibat Khuluk
 
 ##### Pasal 161
 
-<!-- pasal 161 · hlm 79 · pdf 91 · belum dicocokkan -->
+<!-- pasal 161 · hlm 79 · pdf 91 · dicocokkan -->
 
-Perceraian dengan ja1an khuluk mengurangi jumlah talak dan tak dapat dirujuk. <!-- hlm 80 · pdf 92 -->
+Perceraian dengan jalan khuluk mengurangi jumlah talak dan tak dapat dirujuk. <!-- hlm 80 · pdf 92 -->
 
 #### Bagian Keenam — Akibat Li'an
 
 ##### Pasal 162
 
-<!-- pasal 162 · hlm 80 · pdf 92 · belum dicocokkan -->
+<!-- pasal 162 · hlm 80 · pdf 92 · dicocokkan -->
 
 Bilamana li'an terjadi maka perkawinan itu putus untuk selamanya dan anak yang dikandung dinasabkan kepada ibunya, sedang suaminya terbebas dari kewajiban memberi nafkah.
 
@@ -1548,7 +1566,7 @@ Bilamana li'an terjadi maka perkawinan itu putus untuk selamanya dan anak yang d
 
 ##### Pasal 163
 
-<!-- pasal 163 · hlm 80 · pdf 92 · belum dicocokkan -->
+<!-- pasal 163 · hlm 80 · pdf 92 · dicocokkan -->
 
 (1) Seorang suami dapat merujuk isterinya yang dalam masa iddah.
 
@@ -1560,19 +1578,19 @@ b. putusnya perkawinan berdasarkan putusan pengadilan dengan alasan atau alasan-
 
 ##### Pasal 164
 
-<!-- pasal 164 · hlm 81 · pdf 93 · belum dicocokkan -->
+<!-- pasal 164 · hlm 81 · pdf 93 · dicocokkan -->
 
-Seorang wan ita dalam iddah talak raj' i berhak mengajukan keberatan atas kehendak rujuk dari bekas suaminya dihadapan Pegawai Pencatat Nikah disaksikan dua orang saksi
+Seorang wanita dalam iddah talak raj'i berhak mengajukan keberatan atas kehendak rujuk dari bekas suaminya dihadapan Pegawai Pencatat Nikah disaksikan dua orang saksi
 
 ##### Pasal 165
 
-<!-- pasal 165 · hlm 81 · pdf 93 · belum dicocokkan -->
+<!-- pasal 165 · hlm 81 · pdf 93 · dicocokkan -->
 
 Rujuk yang dilakukan tanpa sepengetahuan bekas isteri, dapat dinyatakan tidak sah dengan putusan Pengadilan Agama.
 
 ##### Pasal 166
 
-<!-- pasal 166 · hlm 81 · pdf 93 · belum dicocokkan -->
+<!-- pasal 166 · hlm 81 · pdf 93 · dicocokkan -->
 
 Rujuk harus dapat dibuktikan dengan Kutipan Buku Pendaftaran Rujuk dan bila bukti tersebut hilang atau rusak sehingga tidak dapat dipergunakan lagi, dapat dimintakan duplikatnya kepada instansi yang mengeluarkannya semula.
 
@@ -1580,9 +1598,9 @@ Rujuk harus dapat dibuktikan dengan Kutipan Buku Pendaftaran Rujuk dan bila bukt
 
 ##### Pasal 167
 
-<!-- pasal 167 · hlm 81 · pdf 93 · belum dicocokkan -->
+<!-- pasal 167 · hlm 81 · pdf 93 · dicocokkan -->
 
-(1) Suami yang hendak merujuk isterinya datang bersama-sama isterinya ke Pegawai Pencatat Nikah atau Pembantu Pegawai Pencatat Nikah <!-- hlm 82 · pdf 94 --> yang mewilayahi tempat tinggal suami isteri dengan membawa penetapan tentang tetjadinya talak dan surat keterangan lain yang diperlukan.
+(1) Suami yang hendak merujuk isterinya datang bersama-sama isterinya ke Pegawai Pencatat Nikah atau Pembantu Pegawai Pencatat Nikah <!-- hlm 82 · pdf 94 --> yang mewilayahi tempat tinggal suami isteri dengan membawa penetapan tentang terjadinya talak dan surat keterangan lain yang diperlukan.
 
 (2) Rujuk dilakukan dengan persetujuan isteri dihadapan Pegawaii Pencatat Nikah atau Pembantu Pegawai Pencatat Nikah.
 
@@ -1594,7 +1612,7 @@ Rujuk harus dapat dibuktikan dengan Kutipan Buku Pendaftaran Rujuk dan bila bukt
 
 ##### Pasal 168
 
-<!-- pasal 168 · hlm 83 · pdf 95 · belum dicocokkan -->
+<!-- pasal 168 · hlm 83 · pdf 95 · dicocokkan -->
 
 (1) Dalam hal rujuk dilakukan di hadapan Pembantu Pegawai Pencatat Nikah daftar rujuk dibuat rangkap 2 (dua), diisi dan ditandatangani oleh masing-masing yang bersangkutan beserta saksi-saksi, sehelai dikirim kepada Pegawai Pencatat Nikah yang mewilayahinya, disertai surat-surat keterangan yang diperlukan untuk dicatat dalam buku Pendaftaran Rujuk dan yang lain disimpan.
 
@@ -1604,11 +1622,11 @@ Rujuk harus dapat dibuktikan dengan Kutipan Buku Pendaftaran Rujuk dan bila bukt
 
 ##### Pasal 169
 
-<!-- pasal 169 · hlm 83 · pdf 95 · belum dicocokkan -->
+<!-- pasal 169 · hlm 83 · pdf 95 · dicocokkan -->
 
-(1) Pegawai Pencatat Nikah membuat tentang surat rujuk dan keterangan mengirimkannya kepada Pengadilan Agama terjadinya <!-- hlm 84 · pdf 96 --> talak yang ber ditempat berlangsungnya sangkutan, dan kepada suami dan isteri masing-masing diberikan Kutipan Buku Pendaftaran Rujuk menurut contoh yang ditetapkan oleh Menteri Agama.
+(1) Pegawai Pencatat Nikah membuat surat keterangan tentang terjadinya rujuk dan mengirimkannya kepada Pengadilan Agama <!-- hlm 84 · pdf 96 --> ditempat berlangsungnya talak yang bersangkutan, dan kepada suami dan isteri masing-masing diberikan Kutipan Buku Pendaftaran Rujuk menurut contoh yang ditetapkan oleh Menteri Agama.
 
-(2) Suami isteri atau kuasanya dengan membawa tersebut Kutipan Buku Pendaftaran Rujuk tempat datang ke Pengadilan Agama di berlangsungnya talak dahulu untuk mengurus dan mengambil Kutipan Akta Nikah masing setelah diberi masing yang bersangkutan catatan oleh Pengadilan Agama dalam ruang yang telah tersedia pada Kutipan Akta Nikah tersebut, bahwa yang bersangkutan benar telah rujuk.
+(2) Suami isteri atau kuasanya dengan membawa Kutipan Buku Pendaftaran Rujuk tersebut datang ke Pengadilan Agama di tempat berlangsungnya talak dahulu untuk mengurus dan mengambil Kutipan Akta Nikah masing-masing yang bersangkutan setelah diberi catatan oleh Pengadilan Agama dalam ruang yang telah tersedia pada Kutipan Akta Nikah tersebut, bahwa yang bersangkutan benar telah rujuk.
 
 (3) Catatan yang dimaksud ayat (dua) berisi tempat terjadinya rujuk, tanggal rujuk diikrarkan, nomor dan tanggal Kutipan Buku Pendaftaran Rujuk dan tanda tangan Panitera. <!-- hlm 85 · pdf 97 -->
 
@@ -1616,7 +1634,7 @@ Rujuk harus dapat dibuktikan dengan Kutipan Buku Pendaftaran Rujuk dan bila bukt
 
 ##### Pasal 170
 
-<!-- pasal 170 · hlm 85 · pdf 97 · belum dicocokkan -->
+<!-- pasal 170 · hlm 85 · pdf 97 · dicocokkan -->
 
 (1) Isteri yang ditinggalkan mati oleh suami, wajib melaksanakan masa berkabung selama masa iddah sebagai tanda turut berduka cita dan sekaligus menjaga timbulnya fitnah.
 
@@ -2014,7 +2032,7 @@ Warga negara Indonesia yang berada di negara asing dapat membuat surat hibah di 
 
 ##### Pasal 215
 
-<!-- pasal 215 · hlm Ill · pdf 123 · belum dicocokkan -->
+<!-- pasal 215 · hlm Ill · pdf 123 · dicocokkan -->
 
 Yang dimaksud dengan:
 
@@ -2022,13 +2040,13 @@ Yang dimaksud dengan:
 
 (2) Wakif adalah orang atau orang-orang ataupun badan hukum yang mewakafkan benda miliknya.
 
-(3) Ikrar adalah pemyataan kehendak dari wakif untuk mewakafkan benda miliknya.
+(3) Ikrar adalah pernyataan kehendak dari wakif untuk mewakafkan benda miliknya.
 
-(4) Benda wakaf adalah segala benda baik benda bergerak atau tidak bergerak uang memiliki daya tahan yang tidak hanya sekali pakai dan bemilai menurut ajaran Islam.
+(4) Benda wakaf adalah segala benda baik benda bergerak atau tidak bergerak uang memiliki daya tahan yang tidak hanya sekali pakai dan bernilai menurut ajaran Islam.
 
-(5) Nadzir adalah kelompok orang atau badan hukum yang diserahi tugas pemeliharaan dan pengurusan benda waka( <!-- hlm 112 · pdf 124 -->
+(5) Nadzir adalah kelompok orang atau badan hukum yang diserahi tugas pemeliharaan dan pengurusan benda wakaf. <!-- hlm 112 · pdf 124 -->
 
-(6) Pejabat Pembuat Akta Ikrar Wakaf yang selanjutnya disingkat PPAIW adalah petugas pemerintah yang diangkat berdasarkan peraturan-peraturan yang berlaku, berkewajiban menerima ikrar dari wakif dan menyerahkannya kepada Nadzir serta melakukan pengawasan untuk kelestarian perwakafan.
+(6) Pejabat Pembuat Akta Ikrar Wakaf yang selanjutnya disingkat PPAIW adalah petugas pemerintah yang diangkat berdasarkan peraturan peraturan yang berlaku, berkewajiban menerima ikrar dari wakif dan menyerahkannya kepada Nadzir serta melakukan pengawasan untuk kelestarian perwakafan.
 
 (7) Pejabat Pembuat Ikrar Wakaf seperti dimaksud dalam ayat (6), diangkat dan diberhentikan oleh Menteri Agama.
 
@@ -2038,17 +2056,17 @@ Yang dimaksud dengan:
 
 ##### Pasal 216
 
-<!-- pasal 216 · hlm 112 · pdf 124 · belum dicocokkan -->
+<!-- pasal 216 · hlm 112 · pdf 124 · dicocokkan -->
 
-Fungsi wakaf adalah mengekalkan mantaat benda wakaf sesuai dengan tujuan wakaf <!-- hlm 113 · pdf 125 -->
+Fungsi wakaf adalah mengekalkan manfaat benda wakaf sesuai dengan tujuan wakaf <!-- hlm 113 · pdf 125 -->
 
 #### Bagian Kedua — Unsur-unsur dan Syarat-syarat Wakaf
 
 ##### Pasal 217
 
-<!-- pasal 217 · hlm 113 · pdf 125 · belum dicocokkan -->
+<!-- pasal 217 · hlm 113 · pdf 125 · dicocokkan -->
 
-(1) Badan-badan Hukum Indonesia dan orang atau orang-orang yang telah dewasa dan sehat akalnya serta yang oleh hukum tidak terhalang untuk melakukan perbuatan hukum, atas kehendak sendiri dapat mewakafkan benda miliknya dengan memperhatikan peraturan perundang undangan yang berlaku.
+(1) Badan-badan Hukum Indonesia dan orang atau orang-orang yang telah dewasa dan sehat akalnya serta yang oleh hukum tidak terhalang untuk melakukan perbuatan hukum, atas kehendak sendiri dapat mewakafkan benda miliknya dengan memperhatikan peraturan perundang-undangan yang berlaku.
 
 (2) Dalam hal badan-badan hukum, maka yang bertindak untuk dan atas namanya adalah pengurusnya yang sah menurut hukum.
 
@@ -2056,15 +2074,15 @@ Fungsi wakaf adalah mengekalkan mantaat benda wakaf sesuai dengan tujuan wakaf <
 
 ##### Pasal 218
 
-<!-- pasal 218 · hlm 113 · pdf 125 · belum dicocokkan -->
+<!-- pasal 218 · hlm 113 · pdf 125 · dicocokkan -->
 
-(1) Pihak yang mewakafkan harus mengikrarkan kehendaknya secara jelas dan tegas kepada Nadzir di hadapan Pejabat Pembuat Akta lkrar Wakaf sebagaimana dimaksud dalam Pasal 215 <!-- hlm 114 · pdf 126 --> ayat (6), yang kemudian menuangkannya dalam bentuk ikrar wakaf, dengan disaksikan oleh sekurang-kurangnya 2 orang saksi.
+(1) Pihak yang mewakafkan harus mengikrarkan kehendaknya secara jelas dan tegas kepada Nadzir di hadapan Pejabat Pembuat Akta Ikrar Wakaf sebagaimana dimaksud dalam Pasal 215 <!-- hlm 114 · pdf 126 --> ayat (6), yang kemudian menuangkannya dalam bentuk ikrar wakaf, dengan disaksikan oleh sekurang-kurangnya 2 orang saksi.
 
 (2) Dalam keadaan tertentu, penyimpangan dan ketentuan dimaksud dalam ayat (1) dapat dilaksanakan setelah terlebih dahulu mendapat persetujuan Menteri Agama.
 
 ##### Pasal 219
 
-<!-- pasal 219 · hlm 114 · pdf 126 · belum dicocokkan -->
+<!-- pasal 219 · hlm 114 · pdf 126 · dicocokkan -->
 
 (1) Nadzir sebagaimana dimaksud dalam Pasal 215 ayat (4) terdiri dari perorangan yang harus memenuhi syarat-syarat sebagai berikut:
 
@@ -2076,25 +2094,25 @@ c. sudah dewasa;
 
 d. sehat jasmani dan rohani;
 
-e. tidak berada di bawah pengampuan; f. bertempat tinggal di kecamatan tempat letak benda yang diwakatkannya.
+e. tidak berada di bawah pengampuan; f. bertempat tinggal di kecamatan tempat letak benda yang diwakafkannya.
 
 (2) Jika berbentuk badan hukum, maka Nadzir harus memenuhi persyaratan sebagai berikut:
 
 a. badan hukum Indonesia dan berkedudukan di Indonesia; <!-- hlm 115 · pdf 127 -->
 
-b. mempunyai perwakilan di kecamatan tempat tinggal benda yang diwakatkannya.
+b. mempunyai perwakilan di kecamatan tempat tinggal benda yang diwakafkannya.
 
-(3) Nadzir dimaksud dalam ayat (1) dan (2) harus didaftar pada Kantor Umsan Agama Kecamatan setempat setelah mendengar saran dari Camat Majelis Ulama Kecamatan untuk mendapatkan pengesahan.
+(3) Nadzir dimaksud dalam ayat (1) dan (2) harus didaftar pada Kantor Urusan Agama Kecamatan setempat setelah mendengar saran dari Camat Majelis Ulama Kecamatan untuk mendapatkan pengesahan.
 
-(4) Nadzir sebelum melaksanakan tugas, harus mengucapkan sumpah di hadapan Kepala Kantor Urusan Agama Kecamatan disaksikan sekurang kurangnya oleh 2 orang saksi dengan isi sumpah sebagai berikut: "Demi Allah, saya bersumpah, bahwa saya untuk diangkat menjadi Nadzir langsung atau tidak langsung dengan nama atau dalih apapun tidak memberikan atau menjanjikan ataupun memberikan sesuatu kepada siapapun juga" "Saya bersumpah, bahwa saya untuk melakukan atau tidak melakukan sesuatu dalam jabatan ini tiada sekali-kali akan menerima langsung atau tidak langsung dari siapapun juga suatu janji atau pemberian". "Saya bersumpah, bahwa saya senantiasa akan menjunjung tinggi tugas dan tanggung jawab <!-- hlm 116 · pdf 128 --> yang dibebankan kepada saya selaku Nadzir dalam pengurusan harta wakaf sesuai dengan maksud dan tujuannya".
+(4) Nadzir sebelum melaksanakan tugas, harus mengucapkan sumpah di hadapan Kepala Kantor Urusan Agama Kecamatan disaksikan sekurang-kurangnya oleh 2 orang saksi dengan isi sumpah sebagai berikut: "Demi Allah, saya bersumpah, bahwa saya untuk diangkat menjadi Nadzir langsung atau tidak langsung dengan nama atau dalih apapun tidak memberikan atau menjanjikan ataupun memberikan sesuatu kepada siapapun juga" "Saya bersumpah, bahwa saya untuk melakukan atau tidak melakukan sesuatu dalam jabatan ini tiada sekali-kali akan menerima langsung atau tidak langsung dari siapapun juga suatu janji atau pemberian". "Saya bersumpah, bahwa saya senantiasa akan menjunjung tinggi tugas dan tanggung jawab <!-- hlm 116 · pdf 128 --> yang dibebankan kepada saya selaku Nadzir dalam pengurusan harta wakaf sesuai dengan maksud dan tujuannya".
 
-(5) Jumlah Nadzir yang diperbolehkan untuk satu unit perwakafan, seperti dimaksud Pasal215 ayat (5) sekurang-kurangnya terdiri dari 3 orang dan sebanyak-banyaknya 10 orang yang diangkat oleh Kepala Kantor Urusan Agama Kecamatan atas saran Majelis Ulama Kecamatan dan Camat setempat.
+(5) Jumlah Nadzir yang diperbolehkan untuk satu unit perwakafan, seperti dimaksud Pasal 215 ayat (5) sekurang-kurangnya terdiri dari 3 orang dan sebanyak-banyaknya 10 orang yang diangkat oleh Kepala Kantor Urusan Agama Kecamatan atas saran Majelis Ulama Kecamatan dan Camat setempat.
 
 #### Bagian Ketiga — Kewajiban dan Hak-hak Nadzir
 
 ##### Pasal 220
 
-<!-- pasal 220 · hlm 116 · pdf 128 · belum dicocokkan -->
+<!-- pasal 220 · hlm 116 · pdf 128 · dicocokkan -->
 
 (1) Nadzir berkewajiban untuk mengurus dan bertanggung jawab atas kekayaan wakaf serta hasilnya, dan pelaksanaan perwakafan sesuai dengan tujuan menurut ketentuan-ketentuan yang diatur oleh Menteri Agama.
 
@@ -2104,7 +2122,7 @@ b. mempunyai perwakilan di kecamatan tempat tinggal benda yang diwakatkannya.
 
 ##### Pasal 221
 
-<!-- pasal 221 · hlm 117 · pdf 129 · belum dicocokkan -->
+<!-- pasal 221 · hlm 117 · pdf 129 · dicocokkan -->
 
 (1) Nadzir diberhentikan oleh Kepala Kantor Urusan Agama Kecamatan karena:
 
@@ -2116,13 +2134,13 @@ c. tidak dapat melakukan kewajibannya lagi sebagai Nadzir;
 
 d. melakukan suatu kejahatan sehingga dipidana.
 
-(2) Bilamana terdapat lowongan jabatan Nadzir karena salah satu alasan sebagaimana tersebut penggantinya diangkat dalam ayat (1), maka oleh Kepala Kantor Urutan Agama Kecamatan atas saran Majelis Ulama Kecamatan dan Camat setempat.
+(2) Bilamana terdapat lowongan jabatan Nadzir karena salah satu alasan sebagaimana tersebut dalam ayat (1), maka penggantinya diangkat oleh Kepala Kantor Urutan Agama Kecamatan atas saran Majelis Ulama Kecamatan dan Camat setempat.
 
 (3) Seorang Nadzir yang telah berhenti, sebagaimana dimaksud dalam ayat (1) sub a, tidak dengan <!-- hlm 118 · pdf 130 --> sendirinya digantikan oleh salah seorang ahli warisnya.
 
 ##### Pasal 222
 
-<!-- pasal 222 · hlm 118 · pdf 130 · belum dicocokkan -->
+<!-- pasal 222 · hlm 118 · pdf 130 · dicocokkan -->
 
 Nadzir berhak mendapatkan penghasilan dan fasilitas yang jenis dan jumlahnya ditentukan berdasarkan kelayakan atas saran Majelis Ulama Kecamatan dan Kantor Urusan Agama Kecamatan setempat.
 
@@ -2132,19 +2150,19 @@ Nadzir berhak mendapatkan penghasilan dan fasilitas yang jenis dan jumlahnya dit
 
 ##### Pasal 223
 
-<!-- pasal 223 · hlm 118 · pdf 130 · belum dicocokkan -->
+<!-- pasal 223 · hlm 118 · pdf 130 · dicocokkan -->
 
-(1) Pihak yang hendak mewakafkah dapat menyatakan ikrar wakaf di hadapan Pejabat Pembuat Akta lkrar Wakaf untuk melaksanakan ikrar wakaf.
+(1) Pihak yang hendak mewakafkah dapat menyatakan ikrar wakaf di hadapan Pejabat Pembuat Akta Ikrar Wakaf untuk melaksanakan ikrar wakaf.
 
-(2) lsi dan bentuk lkrar Wakaf ditetapkan oleh Menteri Agama.
+(2) Isi dan bentuk Ikrar Wakaf ditetapkan oleh Menteri Agama.
 
-(3) Pelaksanaan lkrar, demikian pula pembuatan Akta lkrar Wakaf, dianggap sah jika dihadiri <!-- hlm 119 · pdf 131 --> dan disaksikan oleh sekurang-kurangnya 2 (dua) orang saksi.
+(3) Pelaksanaan Ikrar, demikian pula pembuatan Akta Ikrar Wakaf, dianggap sah jika dihadiri <!-- hlm 119 · pdf 131 --> dan disaksikan oleh sekurang-kurangnya 2 (dua) orang saksi.
 
-(4) Dalam melaksanakan Ikrar seperti dimaksud ayat (1) pihak yang mewakafl<an diharuskan menyerahkan kepada Pejabat yang tersebut dalam Pasal 215 ayat (6), surat-surat sebagai berikut:
+(4) Dalam melaksanakan Ikrar seperti dimaksud ayat (1) pihak yang mewakafkan diharuskan menyerahkan kepada Pejabat yang tersebut dalam Pasal 215 ayat (6), surat-surat sebagai berikut:
 
 a. tanda bukti pemilikan harta benda;
 
-b. jika benda yang diwakafl<an berupa benda tidak bergerak, maka harus disertai surat keterangan dari Kepala Desa, yang diperkuat oleh Camat setempat yang menerangkan pemilikan benda tidak bergerak dimaksud;
+b. jika benda yang diwakafkan berupa benda tidak bergerak, maka harus disertai surat keterangan dari Kepala Desa, yang diperkuat oleh Camat setempat yang menerangkan pemilikan benda tidak bergerak dimaksud;
 
 c. surat atau dokumen tertulis yang merupakan kelengkapan dari benda tidak bergerak yang bersangkutan.
 
@@ -2152,7 +2170,7 @@ c. surat atau dokumen tertulis yang merupakan kelengkapan dari benda tidak berge
 
 ##### Pasal 224
 
-<!-- pasal 224 · hlm 119 · pdf 131 · belum dicocokkan -->
+<!-- pasal 224 · hlm 119 · pdf 131 · dicocokkan -->
 
 Setelah Akta Ikrar Wakaf dilaksanakan sesuai dengan ketentuan dalam Pasal 223 ayat (3) dan (4), maka Kepala Kantor Urusan Agama Kecamatan atas nama <!-- hlm 120 · pdf 132 --> Nadzir yang bersangkutan diharuskan mengajukan permohonan kepada Camat untuk mendaftarkan perwakafan benda yang bersangkutan guna menjaga keutuhan dan kelestarian.
 
@@ -2162,7 +2180,7 @@ Setelah Akta Ikrar Wakaf dilaksanakan sesuai dengan ketentuan dalam Pasal 223 ay
 
 ##### Pasal 225
 
-<!-- pasal 225 · hlm 120 · pdf 132 · belum dicocokkan -->
+<!-- pasal 225 · hlm 120 · pdf 132 · dicocokkan -->
 
 (1) Pada dasarnya terhadap benda yang telah diwakafkan tidak dapat dilakukan perubahan atau penggunaan lain dari pada yang dimaksud dalam ikrar wakaf.
 
@@ -2176,7 +2194,7 @@ b. karena kepentingan umum.
 
 ##### Pasal 226
 
-<!-- pasal 226 · hlm 121 · pdf 133 · belum dicocokkan -->
+<!-- pasal 226 · hlm 121 · pdf 133 · dicocokkan -->
 
 Penyelesaian perselisihan sepanjang yang menyangkut persoalan benda wakaf dan Nadzir diajukan kepada Pengadilan Agama setempat sesuai dengan ketentuan peraturan perundang-undangan yang berlaku.
 
@@ -2184,9 +2202,9 @@ Penyelesaian perselisihan sepanjang yang menyangkut persoalan benda wakaf dan Na
 
 ##### Pasal 227
 
-<!-- pasal 227 · hlm 121 · pdf 133 · belum dicocokkan -->
+<!-- pasal 227 · hlm 121 · pdf 133 · dicocokkan -->
 
-Pengawasan terhadap pelaksanaan tugas dan tanggung jawab Nadzir dilakukan secara bersama sama oleh Kepala Kantor Urusan Agama Kecamatan, Majelis Ulama Kecamatan dan Pengadilan agama yang mewilayahinya. <!-- hlm 122 · pdf 134 -->
+Pengawasan terhadap pelaksanaan tugas dan tanggung jawab Nadzir dilakukan secara bersama-sama oleh Kepala Kantor Urusan Agama Kecamatan, Majelis Ulama Kecamatan dan Pengadilan agama yang mewilayahinya. <!-- hlm 122 · pdf 134 -->
 
 ### BAB V — KETENTUAN PERALIHAN
 
