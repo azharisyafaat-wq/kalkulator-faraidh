@@ -24,23 +24,26 @@ KMA = range(255, 261)
 semua = ' '.join(h[p] for p in list(KHI) + list(PENJELASAN))
 frek = collections.Counter(w.lower() for w in re.findall(r'[A-Za-z0-9]*[A-Za-z][A-Za-z0-9]*', semua))
 GANTI = {}
-# Salah baca OCR yang berulang. h terbaca untuk b dan 1 untuk l: kata diganti bila bentuk perbaikannya muncul
+# Salah baca OCR yang berulang. h terbaca untuk b, 1 untuk l, ij/tj untuk rj (teijadi, petjodohan): kata diganti bila bentuk perbaikannya muncul
 # jauh lebih sering di naskah yang sama (paling sedikit 3 kali dan 3 kali lipat). rn/m tidak memakai aturan
 # frekuensi karena salah bacanya berlaku dua arah (pemah/pernah, suarni/suami); daftarnya ditulis satu per satu.
 for w, n in list(frek.items()):
     if len(w) < 3:
         continue
-    for a, b2 in (('h', 'b'), ('1', 'l')):
+    for a, b2 in (('h', 'b'), ('1', 'l'), ('ij', 'rj'), ('tj', 'rj')):
         i = w.find(a)
         while i >= 0:
-            y = w[:i] + b2 + w[i + 1:]
+            y = w[:i] + b2 + w[i + len(a):]
             if frek.get(y, 0) >= max(3, 3 * n) and w not in GANTI:
                 GANTI[w] = y
             i = w.find(a, i + 1)
 for w in ('dalarn agarna suarni hukurn bersarna rnempunyai selarna sarna rurnah rnerupakan sarnpai rnungkin rnaksud '
           'rnengucapkan enarn rnengikrarkan perdarnaian rnenjatuhkan rnernpunyai rnenasehati mahkarnah').split():
     GANTI[w] = w.replace('rn', 'm')
-GANTI.update({'besamya': 'besarnya', 'pemah': 'pernah', 'pemikahan': 'pernikahan', 'lahimya': 'lahirnya',
+GANTI.update({'bemilai': 'bernilai', 'mantaat': 'manfaat', 'lkrar': 'ikrar', 'lsi': 'isi', 'diwakatkannya': 'diwakafkannya', 'umsan': 'urusan',
+              'petwalian': 'perwalian', 'petwaliannya': 'perwaliannya', 'hawah': 'bawah', 'pemahuk': 'pemabuk', 'pemhoros': 'pemboros',
+              'haiknya': 'baiknya', 'himhingan': 'bimbingan', 'memhehani': 'membebani', 'kerahatnya': 'kerabatnya', 'tetjadinya': 'terjadinya',
+              '1ampau': 'lampau', 'pemyataan': 'pernyataan', 'ljab': 'ijab', 'bah': 'bab', 'eaton': 'calon', 'besamya': 'besarnya', 'pemah': 'pernah', 'pemikahan': 'pernikahan', 'lahimya': 'lahirnya',
               # ri terbaca n, u terbaca n/rn, b terbaca h: ditemukan saat pencocokan Buku II dengan pindaian
               'wans': 'waris', 'pewans': 'pewaris', 'wansan': 'warisan', 'barn': 'baru', 'sating': 'saling',
               'masmg': 'masing', 'heherapa': 'beberapa', 'melehihi': 'melebihi', 'diamhil': 'diambil', 'jenazab': 'jenazah',
@@ -71,7 +74,15 @@ def betulkan(s):
     s = re.sub(r'\(\s*([0-9Il]{1,2})\s*[)}]', lambda m: '(' + m.group(1).replace('I', '1').replace('l', '1') + ')', s)
     s = s.replace('\u200b', '')
     s = re.sub(r'^I\.\s', '1. ', s)
-    s = re.sub(r'\bcal on\b', 'calon', s)                 # nomor butir 1 terbaca I
+    s = re.sub(r'\bcal on\b', 'calon', s)
+    s = re.sub(r'\bNo\.( ?)I\b', r'No.\g<1>1', s)            # nomor 1 terbaca I
+    s = re.sub(r'\bI(?=\d)', '1', s)                         # I974, I2
+    s = re.sub(r'(?<=\d)I\b', '1', s)
+    s = re.sub(r'\b([Pp]asal)(\d)', r'\1 \2', s)              # pasal5 -> pasal 5
+    s = re.sub(r'\bN ikah\b', 'Nikah', s)
+    s = re.sub(r'\bbel urn\b', 'belum', s)
+    s = re.sub(r'\bse(\w+) \1nya\b', r'se\1-\1nya', s)          # sekurang kurangnya -> sekurang-kurangnya
+    s = re.sub(r'\blO\b', '10', s)                 # nomor butir 1 terbaca I
     s = re.sub(r'\s+([,;:])(?=\s|$)', r'\1', s)       # spasi sebelum tanda baca
     return s
 
@@ -105,7 +116,7 @@ def blok_dari(baris):
                 blok.append(b)
             continue
         b = betulkan(b)
-        mulai = (not blok or re.match(r'^\(\d{1,2}\)', b) or re.match(r'^[a-z]\.\s', b) or re.match(r'^\d{1,2}\.\s', b))
+        mulai = (not blok or re.match(r'^\(\d{1,2}\)', b) or re.match(r'^\([a-z]\)\s', b) or re.match(r'^[a-z]\.\s', b) or re.match(r'^\d{1,2}\.\s', b))
         if blok and re.search(r'\b(ayat|Pasal|pasal)$', blok[-1]):   # "... dalam ayat / (1) pasal ini" bukan ayat baru
             mulai = False
         if mulai or blok[-1].startswith('<!-- hlm ') and blok[-1].endswith('-->') and not re.search(r'[A-Za-z]', blok[-1].split('-->')[-1]) and False:
@@ -124,15 +135,17 @@ def sambung(a, b):
     ma, mb = re.search(r'([A-Za-z]+)$', a), re.match(r'([A-Za-z]+)', b)
     if ma and mb:
         x, y = ma.group(1), mb.group(1)
-        if x.lower() == y.lower() or (y.lower().startswith(x.lower()) and y.lower()[len(x):] in ('nya', 'an', 'kan', 'i')):
+        if x.lower() == y.lower() or (y.lower().startswith(x.lower()) and y.lower()[len(x):] in ('nya', 'an', 'kan', 'i')) \
+                or (len(y) >= 3 and x.lower().endswith(y.lower()) and x.lower()[:-len(y)] in ('ber', 'se', 'ke', 'di', 'me', 'pe')):
             return a + '-' + b
         if frek.get((x + y).lower(), 0) >= 1 and frek.get(y.lower(), 0) == 0 or frek.get((x + y).lower(), 0) >= 2 and len(y) <= 4:
             return a + b
     return a + ' ' + b
 
 
-# Pasal yang teksnya dicocokkan kata demi kata dengan pindaian (25-11-2026); bagian lain teks OCR yang dirapikan.
-DICOCOKKAN = set(range(85, 98)) | set(range(171, 215)) | {228, 229}
+# Semua pasal sudah dicocokkan (25-11-2026): Pasal 85–97, 171–214, 228–229 dibaca langsung pada pindaian; pasal lain
+# dibandingkan kata demi kata dengan OCR kedua (Tesseract) dan setiap selisih diperiksa pada pindaian.
+DICOCOKKAN = set(range(1, 230))
 
 # --- susun bagian KHI ------------------------------------------------------------------------------
 md = []
@@ -222,17 +235,40 @@ KEPALA = """# Kompilasi Hukum Islam di Indonesia
 1. Teks diambil dari lapisan OCR berkas PDF dengan markitdown 0.1.9, per halaman. Artefak tabel dibuang, lalu judul Buku, Bab, Bagian, dan Pasal disusun ulang.
 2. Salah baca OCR yang berulang dikoreksi otomatis, misalnya "hagian" menjadi "bagian" dan "suarni" menjadi "suami".
 3. Pasal 85–97, Pasal 171–214, Pasal 228–229, Penjelasan, Instruksi Presiden Nomor 1 Tahun 1991, dan Keputusan Menteri Agama Nomor 154 Tahun 1991 dicocokkan kata demi kata dengan gambar pindaian pada 25 November 2026. Halaman Penjelasan Pasal demi Pasal, Inpres, dan KMA ditulis ulang dari pindaian karena urutan teks OCR-nya kacau.
-4. Pasal lain bertanda "belum dicocokkan". Teksnya dapat memuat salah baca OCR; cocokkan dengan pindaian pada halaman yang disebut sebelum mengutipnya.
+4. Pasal lain di Buku I dan Buku III dicocokkan pada 25 November 2026 dengan cara lain. Teksnya dibandingkan kata demi kata dengan OCR kedua yang independen (Tesseract 5, bahasa Indonesia) atas pindaian yang sama. Setiap selisih diperiksa pada gambar pindaian, lalu dikoreksi (`terbit/naskah-khi/koreksi.json`).
 5. Salah cetak dalam edisi ini dipertahankan sebagaimana tercetak. Salah cetak yang dapat memengaruhi makna diberi catatan penyunting.
 6. Edisi ini tidak mencetak Pasal 124 dan Pasal 139.
 7. Spasi sebelum titik dua dan koma dinormalkan.
 
-**Penanda.** `<!-- hlm N · pdf P -->` menunjukkan halaman buku (hlm) dan halaman berkas PDF (pdf). Setiap pasal disertai `<!-- pasal N · hlm · pdf · status -->`; statusnya "dicocokkan" atau "belum dicocokkan".
+**Penanda.** `<!-- hlm N · pdf P -->` menunjukkan halaman buku (hlm) dan halaman berkas PDF (pdf). Setiap pasal disertai `<!-- pasal N · hlm · pdf · status -->`.
 
 **Tidak dimuat.** Kata Pengantar, Sambutan, Daftar Isi, dan Lampiran buku (UU 1/1974 dan PP 9/1975 beserta penjelasannya, hlm. 129–238). Bagian itu dapat dibaca pada pindaian.
 """
 
 teks = KEPALA + '\n' + '\n\n'.join(md) + '\n'
+
+# Perbaikan yang baru terlihat sesudah baris digabung (kata terpotong di akhir baris).
+# Nomor halaman yang terselip di akhir paragraf (angka sama dengan halaman sebelum penanda berikutnya).
+teks = re.sub(r' (\d{1,3})(\s*)(<!-- hlm (\d+) · pdf \d+ -->)', lambda m: (m.group(2) or ' ') + m.group(3) if int(m.group(1)) + 1 == int(m.group(4)) else m.group(0), teks)
+teks = re.sub(r' (\d{1,3})\n\n(<!-- hlm (\d+) · pdf \d+ -->)', lambda m: '\n\n' + m.group(2) if int(m.group(1)) + 1 == int(m.group(3)) else m.group(0), teks)
+teks = re.sub(r'\bse(\w+) \1nya\b', r'se\1-\1nya', teks)
+teks = re.sub(r'\bbel urn\b', 'belum', teks)
+for pola, ganti in [
+        (r'\b(di)?([Pp])e[it]j(anji)', r'\1\2erj\3'),            # petjanjian/peijanjian -> perjanjian
+        (r'\b([Pp])ennohon', r'\1ermohon'),                     # pennohonan -> permohonan
+        (r'\bke(\w+) \1nya\b', r'ke\1-\1nya'),                  # keempat empatnya -> keempat-empatnya
+        (r'\b([Tt])erse ?b ?ut\b', r'\1ersebut'), (r'\b(di)?an tara\b', r'\1antara'), (r'\bse orang\b', 'seorang'),
+        (r'\bper kawinan', 'perkawinan'), (r'\bdi mintai\b', 'dimintai'), (r'\bmeng hindari\b', 'menghindari'),
+        (r'\b([Pp])erundang undangan', r'\1erundang-undangan'), (r'\bhi lang\b', 'hilang'), (r"\braj' i\b", "raj'i"),
+        (r'\bkekuatannya,jika\b', 'kekuatannya, jika'), (r'\byangtetap\b', 'yang tetap'), (r'\bhuruf([a-z])\b', r'huruf \1'),
+        (r'\bPengadilanAgama\b', 'Pengadilan Agama'), (r'\badil,jujur\b', 'adil, jujur'), (r'\bA gama \.', 'Agama.'), (r'\( dua\)', '(dua)'),
+        (r'\bmem pelajari\b', 'mempelajari'), (r'\bdi hindarkan\b', 'dihindarkan'), (r'\bmemindahkan nya\b', 'memindahkannya'), (r'\ba tau\b', 'atau'),
+        (r"\b(li|mut|ba|raj|Li|Mut|Raj)' (an|ah|da|i)\b", r"\1'\2"), (r'\bMufah\b', "Mut'ah"), (r'\btasakh\b', 'fasakh'), (r'\bja1an\b', 'jalan'),
+        (r'\bmen damaikan\b', 'mendamaikan'), (r'\bme wilayahi\b', 'mewilayahi'), (r'\bke matian\b', 'kematian'), (r'\bwan ita\b', 'wanita'), (r'\bIa yak\b', 'layak'),
+        (r'\b(mewakaf|diwakaf)l<an\b', r'\1kan'),
+        (r'\bcaJon\b', 'calon'), (r'\bAgarria\b', 'Agama'), (r'\bPeneegahan\b', 'Pencegahan'), (r'\bsempuma\b', 'sempurna'),
+        (r'\bKeUma\b', 'Kelima'), (r'\bnatkah\b', 'nafkah'), (r'\bsuamt\b', 'suami'), (r'\bsesuat\b', 'sesuai')]:
+    teks = re.sub(pola, ganti, teks)
 
 # Judul Bab/Bagian yang terpotong atau terbaca salah oleh OCR (diperiksa pada pindaian dan Daftar Isi).
 for a, b in [('### BAB II — FUNGSI, UNSUR-UNSUR\n\nDAN SYARAT-SYARAT WAKAF', '### BAB II — FUNGSI, UNSUR-UNSUR DAN SYARAT-SYARAT WAKAF'),
@@ -242,6 +278,8 @@ for a, b in [('### BAB II — FUNGSI, UNSUR-UNSUR\n\nDAN SYARAT-SYARAT WAKAF', '
              ('— WaliNikah', '— Wali Nikah'), ('— SaksiNikah', '— Saksi Nikah'), ('— AkadNikah', '— Akad Nikah'),
              ('— Urn urn', '— Umum'), ('— Mufah', "— Mut'ah"), ('— AkibatLfan', "— Akibat Li'an")]:
     if a not in teks:
+        if b in teks:
+            continue                      # sudah diperbaiki oleh koreksi OCR sistematis
         sys.exit('judul tidak ditemukan: ' + a)
     teks = teks.replace(a, b)
 
@@ -250,6 +288,8 @@ import os
 berkas_koreksi = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'koreksi.json')
 for pdf, lama, baru in (json.load(open(berkas_koreksi)) if os.path.exists(berkas_koreksi) else []):
     m = re.search(r'(<!-- hlm [^·]+· pdf ' + str(pdf) + r' -->)(.*?)(?=<!-- hlm [^·]+· pdf \d+ -->|\Z)', teks, re.S)
+    if m and m.group(2).count(lama) == 0 and baru in m.group(2):
+        continue                          # sudah diperbaiki oleh koreksi OCR sistematis
     if not m or m.group(2).count(lama) != 1:
         sys.exit(f'koreksi gagal di pdf {pdf}: "{lama}" muncul {m.group(2).count(lama) if m else "?"} kali')
     teks = teks[:m.start(2)] + m.group(2).replace(lama, baru) + teks[m.end(2):]
