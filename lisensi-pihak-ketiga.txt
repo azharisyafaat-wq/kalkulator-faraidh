@@ -54,12 +54,15 @@ Lisensi dibaca dari halaman jurnal atau artikel pada 24 November 2026.
 
 NASKAH KHI
 
-Naskah KHI yang dirujuk aplikasi adalah edisi resmi "Kompilasi Hukum Islam di Indonesia",
-Direktorat Bina KUA dan Keluarga Sakinah, Ditjen Bimbingan Masyarakat Islam, Kementerian Agama
-RI, November 2018. Halaman Buku II (Pasal 171-214) dimuat dalam Panduan aplikasi, Lampiran A.
-Naskah utuhnya (262 halaman) ditautkan ke berkas di Wikimedia Commons, yang mencatatnya sebagai
-domain publik menurut Pasal 43 UU 28/2014: https://commons.wikimedia.org/wiki/File:KHI_id.pdf
+Pindaian "Kompilasi Hukum Islam di Indonesia", Direktorat Bina KUA dan Keluarga Sakinah, Ditjen
+Bimbingan Masyarakat Islam, Kementerian Agama RI, November 2018 (262 halaman), disertakan sebagai
+rujukan/KHI_Kemenag_2018_Kompilasi_Hukum_Islam.pdf. Berkas yang ukuran dan jumlah halamannya sama
+dicatat Wikimedia Commons sebagai domain publik menurut Pasal 43 UU 28/2014:
+https://commons.wikimedia.org/wiki/File:KHI_id.pdf
+
+naskah/khi-kemenag-2018.md disusun dari pindaian itu dengan markitdown (MIT License,
+https://github.com/microsoft/markitdown) lalu dirapikan; alat penyusunnya ada di terbit/naskah-khi/.
 
 Dua salinan KHI ketik ulang pihak ketiga (insantri.com dan lampiran di repositori etheses
-UIN Maulana Malik Ibrahim Malang) dikeluarkan dari paket sejak 5.18.0 karena tidak berketerangan
-lisensi, dan sejak 5.18.1 tidak lagi ditautkan karena isinya sudah tercakup naskah resmi di atas.
+UIN Maulana Malik Ibrahim Malang) tidak disertakan dan tidak ditautkan; isinya sudah tercakup
+naskah resmi di atas.

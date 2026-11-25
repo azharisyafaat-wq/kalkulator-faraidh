@@ -14,5 +14,9 @@ jobs:
         run: node uji/periksa-mesin.cjs
       - name: Pembaca cerita keluarga
         run: node uji/periksa-cerita.cjs
-      - name: Sintaks service worker dan skrip terbit
-        run: node --check sw.js && node --check terbit/buat-paket.cjs
+      - name: Naskah KHI dalam aplikasi (pasal, status pencocokan, kutipan dalil)
+        run: node uji/periksa-naskah-khi.cjs
+      - name: Naskah KHI dapat dibangun ulang byte-identik
+        run: python3 -I terbit/naskah-khi/susun_md.py terbit/naskah-khi/halaman-markitdown.json /tmp/khi.md && cmp /tmp/khi.md naskah/khi-kemenag-2018.md
+      - name: Sintaks service worker, naskah, dan skrip terbit
+        run: node --check sw.js && node --check naskah-khi.js && node --check terbit/buat-paket.cjs

@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.24-Pro-v5.18.1",
+  "version": "2026.11.25-Pro-v5.19.0",
   "checked_on": "2026-10-29",
   "jurisdiction": "Indonesia — kewarisan Islam / Kamar Agama Mahkamah Agung",
   "update_mode": "Tautan resmi dan katalog sumber bertanggal; tidak ada sinkronisasi otomatis maupun perubahan rumus dari situs eksternal.",
@@ -37,7 +37,8 @@
       "summary": "Mengatur harta waris, ahli waris, bagian, penggantian, aul, radd serta wasiat. Pasal 209 memberi batas maksimum 1/3 untuk wasiat wajibah anak/orang tua angkat yang tidak menerima wasiat. Batas tersebut bukan bagian otomatis.",
       "integration": "Pemisahan kepemilikan, kewajiban, bagian dasar dan wasiat; pilihan tafsir tetap ditampilkan. Batas pengganti Pasal 185 tidak disamakan dengan satu rumus universal.",
       "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/KHI_id.pdf",
-      "local_url": "panduan/buku-panduan-faraidh-tiga-versi.pdf#page=20",
+      "text_url": "#naskah-khi",
+      "local_url": "rujukan/KHI_Kemenag_2018_Kompilasi_Hukum_Islam.pdf#page=101",
       "verification": "Kutipan Pasal 174–193 KHI dalam aplikasi dicocokkan kata demi kata (30-10-2026) dengan pindaian resmi edisi Kementerian Agama 2018 yang dimuat dalam Panduan aplikasi, Lampiran A. Salinan ketik ulang pihak ketiga tidak lagi disertakan dalam paket.",
       "checked_on": "2026-10-26"
     },
@@ -237,8 +238,9 @@
       "integration": "Rujukan primer bagi seluruh pasal KHI yang diterapkan dalam kalkulator (termasuk harta bersama Ps. 85-97, waris Ps. 171-193, wasiat Ps. 194-209, dan hibah Ps. 210-214).",
       "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/KHI_id.pdf",
       "related_url": "https://commons.wikimedia.org/wiki/File:KHI_id.pdf",
-      "local_url": "panduan/buku-panduan-faraidh-tiga-versi.pdf#page=20",
-      "verification": "Identitas berkas dicocokkan dengan halaman berkas Wikimedia Commons (dibaca 24-11-2026): Kompilasi Hukum Islam di Indonesia, Direktorat Bina KUA dan Keluarga Sakinah, Ditjen Bimbingan Masyarakat Islam, Kementerian Agama RI, November 2018; 262 halaman; 10,33 MB; berstatus domain publik menurut Pasal 43 UU 28/2014. Halaman Buku II (Pasal 171–214) dari edisi ini dimuat dalam Panduan aplikasi, Lampiran A. Berkas utuh tidak disertakan dalam paket; salinan ketik ulang pihak ketiga tidak dipakai.",
+      "text_url": "#naskah-khi",
+      "local_url": "rujukan/KHI_Kemenag_2018_Kompilasi_Hukum_Islam.pdf",
+      "verification": "Berkas pindaian utuh disertakan dalam paket (rujukan/KHI_Kemenag_2018_Kompilasi_Hukum_Islam.pdf, 262 halaman, SHA-256 322fe34a…a2e3); ukuran dan jumlah halamannya sama dengan berkas di Wikimedia Commons yang dicatat sebagai domain publik menurut Pasal 43 UU 28/2014. Naskah teks dalam aplikasi (naskah/khi-kemenag-2018.md) disusun dari pindaian ini dengan markitdown; Pasal 85–97, 171–214, 228–229, Penjelasan, Inpres 1/1991, dan KMA 154/1991 dicocokkan kata demi kata dengan pindaian (25-11-2026), pasal lain ditandai belum dicocokkan. Edisi ini tidak mencetak Pasal 124 dan Pasal 139.",
       "checked_on": "2026-11-24"
     },
     {
