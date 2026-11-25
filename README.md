@@ -66,6 +66,13 @@ Situs faraidh.syafaatlawfirm.com dibangun dari repositori ini; berkas di server 
 
 ## Riwayat versi
 
+- **5.19.0** (25 November 2026):
+  - Naskah KHI dalam aplikasi. Pindaian resmi *Kompilasi Hukum Islam di Indonesia* (Kemenag 2018, 262 halaman) dikonversi dengan markitdown menjadi `naskah/khi-kemenag-2018.md`. Pasal 85–97, 171–214, 228–229, Penjelasan, Inpres 1/1991, dan KMA 154/1991 dicocokkan kata demi kata dengan pindaian. Pasal lain ditandai "belum dicocokkan". Edisi ini tidak mencetak Pasal 124 dan Pasal 139.
+  - Rujukan "Ps. N" di hasil KHI menjadi tautan ke pasal itu. Penampilnya memuat teks, status pencocokan, penjelasan pasal, pencarian nomor atau kata, dan tombol ke halaman pindaiannya.
+  - Pindaian utuh disertakan dalam paket (`rujukan/KHI_Kemenag_2018_Kompilasi_Hukum_Islam.pdf`). Dalil KHI membuka halaman pindaian itu dan tombol "Baca Pasal N dalam naskah KHI"; tautan Commons di dalil dan tautan Lampiran A di Pustaka dibuang karena sudah tercakup.
+  - Kutipan dalil Pasal 174 kini persis seperti cetakan ("kakek. Golongan perempuan …"). Uji `uji/periksa-naskah-khi.cjs` memeriksa bahwa sebelas kutipan dalil KHI sama kata demi kata dengan naskah.
+  - Penyusun naskah di `terbit/naskah-khi/`; CI memeriksa bahwa naskah dapat dibangun ulang byte-identik.
+
 - **5.18.1** (24 November 2026):
   - Naskah KHI hanya dari edisi resmi Kementerian Agama 2018. Tautan "Naskah KHI (BPHN)" pada sepuluh dalil KHI dan kartu KHI Buku II diganti naskah lengkap resmi; berkas BPHN itu (`perkawinan.pdf`) tidak dapat dibuka untuk diperiksa karena dijawab halaman tantangan Cloudflare. Kartu KHI kini juga menautkan pindaian resmi Buku II di Panduan, Lampiran A.
   - Rujukan KHI ganda dibuang: salinan ketik ulang di Internet Archive dan lampiran KHI UIN Malang tidak lagi ditautkan dari katalog Pustaka, kartu Dasar hukum, maupun PDF katalog 00 dan 03 (halaman 5). Alamat lama `rujukan/KHI_02_…` dan `rujukan/KHI_03_…` dijawab 410.

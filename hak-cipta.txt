@@ -54,6 +54,8 @@ KOMPONEN PIHAK KETIGA DAN DOKUMEN HUKUM
    rujukan disertakan tanpa izin pihak lain. KHI (lampiran Inpres No. 1 Tahun 1991),
    SEMA, SK KMA, dan Buku II Mahkamah Agung disertakan sebagai dokumen resmi lembaga
    negara yang diterbitkan untuk umum, dengan menyebut sumbernya.
+   Pindaian utuh KHI edisi Kementerian Agama 2018 dan naskah teks yang disusun darinya
+   (naskah/khi-kemenag-2018.md) disertakan atas dasar yang sama; lihat lisensi-pihak-ketiga.txt.
 
 --------------------------------------------------------------------------------
 TANPA JAMINAN

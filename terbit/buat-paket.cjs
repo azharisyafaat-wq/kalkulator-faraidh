@@ -37,7 +37,7 @@ const versiSw = (sw.match(/const CACHE='faraidh-(\d+\.\d+\.\d+)-/) || [])[1];
 const keluar = path.resolve(arg('--keluar') || path.join(AKAR, 'dist', 'paket-' + (versiHtml || 'x')));
 
 // Berkas repositori yang ikut paket (selain dokumen). Folder disalin seluruhnya.
-const REPO = ['.htaccess', 'index.html', 'sw.js', 'bank-kasus.js', 'manifest.webmanifest', 'sumber-hukum.json',
+const REPO = ['.htaccess', 'index.html', 'sw.js', 'bank-kasus.js', 'naskah-khi.js', 'naskah', 'manifest.webmanifest', 'sumber-hukum.json',
   'baca-saya.txt', 'hak-cipta.txt', 'lisensi-pihak-ketiga.txt', 'LICENSE', 'fonts', 'icons', 'vendor', 'screenshots'];
 
 const galat = [], catatan = [];
