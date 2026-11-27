@@ -66,6 +66,16 @@ Situs faraidh.syafaatlawfirm.com dibangun dari repositori ini; berkas di server 
 
 ## Riwayat versi
 
+- **5.19.2** (27 November 2026):
+  - Naskah KHI dibandingkan kata demi kata dengan salinan ketik edisi Departemen Agama 2001 (JDIH Universitas Sumatera Utara). Selisihnya diperiksa pada pindaian, dan cacat penyusunan berikut diperbaiki:
+    - judul "Bagian Kelima — Kewajiban Suami yang Beristeri Lebih Dan Seorang" yang tergabung ke Pasal 81 ayat (4); Pasal 82 kini tampil di bagian yang benar;
+    - delapan butir yang tergabung ke paragraf sebelumnya: Pasal 1 huruf j, 39 ayat (3) huruf b, 99 huruf a–b, 113 huruf c, 158 huruf a, 219 huruf f, dan KMA 154/1991 huruf b;
+    - tanda baca: "ber'itikad" (Pasal 75), "Ba'in" (Pasal 119), tanda kutip Pasal 127 huruf b, serta noda pindaian yang terbaca sebagai apostrof (Pasal 73);
+    - sembilan nomor halaman yang tidak terbaca OCR. Akibatnya tombol pindaian Pasal 14, 15, 42, 43, 80, 132, 133, 141, 142, dan 148 sebelumnya menulis "hlm. -", dan Pasal 215 menulis "hlm. Ill".
+  - Salinan 2001 memuat salah cetak yang sama dengan edisi 2018 (Pasal 70 huruf e, 96 ayat (2), 197 ayat (1) huruf d, 211) dan juga tidak memuat Pasal 124 dan 139. Catatan penyunting baru ada pada Pasal 70 huruf e (dibandingkan dengan Pasal 8 huruf e UU 1/1974 dalam Lampiran buku) dan Pasal 197 ayat (1) huruf d. Catatan Pasal 185 kini juga menyebut bahwa dalam salinan 2001 tanda bintang keterangan SEMA 2/1994 melekat pada Pasal 177.
+  - Bunyi yang benar untuk salah cetak lain belum dapat dicocokkan dengan naskah resmi, sehingga tidak ditampilkan. Jejaknya ada di `terbit/naskah-khi/banding-2001.md`.
+  - Uji naskah diperketat (44 pemeriksaan): nomor halaman, judul yang tergabung, butir yang tergabung, apostrof hasil OCR, dan catatan penyunting.
+
 - **5.19.1** (25 November 2026):
   - Seluruh pasal naskah KHI kini dicocokkan.
     - Pasal yang sebelumnya bertanda "belum dicocokkan" (Buku I Pasal 1–84 dan 98–170, Buku III Pasal 215–227) dibandingkan kata demi kata dengan OCR kedua yang independen (Tesseract 5, bahasa Indonesia) atas pindaian yang sama.

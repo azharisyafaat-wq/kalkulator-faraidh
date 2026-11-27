@@ -34,9 +34,27 @@ const salahStatus = N.urutan.filter(k => (N.pasal[k].status === 'dicocokkan') !=
 cek('semua pasal berstatus dicocokkan', !salahStatus.length, 'pasal: ' + salahStatus.slice(0, 10).join(', '));
 const tanpaStatus = N.urutan.filter(k => !/^(dicocokkan|belum dicocokkan)$/.test(N.pasal[k].status));
 cek('setiap pasal punya status', !tanpaStatus.length, tanpaStatus.join(', '));
-const halamanSalah = N.urutan.filter(k => { const p = N.pasal[k]; return /^\d+$/.test(p.hlm) && p.pdf - +p.hlm !== 12; });
-cek('halaman PDF = halaman buku + 12', !halamanSalah.length, halamanSalah.join(', '));
+const halamanSalah = N.urutan.filter(k => { const p = N.pasal[k]; return !/^\d+$/.test(p.hlm) || p.pdf - +p.hlm !== 12; });
+cek('setiap pasal berhalaman buku berupa angka dan = halaman PDF − 12', !halamanSalah.length, halamanSalah.map(k => k + ' (hlm ' + N.pasal[k].hlm + ')').join(', '));
+const penandaSalah = [...md.matchAll(/<!-- (?:pasal \d+ · )?hlm (\S+) · pdf (\d+)/g)].filter(m => !/^\d+$/.test(m[1]) || +m[2] - +m[1] !== 12);
+cek('setiap penanda halaman berupa angka dan = halaman PDF − 12', !penandaSalah.length, penandaSalah.map(m => m[0]).join(' | '));
 cek('Pasal 171 di hlm. 89 / pdf 101', N.pasal[171].hlm === '89' && N.pasal[171].pdf === 101);
+cek('Pasal 215 di hlm. 111 / pdf 123', N.pasal[215].hlm === '111' && N.pasal[215].pdf === 123);
+
+// struktur: judul Bagian tidak tergabung ke teks pasal; butir a./b./1./(1) tidak tergabung ke paragraf sebelumnya
+cek('Pasal 82 berada di Bagian Kelima (judulnya tidak tergabung ke Pasal 81)', /^Bagian Kelima — Kewajiban Suami yang Beristeri/.test(N.pasal[82].bagian) && !N.pasal[81].blok.some(b => /Bagian Kelima/.test(b)));
+const isiPasal = N.urutan.flatMap(k => N.pasal[k].blok.filter(b => !/^> /.test(b)).map(b => [k, b]));
+const tergabung = isiPasal.filter(([, b]) => /(?:[:;]|-->)\s(?:\(\d{1,2}\)|[a-z]\.|\d{1,2}\.)\s[A-Za-z]|\bdan\s[a-z]\.\s[A-Za-z]/.test(b));
+cek('tidak ada butir yang tergabung ke paragraf sebelumnya', !tergabung.length, tergabung.map(([k, b]) => 'Pasal ' + k + ': ' + b.slice(0, 80)).join(' | '));
+cek('Pasal 1 huruf j berdiri sendiri', N.pasal[1].blok.some(b => /^j\. Mut'ah adalah/.test(b)));
+// tanda baca hasil OCR: apostrof ganda, apostrof di awal kata, spasi sesudah apostrof di tengah kata
+const apostrof = [...md.matchAll(/''|\s'[a-z]|\w' (?:in|itikad|an|ah|da|i)\b/g)].map(m => md.slice(Math.max(0, m.index - 20), m.index + 20));
+cek('tidak ada apostrof hasil salah baca OCR', !apostrof.length, apostrof.join(' | '));
+// catatan penyunting: salah cetak yang dapat memengaruhi makna
+const CATATAN = { 70: 'kemenakan dan isteri', 96: 'Pembangian', 185: 'keterangan bertanda bintang', 197: 'surat wasiat dan pewasiat', 211: 'Hibah dan orang tua' };
+for (const [k, kata] of Object.entries(CATATAN))
+  cek('catatan penyunting Pasal ' + k, N.pasal[k].blok.some(b => /^> Catatan penyunting:/.test(b) && b.includes(kata)));
+cek('catatan Pasal 70 huruf e mengutip Pasal 8 huruf e UU 1/1974', /kemenakan dari isteri, dalam hal seorang suami beristeri lebih dari seorang/.test(N.pasal[70].blok.join(' ')));
 
 // kutipan dalil
 const i = html.indexOf('const DALIL_ENTRIES={'); let d0 = 0, j = -1;

@@ -1,6 +1,6 @@
 # Kompilasi Hukum Islam di Indonesia
 
-<!-- naskah khi-kemenag-2018 · disusun 25-11-2026 -->
+<!-- naskah khi-kemenag-2018 · disusun 27-11-2026 -->
 
 **Sumber.** *Kompilasi Hukum Islam di Indonesia*, Direktorat Bina KUA dan Keluarga Sakinah, Direktorat Jenderal Bimbingan Masyarakat Islam, Kementerian Agama RI, November 2018, 262 halaman. Berkas pindaian yang dipakai: `rujukan/KHI_Kemenag_2018_Kompilasi_Hukum_Islam.pdf` (SHA-256 `322fe34a0fc77ba234a2e853e43925d1713b4cc447f95e07ef537bd2a451a2e3`), sama ukuran dan jumlah halamannya dengan berkas di Wikimedia Commons yang dicatat sebagai domain publik menurut Pasal 43 UU 28/2014.
 
@@ -13,12 +13,13 @@
 5. Salah cetak dalam edisi ini dipertahankan sebagaimana tercetak. Salah cetak yang dapat memengaruhi makna diberi catatan penyunting.
 6. Edisi ini tidak mencetak Pasal 124 dan Pasal 139.
 7. Spasi sebelum titik dua dan koma dinormalkan.
+8. Pada 27 November 2026 naskah ini dibandingkan kata demi kata dengan salinan ketik *Kompilasi Hukum Islam di Indonesia* edisi Direktorat Pembinaan Peradilan Agama Islam, Ditjen Pembinaan Kelembagaan Islam, Departemen Agama, 2001, yang dimuat JDIH Universitas Sumatera Utara (berkas dibuat 2007). Salinan itu memuat salah cetak yang sama dengan edisi ini, antara lain pada Pasal 70 huruf e, Pasal 96 ayat (2), Pasal 197 ayat (1) huruf d, dan Pasal 211, dan juga tidak memuat Pasal 124 dan Pasal 139. Selisih yang ditemukan diperiksa pada pindaian. Hasilnya, satu judul Bagian yang tergabung ke Pasal 81, delapan butir yang tergabung ke paragraf sebelumnya (satu di antaranya dalam KMA Nomor 154 Tahun 1991), tiga tanda baca, satu noda pindaian yang terbaca sebagai apostrof, dan sembilan nomor halaman yang tidak terbaca OCR diperbaiki (`terbit/naskah-khi/banding-2001.md`). Bunyi yang benar untuk salah cetak belum dapat dicocokkan dengan naskah resmi lain, kecuali Pasal 70 huruf e, yang merujuk Pasal 8 UU No. 1 Tahun 1974.
 
 **Penanda.** `<!-- hlm N · pdf P -->` menunjukkan halaman buku (hlm) dan halaman berkas PDF (pdf). Setiap pasal disertai `<!-- pasal N · hlm · pdf · status -->`.
 
 **Tidak dimuat.** Kata Pengantar, Sambutan, Daftar Isi, dan Lampiran buku (UU 1/1974 dan PP 9/1975 beserta penjelasannya, hlm. 129–238). Bagian itu dapat dibaca pada pindaian.
 
-<!-- hlm - · pdf 13 -->
+<!-- hlm 1 · pdf 13 -->
 
 ## BUKU I — HUKUM PERKAWINAN
 
@@ -48,7 +49,9 @@ g. Pemeliharaan anak atau hadhonah adalah kegiatan mengasuh, memelihara dan mend
 
 h. Perwalian adalah kewenangan yang diberikan kepada seseorang untuk melakukan sesuatu perbuatan hukum sebagai wakil untuk kepentingan dan atas nama anak yang tidak mempunyai kedua orang tua, orang tua yang masih hidup, tidak cakap melakukan perbuatan hukum;
 
-i. Khuluk adalah perceraian yang terjadi atas permintaan isteri dengan memberikan tebusan atau iwadh kepada dan atas persetujuan suaminya; <!-- hlm 5 · pdf 17 --> J. Mut'ah adalah pemberian bekas suami kepada isteri, yang dijatuhi talak berupa benda atau uang dan lainnya.
+i. Khuluk adalah perceraian yang terjadi atas permintaan isteri dengan memberikan tebusan atau iwadh kepada dan atas persetujuan suaminya; <!-- hlm 5 · pdf 17 -->
+
+j. Mut'ah adalah pemberian bekas suami kepada isteri, yang dijatuhi talak berupa benda atau uang dan lainnya.
 
 ### BAB II — DASAR-DASAR PERKAWINAN
 
@@ -154,7 +157,7 @@ Peminangan dapat langsung dilakukan oleh orang yang berkehendak mencari pasangan
 
 (1) Pinangan belum menimbulkan akibat hukum dan para pihak bebas memutuskan hubungan peminangan.
 
-(2) Kebebasan memutuskan hubungan peminangan dilakukan dengan tata cara yang baik sesuai <!-- hlm - · pdf 22 --> dengan tuntunan dan kebiasaan setempat, sehingga tetap terbina kerukunan dan saling menghargai.
+(2) Kebebasan memutuskan hubungan peminangan dilakukan dengan tata cara yang baik sesuai <!-- hlm 10 · pdf 22 --> dengan tuntunan dan kebiasaan setempat, sehingga tetap terbina kerukunan dan saling menghargai.
 
 ### BAB IV — RUKUN DAN SYARAT PERKAWINAN
 
@@ -162,7 +165,7 @@ Peminangan dapat langsung dilakukan oleh orang yang berkehendak mencari pasangan
 
 ##### Pasal 14
 
-<!-- pasal 14 · hlm - · pdf 22 · dicocokkan -->
+<!-- pasal 14 · hlm 10 · pdf 22 · dicocokkan -->
 
 Untuk melaksanakan perkawinan harus ada:
 
@@ -180,7 +183,7 @@ e. Ijab dan Kabul.
 
 ##### Pasal 15
 
-<!-- pasal 15 · hlm - · pdf 22 · dicocokkan -->
+<!-- pasal 15 · hlm 10 · pdf 22 · dicocokkan -->
 
 (1) Untuk kemaslahatan keluarga dan rumah tangga, perkawinan hanya boleh dilakukan <!-- hlm 11 · pdf 23 --> calon mempelai yang telah mencapai umur yang ditetapkan dalam pasal 7 Undang-undang No. 1 tahun 1974 yakni calon suami sekurang-kurangnya berumur 19 tahun dan calon isteri sekurang-kurangnya berumur 16 tahun
 
@@ -394,7 +397,9 @@ d. dengan seorang wanita bekas isteri keturunannya.
 
 (3) Karena pertalian sesusuan:
 
-a. dengan wanita yang menyusui dan seterusnya menurut garis lurus ke atas; <!-- hlm 21 · pdf 33 --> b. dengan seorang wanita sesusuan dan seterusnya menurut garis lurus ke bawah;
+a. dengan wanita yang menyusui dan seterusnya menurut garis lurus ke atas; <!-- hlm 21 · pdf 33 -->
+
+b. dengan seorang wanita sesusuan dan seterusnya menurut garis lurus ke bawah;
 
 c. dengan seorang wanita saudara sesusuan, dan kemanakan sesusuan ke bawah;
 
@@ -418,7 +423,7 @@ c. seorang wanita yang tidak beragama islam.
 
 <!-- pasal 41 · hlm 21 · pdf 33 · dicocokkan -->
 
-(1) Seorang pria dilarang memadu isterinya dengan seoarang wanita yang mempunyai hubungan pertalian nasab atau sesusuan dengan isterinya; <!-- hlm - · pdf 34 -->
+(1) Seorang pria dilarang memadu isterinya dengan seoarang wanita yang mempunyai hubungan pertalian nasab atau sesusuan dengan isterinya; <!-- hlm 22 · pdf 34 -->
 
 a. saudara kandung, seayah atau seibu atau keturunannya;
 
@@ -428,13 +433,13 @@ b. wanita dengan bibinya atau kemenakannya.
 
 ##### Pasal 42
 
-<!-- pasal 42 · hlm - · pdf 34 · dicocokkan -->
+<!-- pasal 42 · hlm 22 · pdf 34 · dicocokkan -->
 
 Seorang pria dilarang melangsungkan perkawinan dengan seorang wanita apabila pria tersebut sedang mempunyai 4 (empat) orang isteri yang keempat-empatnya masih terikat tali perkawinan atau masih dalam iddah talak raj'i ataupun salah seorang diantara mereka masih terikat tali perkawinan sedang yang lainnya dalam masa iddah talak raj'i.
 
 ##### Pasal 43
 
-<!-- pasal 43 · hlm - · pdf 34 · dicocokkan -->
+<!-- pasal 43 · hlm 22 · pdf 34 · dicocokkan -->
 
 (1) Dilarang melangsungkan perkawinan antara seorang pria:
 
@@ -700,6 +705,8 @@ d. perkawinan dilakukan antara dua orang yang mempunyai hubungan darah; semenda 
 
 e. isteri adalah saudara kandung atau sebagai bibi atau kemenakan dan isteri atau isteri-isterinya.
 
+> Catatan penyunting: tertulis "kemenakan dan isteri" dalam edisi ini (hlm. 37). Huruf d pasal ini merujuk Pasal 8 Undang-undang No. 1 Tahun 1974. Huruf e Pasal 8 itu, sebagaimana dimuat dalam Lampiran edisi ini (hlm. 138), berbunyi "berhubungan saudara dengan isteri atau sebagai bibi atau kemenakan dari isteri, dalam hal seorang suami beristeri lebih dari seorang".
+
 ##### Pasal 71
 
 <!-- pasal 71 · hlm 37 · pdf 49 · dicocokkan -->
@@ -734,7 +741,7 @@ f. perkawinan yang dilaksanakan dengan paksaan.
 
 Yang dapat mengajukan permohonan pembatalan perkawinan adalah:
 
-a. para keluarga dalam garis keturunan lurus ke atas dan ke 'bawah dari suami atau isteri;
+a. para keluarga dalam garis keturunan lurus ke atas dan ke bawah dari suami atau isteri;
 
 b. Suami atau isteri;
 
@@ -760,7 +767,7 @@ a. perkawinan yang batal karena salah satu suami atau isteri murtad;
 
 b. anak-anak yang dilahirkan dari perkawinan tersebut;
 
-c. pihak ketiga sepanjang mereka memperoleh hak-hak dengan ber' itikad baik, sebelum keputusan pembatalan perkawinan kekutan hukum yang tetap. <!-- hlm 40 · pdf 52 -->
+c. pihak ketiga sepanjang mereka memperoleh hak-hak dengan ber'itikad baik, sebelum keputusan pembatalan perkawinan kekutan hukum yang tetap. <!-- hlm 40 · pdf 52 -->
 
 ##### Pasal 76
 
@@ -804,13 +811,13 @@ Batalnya suatu perkawinan tidak akan memutuskan hubungan hukum antara anak denga
 
 (2) Hak dan kedudukan isteri adalah seimbang dengan hak dan kedudukan suami dalam kehidupan rumah tangga dan pergaulan hidup bersama dalam masyarakat.
 
-(3) masing-masing pihak berhak untuk melakukan perbuatan hukum. <!-- hlm - · pdf 54 -->
+(3) masing-masing pihak berhak untuk melakukan perbuatan hukum. <!-- hlm 42 · pdf 54 -->
 
 #### Bagian Ketiga — Kewajiban Suami
 
 ##### Pasal 80
 
-<!-- pasal 80 · hlm - · pdf 54 · dicocokkan -->
+<!-- pasal 80 · hlm 42 · pdf 54 · dicocokkan -->
 
 (1) Suami adalah pembimbing, terhadap isteri dan rumah tangganya, akan tetap mengenai hal-hal urusan rumah tangga yang penting-penting diputuskan oleh suami isteri bersama.
 
@@ -844,7 +851,9 @@ c. biaya pendidikan bagi anak. <!-- hlm 43 · pdf 55 -->
 
 (3) Tempat kediaman disediakan untuk melindungi isteri dan anak-anaknya dari gangguan pihak lain, sehingga mereka merasa aman dan <!-- hlm 44 · pdf 56 --> tenteram. Tempat kediaman juga berfungsi sebagai tempat menyimpan harta kekayaan, sebagai tempat menata dan mengatur alat-alat rumah tangga.
 
-(4) Suami wajib melengkapi tempat kediaman sesuai dengan kemampuannya serta disesuaikan dengan keadaan lingkungan tempat tinggalnya, baik berupa alat perlengkapan rumah tangga maupun sarana penunjang lainnya. Bagian Kelima Kewajiban Suami yang Beristeri Lebih Dan Seorang
+(4) Suami wajib melengkapi tempat kediaman sesuai dengan kemampuannya serta disesuaikan dengan keadaan lingkungan tempat tinggalnya, baik berupa alat perlengkapan rumah tangga maupun sarana penunjang lainnya.
+
+#### Bagian Kelima — Kewajiban Suami yang Beristeri Lebih Dan Seorang
 
 ##### Pasal 82
 
@@ -996,7 +1005,11 @@ Janda atau duda cerai masing-masing berhak seperdua dari harta bersama sepanjang
 
 <!-- pasal 99 · hlm 50 · pdf 62 · dicocokkan -->
 
-Anak yang sah adalah: a. anak yang dilahirkan dalam atau akibat perkawinan yang sah; <!-- hlm 51 · pdf 63 --> b. hasil perbuatan suami isteri yang sah diluar rahim dan dilahirkan oleh isteri tersebut.
+Anak yang sah adalah:
+
+a. anak yang dilahirkan dalam atau akibat perkawinan yang sah; <!-- hlm 51 · pdf 63 -->
+
+b. hasil perbuatan suami isteri yang sah diluar rahim dan dilahirkan oleh isteri tersebut.
 
 ##### Pasal 100
 
@@ -1120,7 +1133,9 @@ Perkawinan dapat putus karena:
 
 a. Kematian,
 
-b. Perceraian, dan c. atas putusan Pengadilan.
+b. Perceraian, dan
+
+c. atas putusan Pengadilan.
 
 ##### Pasal 114
 
@@ -1174,7 +1189,7 @@ Talak Raj'i adalah talak kesatu atau kedua, dimana suami berhak rujuk selama ist
 
 1. Talak Ba'in Shughraa adalah talak yang tidak boleh dirujuk tapi boleh akad nikah baru dengan bekas suaminya meskipun dalam iddah.
 
-2. Talak Ba' in Shughraa sebagaimana tersebut pada ayat (1) adalah:
+2. Talak Ba'in Shughraa sebagaimana tersebut pada ayat (1) adalah:
 
 a. talak yang terjadi qabla al dukhul;
 
@@ -1206,7 +1221,7 @@ Talak bid'i adalah talak yang dilarang, yaitu talak yang dijatuhkan pada waktu i
 
 Perceraian itu terjadi terhitung pada saat perceraian itu dinyatakan di depan sidang pengadilan.
 
-> Catatan: Pasal 124 tidak tercantum dalam edisi ini; naskah melompat dari Pasal 123 ke Pasal 125 (hlm. 60).
+> Catatan: Pasal 124 tidak tercantum dalam edisi ini; naskah melompat dari Pasal 123 ke Pasal 125 (hlm. 60). Salinan edisi Departemen Agama 2001 juga tidak memuatnya.
 
 ##### Pasal 125
 
@@ -1228,7 +1243,7 @@ Tata cara li'an diatur sebagai berikut:
 
 a. Suami bersumpah empat kali dengan kata tuduhan zina dan atau pengingkaran anak tersebut diikuti sumpah kelima dengan kata-kata "laknat Allah atas dirinya apabila tuduhan dan atau pengingkaran tersebut dusta"
 
-b. Isteri menolak tuduhan dan atau pengingkaran tersebut dengan sumpah empat kali dengan kata ''tuduhan dan atau pengingkaran tersebut tidak benar", diikuti sumpah kelima dengan kata-kata murka Allah atas dirinya: tuduhan dan atau pengingkaran tersebut benar";
+b. Isteri menolak tuduhan dan atau pengingkaran tersebut dengan sumpah empat kali dengan kata "tuduhan dan atau pengingkaran tersebut tidak benar", diikuti sumpah kelima dengan kata-kata murka Allah atas dirinya: tuduhan dan atau pengingkaran tersebut benar";
 
 c. tata cara pada huruf a dan huruf b tersebut merupakan satu kesatuan yang tak terpisahkan;
 
@@ -1266,11 +1281,11 @@ Pengadilan Agama dapat mengabulkan atau menolak permohonan tersebut, dan terhada
 
 4. Bila suami tidak mengucapkan ikrar talak dalam tempo 6 (enam) bulah terhitung sejak putusan Pengadilan Agama tentang izin ikrar talak baginya mempunyai kekuatan hukum yang tetap maka hak suami untuk mengikrarkan talak gugur dan ikatan perkawinan yang tetap utuh.
 
-5. Setelah sidang penyaksian ikrar talak Pengadilan Agama membuat penetapan tentang terjadinya Talak rangkap empat yang merupakan bukti perceraian bagi bekas suami dan isteri. <!-- hlm - · pdf 76 --> Helai pertama beserta surat ikrar talak dikirimkan kepada Pegawai Pencatat Nikah yang mewilayahi tempat tinggal suami untuk diadakan pencatatan, helai kedua dan ketiga masing-masing diberikan kepada suami isteri dan helai keempat disimpan oleh Pengadilan Agama
+5. Setelah sidang penyaksian ikrar talak Pengadilan Agama membuat penetapan tentang terjadinya Talak rangkap empat yang merupakan bukti perceraian bagi bekas suami dan isteri. <!-- hlm 64 · pdf 76 --> Helai pertama beserta surat ikrar talak dikirimkan kepada Pegawai Pencatat Nikah yang mewilayahi tempat tinggal suami untuk diadakan pencatatan, helai kedua dan ketiga masing-masing diberikan kepada suami isteri dan helai keempat disimpan oleh Pengadilan Agama
 
 ##### Pasal 132
 
-<!-- pasal 132 · hlm - · pdf 76 · dicocokkan -->
+<!-- pasal 132 · hlm 64 · pdf 76 · dicocokkan -->
 
 1. Gugatan perceraian diajukan oleh isteri atau kuasanya pada Pengadilan Agama. Yang daerah hukumnya mewilayahi tempat tinggal penggugat kecuali isteri meninggalkan tempat kediaman bersama tanpa izin suami.
 
@@ -1278,7 +1293,7 @@ Pengadilan Agama dapat mengabulkan atau menolak permohonan tersebut, dan terhada
 
 ##### Pasal 133
 
-<!-- pasal 133 · hlm - · pdf 76 · dicocokkan -->
+<!-- pasal 133 · hlm 64 · pdf 76 · dicocokkan -->
 
 1. Gugatan perceraian karena alasan tersebut dalam pasal 116 huruf b, dapat diajukan setelah lampau 2 (dua) tahun terhitung sejak tergugat meninggalkan gugatan meninggalkan rumah. <!-- hlm 65 · pdf 77 -->
 
@@ -1326,17 +1341,17 @@ Gugatan perceraian gugur apabila suami atau isteri meninggal sebelum adanya putu
 
 4. Dalam hal sudah dilakukan sebagaimana dimaksud dalam ayat (2) dan tergugat atau kuasanya tetap tidak hadir, gugatan diterima tanpa hadirnya tergugat, kecuali apabila gugatan itu tanpa hak atau tidak beralasan.
 
-> Catatan: Pasal 139 tidak tercantum dalam edisi ini; naskah melompat dari Pasal 138 ke Pasal 140 (hlm. 67).
+> Catatan: Pasal 139 tidak tercantum dalam edisi ini; naskah melompat dari Pasal 138 ke Pasal 140 (hlm. 67). Salinan edisi Departemen Agama 2001 juga tidak memuatnya.
 
 ##### Pasal 140
 
 <!-- pasal 140 · hlm 67 · pdf 79 · dicocokkan -->
 
-Apabila tergugat berada dalam keadaan sebagaimana dimaksud dalam pasal 132 ayat (2), panggilan <!-- hlm - · pdf 80 --> disampaikan melalui perwakilan Republik Indonesia setempat
+Apabila tergugat berada dalam keadaan sebagaimana dimaksud dalam pasal 132 ayat (2), panggilan <!-- hlm 68 · pdf 80 --> disampaikan melalui perwakilan Republik Indonesia setempat
 
 ##### Pasal 141
 
-<!-- pasal 141 · hlm - · pdf 80 · dicocokkan -->
+<!-- pasal 141 · hlm 68 · pdf 80 · dicocokkan -->
 
 1. Pemeriksaan gugatan perceraian dilakukan oleh hakim selambat-lambatnya 30 (tiga puluh) hari setelah diterimanya berkas atau surat gugatan perceraian
 
@@ -1346,7 +1361,7 @@ Apabila tergugat berada dalam keadaan sebagaimana dimaksud dalam pasal 132 ayat 
 
 ##### Pasal 142
 
-<!-- pasal 142 · hlm - · pdf 80 · dicocokkan -->
+<!-- pasal 142 · hlm 68 · pdf 80 · dicocokkan -->
 
 1. Pada sidang pemeriksaan gugatan perceraian, suami isteri datang sendiri atau mewakilkan kepada kuasanya. <!-- hlm 69 · pdf 81 -->
 
@@ -1394,11 +1409,11 @@ Apabila tidak dicapai perdamaian, pemeriksaan gugatan perceraian dilakukan dalam
 
 (5) Apabila Pegawai Pencatat Nikah dengan Pegawai Pencatat Nikah tempat pernikahan mereka dilangsungkan, maka satu helai salinan putusan Pengadilan Agama sebagaimana dimaksud dalam ayat (2) dikirimkan pula kepada Pegawai Pencatat Nikah yang mewilayahi tempat perkawinan dilangsungkan dan bagi perkawinan yang dilangsungkan di luar Negeri Salinan itu disampaikan kepada Pegawai Pencatat Nikah Jakarta.
 
-(6) Kelalaian mengirimkan salinan putusan tersebut dalam ayat (1) menjadi tanggungjawab Panitera yang bersangkutan, apabila yang demikian itu mengakibatkan kerugian bagi bekas suami atau isteri atau keduanya. <!-- hlm - · pdf 84 -->
+(6) Kelalaian mengirimkan salinan putusan tersebut dalam ayat (1) menjadi tanggungjawab Panitera yang bersangkutan, apabila yang demikian itu mengakibatkan kerugian bagi bekas suami atau isteri atau keduanya. <!-- hlm 72 · pdf 84 -->
 
 ##### Pasal 148
 
-<!-- pasal 148 · hlm - · pdf 84 · dicocokkan -->
+<!-- pasal 148 · hlm 72 · pdf 84 · dicocokkan -->
 
 1. Seorang isteri yang mengajukan gugatan perceraian dengan jalan khuluk, menyanpaikan permohonannya kepada Pengadilan Agama yang mewilayahi tempat tinggalnya disertai alasan atau alasan-alasannya.
 
@@ -1528,7 +1543,9 @@ Harta bersama dibagi menurut ketentuan sebagaimana tersebut dalam pasal 96, 97. 
 
 <!-- pasal 158 · hlm 79 · pdf 91 · dicocokkan -->
 
-Mut'ah wajib diberikan oleh bekas suami dengan syarat: a. belum ditetapkan mahar bagi isteri ba'da al dukhul;
+Mut'ah wajib diberikan oleh bekas suami dengan syarat:
+
+a. belum ditetapkan mahar bagi isteri ba'da al dukhul;
 
 b. perceraian itu atas kehendak suami.
 
@@ -1786,7 +1803,7 @@ Bagi ahli waris yang belum dewasa atau tidak mampu melaksanakan hak dan kewajiba
 
 \* Berdasarkan Surat Edaran Mahkamah Agung Nomor: 2 Tahun 1994, maksud pasal tersebut ialah: ayah mendapat sepertiga bagian bila pewaris tidak meninggalkan anak, tetapi <!-- hlm 96 · pdf 108 --> meninggalkan suami dan ibu, bila ada anak, ayah mendapat seperenam bagian.
 
-> Catatan penyunting: keterangan bertanda bintang di atas tercetak di antara ayat (1) dan ayat (2) Pasal 185 dalam edisi ini. Isinya menerangkan Pasal 177 (SEMA Nomor 2 Tahun 1994), bukan Pasal 185.
+> Catatan penyunting: keterangan bertanda bintang di atas tercetak di antara ayat (1) dan ayat (2) Pasal 185 dalam edisi ini. Isinya menerangkan Pasal 177 (SEMA Nomor 2 Tahun 1994), bukan Pasal 185. Dalam salinan edisi Departemen Agama 2001, tanda bintang itu melekat pada Pasal 177.
 
 (2) Bagian ahli waris pengganti tidak boleh melebihi dari bagian ahli waris yang sederajat dengan yang diganti.
 
@@ -1891,6 +1908,8 @@ b. dipersalahkan secara memfitnah telah mengajukan pengaduan bahwa pewasiat tela
 c. dipersalahkan dengan kekerasan atau ancaman mencegah pewasiat untuk membuat atau mencabut atau merubah wasiat untuk kepentingan calon penerima wasiat; <!-- hlm 102 · pdf 114 -->
 
 d. dipersalahkan telah menggelapkan atau merusak atau memalsukan surat wasiat dan pewasiat.
+
+> Catatan penyunting: tertulis "surat wasiat dan pewasiat" dalam edisi ini (hlm. 102).
 
 (2) Wasiat menjadi batal apabila orang yang ditunjuk untuk menerima wasiat itu:
 
@@ -2026,13 +2045,13 @@ Warga negara Indonesia yang berada di negara asing dapat membuat surat hibah di 
 
 ## BUKU III — HUKUM PERWAKAFAN
 
-<!-- hlm 110 · pdf 122 --> <!-- hlm Ill · pdf 123 -->
+<!-- hlm 110 · pdf 122 --> <!-- hlm 111 · pdf 123 -->
 
 ### BAB I — KETENTUAN UMUM
 
 ##### Pasal 215
 
-<!-- pasal 215 · hlm Ill · pdf 123 · dicocokkan -->
+<!-- pasal 215 · hlm 111 · pdf 123 · dicocokkan -->
 
 Yang dimaksud dengan:
 
@@ -2094,7 +2113,9 @@ c. sudah dewasa;
 
 d. sehat jasmani dan rohani;
 
-e. tidak berada di bawah pengampuan; f. bertempat tinggal di kecamatan tempat letak benda yang diwakafkannya.
+e. tidak berada di bawah pengampuan;
+
+f. bertempat tinggal di kecamatan tempat letak benda yang diwakafkannya.
 
 (2) Jika berbentuk badan hukum, maka Nadzir harus memenuhi persyaratan sebagai berikut:
 
@@ -2410,7 +2431,11 @@ MENTERI AGAMA REPUBLIK INDONESIA
 
 Menimbang:
 
-a. bahwa Instruksi Presiden Republik Indonesia Nomor 1 Tahun 1991 tanggal 10 Juni 1991 memerintahkan kepada Menteri Agama untuk menyebarluaskan Kompilasi Hukum Islam untuk digunakan oleh Instansi Pemerintah dan oleh masyarakat yang memerlukannya. <!-- hlm - · pdf 256 --> b. bahwa penyebarluasan Kompilasi Hukum Islam tersebut perlu dilaksanakan dengan sebaik-baiknya dan dengan penuh tanggung jawab.
+a. bahwa Instruksi Presiden Republik Indonesia Nomor 1 Tahun 1991 tanggal 10 Juni 1991 memerintahkan kepada Menteri Agama untuk menyebarluaskan Kompilasi Hukum Islam untuk digunakan oleh Instansi Pemerintah dan oleh masyarakat yang memerlukannya.
+
+<!-- hlm 244 · pdf 256 -->
+
+b. bahwa penyebarluasan Kompilasi Hukum Islam tersebut perlu dilaksanakan dengan sebaik-baiknya dan dengan penuh tanggung jawab.
 
 c. bahwa oleh karena itu perlu dikeluarkan Keputusan Menteri Agama Republik Indonesia tentang Pelaksanaan Instruksi Presiden Republik Indonesia Nomor 1 Tahun 1991 tanggal 10 Juni 1991.
 
