@@ -140,7 +140,7 @@
       (sesudah ? '<button type="button" class="btn" data-khi-ke="' + sesudah + '">Pasal ' + sesudah + ' ›</button>' : '') + '</div>';
     if (!p) {
       isi('<h4>Pasal ' + n + '</h4><p>' + (n === 124 || n === 139
-        ? 'Pasal ' + n + ' tidak tercantum dalam edisi Kemenag 2018: naskahnya melompat dari Pasal ' + (n - 1) + ' ke Pasal ' + (n + 1) + '.'
+        ? 'Pasal ' + n + ' tidak tercantum dalam edisi Kemenag 2018: naskahnya melompat dari Pasal ' + (n - 1) + ' ke Pasal ' + (n + 1) + '. Salinan edisi Departemen Agama 2001 juga tidak memuatnya.'
         : 'Kompilasi Hukum Islam memuat Pasal 1 sampai Pasal 229.') + '</p>' + nav);
       return;
     }

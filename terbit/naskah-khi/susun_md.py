@@ -94,6 +94,11 @@ def angka_ocr(s):
     return int(s.replace(' ', '').replace('i', '1').replace('l', '1').replace('I', '1').replace('O', '0').replace('o', '0'))
 
 
+# Nomor halaman yang tidak terbaca (atau salah terbaca, "Ill") oleh OCR; dibaca pada kaki halaman pindaian
+# (27-11-2026). Semuanya sama dengan halaman PDF dikurangi 12.
+HLM_PINDAIAN = {13: '1', 22: '10', 34: '22', 54: '42', 76: '64', 80: '68', 84: '72', 123: '111', 256: '244'}
+
+
 # --- baca halaman: buang nomor halaman di kaki, catat nomor halaman asli --------------------------
 def halaman(rentang):
     for p in rentang:
@@ -102,6 +107,7 @@ def halaman(rentang):
         asli = None
         if baris and re.fullmatch(r'[0-9IVXlvix]{1,4}', baris[-1]):
             asli = baris.pop()
+        asli = HLM_PINDAIAN.get(p, asli)
         yield p, asli, baris
 
 
@@ -190,7 +196,7 @@ def tulis_khi():
                     elif n != pasal_harap:
                         log.append(f'pdf {p}: pasal {pasal_harap}–{n - 1} tidak ditemukan sebagai judul')
                         hilang = ', '.join(f'Pasal {k}' for k in range(pasal_harap, n))
-                        md.append(f'> Catatan: {hilang} tidak tercantum dalam edisi ini; naskah melompat dari Pasal {pasal_harap - 1} ke Pasal {n} (hlm. {asli}).')
+                        md.append(f'> Catatan: {hilang} tidak tercantum dalam edisi ini; naskah melompat dari Pasal {pasal_harap - 1} ke Pasal {n} (hlm. {asli}). Salinan edisi Departemen Agama 2001 juga tidak memuatnya.')
                     pasal_harap = n + 1
                     md.append(f'##### Pasal {n}')
                     md.append(f'<!-- pasal {n} · hlm {asli or "-"} · pdf {p} · {"dicocokkan" if n in DICOCOKKAN else "belum dicocokkan"} -->')
@@ -212,7 +218,8 @@ def tulis_bebas(rentang, judul):
         else:
             blok = blok_dari(baris)
         # paragraf yang berlanjut dari halaman sebelumnya: penanda halaman disisipkan di dalam paragraf
-        if blok and re.match(r'[a-z]', blok[0]) and md and not md[-1].startswith('#'):
+        # ("b. bahwa ..." adalah butir baru, bukan lanjutan paragraf)
+        if blok and re.match(r'[a-z]', blok[0]) and not re.match(r'([a-z]|\d{1,2})\.\s', blok[0]) and md and not md[-1].startswith('#'):
             md[-1] += ' ' + penanda + ' ' + blok.pop(0)
         else:
             md.append(penanda)
@@ -226,7 +233,7 @@ tulis_bebas(KMA, 'KEPUTUSAN MENTERI AGAMA REPUBLIK INDONESIA NOMOR 154 TAHUN 199
 
 KEPALA = """# Kompilasi Hukum Islam di Indonesia
 
-<!-- naskah khi-kemenag-2018 · disusun 25-11-2026 -->
+<!-- naskah khi-kemenag-2018 · disusun 27-11-2026 -->
 
 **Sumber.** *Kompilasi Hukum Islam di Indonesia*, Direktorat Bina KUA dan Keluarga Sakinah, Direktorat Jenderal Bimbingan Masyarakat Islam, Kementerian Agama RI, November 2018, 262 halaman. Berkas pindaian yang dipakai: `rujukan/KHI_Kemenag_2018_Kompilasi_Hukum_Islam.pdf` (SHA-256 `322fe34a0fc77ba234a2e853e43925d1713b4cc447f95e07ef537bd2a451a2e3`), sama ukuran dan jumlah halamannya dengan berkas di Wikimedia Commons yang dicatat sebagai domain publik menurut Pasal 43 UU 28/2014.
 
@@ -239,6 +246,7 @@ KEPALA = """# Kompilasi Hukum Islam di Indonesia
 5. Salah cetak dalam edisi ini dipertahankan sebagaimana tercetak. Salah cetak yang dapat memengaruhi makna diberi catatan penyunting.
 6. Edisi ini tidak mencetak Pasal 124 dan Pasal 139.
 7. Spasi sebelum titik dua dan koma dinormalkan.
+8. Pada 27 November 2026 naskah ini dibandingkan kata demi kata dengan salinan ketik *Kompilasi Hukum Islam di Indonesia* edisi Direktorat Pembinaan Peradilan Agama Islam, Ditjen Pembinaan Kelembagaan Islam, Departemen Agama, 2001, yang dimuat JDIH Universitas Sumatera Utara (berkas dibuat 2007). Salinan itu memuat salah cetak yang sama dengan edisi ini, antara lain pada Pasal 70 huruf e, Pasal 96 ayat (2), Pasal 197 ayat (1) huruf d, dan Pasal 211, dan juga tidak memuat Pasal 124 dan Pasal 139. Selisih yang ditemukan diperiksa pada pindaian. Hasilnya, satu judul Bagian yang tergabung ke Pasal 81, delapan butir yang tergabung ke paragraf sebelumnya (satu di antaranya dalam KMA Nomor 154 Tahun 1991), tiga tanda baca, satu noda pindaian yang terbaca sebagai apostrof, dan sembilan nomor halaman yang tidak terbaca OCR diperbaiki (`terbit/naskah-khi/banding-2001.md`). Bunyi yang benar untuk salah cetak belum dapat dicocokkan dengan naskah resmi lain, kecuali Pasal 70 huruf e, yang merujuk Pasal 8 UU No. 1 Tahun 1974.
 
 **Penanda.** `<!-- hlm N · pdf P -->` menunjukkan halaman buku (hlm) dan halaman berkas PDF (pdf). Setiap pasal disertai `<!-- pasal N · hlm · pdf · status -->`.
 
